@@ -10,7 +10,7 @@ const Hero = () => {
         <Transition delay={'100'}>
           <div className="w-full mb-8">
             <h1 className="text-primary text-7xl font-bold">👋</h1>
-            <h1 className="text-primary  text-7xl font-bold">I'm Peter</h1>
+            <h1 className="text-primary  text-7xl font-bold">I&apos;m Peter</h1>
           </div>
         </Transition>
 
@@ -43,7 +43,9 @@ const Hero = () => {
         <Transition delay="100">
           <div className="w-full">
             <h1 className="text-primary text-7xl ">👋</h1>
-            <h1 className="text-primary text-7xl font-extrabold ">I'm Peter</h1>
+            <h1 className="text-primary text-7xl font-extrabold ">
+              I&apos;m Peter
+            </h1>
             <h1 className="text-primary text-2xl uppercase">
               A Full-Stack engineer from sunny Florida
             </h1>

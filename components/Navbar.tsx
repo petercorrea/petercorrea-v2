@@ -22,17 +22,30 @@ const Navbar = () => {
         <FaHamburger size={24} className="text-primary md:hidden" />
       </button>
 
-      <div className="hidden md:flex flex-row justify-center items-center rounded-full">
-        <Link href="" className="text-primary m-2 p-4">
+      <div className="hidden md:flex flex-row justify-center items-center rounded-full bg-white opacity-80 backdrop-blur-xl">
+        <Link
+          href=""
+          className="flex flex-row justify-center color-primary m-2 p-4 rounded-full w-20 bg-transparent"
+        >
           About
         </Link>
-        <Link href="" className="text-primary m-2 p-4">
+
+        <Link
+          href=""
+          className="flex flex-row justify-center color-primary m-2 p-4 rounded-full w-20"
+        >
           XP
         </Link>
-        <Link href="" className="text-primary m-2 p-4">
+        <Link
+          href=""
+          className="flex flex-row justify-center color-primary m-2 p-4 rounded-full w-20"
+        >
           Projects
         </Link>
-        <Link href="" className="text-primary m-2 p-4">
+        <Link
+          href=""
+          className="flex flex-row justify-center color-primary m-2 p-4 rounded-full w-20"
+        >
           Contact
         </Link>
       </div>

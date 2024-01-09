@@ -30,7 +30,3 @@ html[data-theme='darky'] {
   --color-primary: white;
   --background: black;
 }
-
-/* .flow {
-  @apply transition duration-300 ease-in-out translate-y-4 scale-95;
-} */

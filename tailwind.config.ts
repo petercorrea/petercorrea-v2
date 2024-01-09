@@ -17,7 +17,6 @@ const config: Config = {
     'delay-450',
     'delay-500',
   ],
-
   darkMode: 'class',
   theme: {
     extend: {
