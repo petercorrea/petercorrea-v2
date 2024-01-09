@@ -23,14 +23,7 @@ const config: Config = {
       colors: {
         // functional
         primary: 'var(--color-primary)',
-        // neutrals
-        black: 'black',
-        white: 'white',
-        grey: 'grey',
-        // colors
-        red: 'red',
-        blue: 'blue',
-        green: 'green',
+        opposite: 'var(--color-opposite)',
       },
       transitionDelay: {
         '100': '100ms',

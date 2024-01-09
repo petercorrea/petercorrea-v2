@@ -22,11 +22,13 @@ body {
 @layer base {
   html {
     --color-primary: black;
+    --color-opposite: white;
     --background: white;
   }
 }
 
 html[data-theme='darky'] {
   --color-primary: white;
+  --color-opposite: black;
   --background: black;
 }

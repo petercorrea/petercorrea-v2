@@ -46,8 +46,17 @@ const Navbar = () => {
           href=""
           className="flex flex-row justify-center color-primary m-2 p-4 rounded-full w-20"
         >
+          Posts
+        </Link>
+        <Link
+          href=""
+          className="flex flex-row justify-center color-primary m-2 p-4 rounded-full w-20"
+        >
           Contact
         </Link>
+        <button className="flex flex-row justify-center color-primary m-2 p-4 rounded-full w-20">
+          Resume
+        </button>
       </div>
 
       <DarkModeButton setDarkMode={setDarkMode} darkMode={darkMode} />

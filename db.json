@@ -1,0 +1,201 @@
+{
+  "contact": {
+    "name": "Peter Correa",
+    "title": "Software Engineer",
+    "email": "contact@petercorrea.com",
+    "linkedin": "linkedin.com/in/petercorrea",
+    "website": "petercorrea.com"
+  },
+  "professionalSummary": "Experienced Full Stack Software Engineer with front-end and back-end development expertise, including JavaScript, TypeScript, Node.js, React.js, Next.js, GraphQL, SQL, and AWS. Proven skills in designing scalable distributed systems, advanced programming, performance testing, and systems integration. Skilled in deploying full-stack applications, migrating databases, improving developer experiences, writing test cases, and integrating APIs. Soft skills include collaborating with designers and stakeholders, presenting to staff, conducting code reviews, interviewing candidates, mentoring peers, and onboarding new team members. Notable projects include in-house billing services, vendor marketplaces, and mobile development.",
+  "professionalExperiance": [
+    {
+      "company": "RoadRuner",
+      "date": "2022-2023",
+      "role": "Software Engineer",
+      "responsibilities": [
+        "Led in-house billing and invoicing projects built using React, Node.js, Digital Ocean, Heroku, and Redis",
+        "Enhanced sprint efﬁciency by 60%, improved commitment by 20%, outperforming sister team by 16%",
+        "Implemented a microservices-based backend using Node.js, resulting in a 25% reduction in response time",
+        "Supported critical technology transitions to AWS, GitHub Actions & CodeSpaces, and SonarCloud",
+        "Enhanced user experience and interface responsiveness using React, implementing advanced features like dynamic content rendering and state management",
+        "Enhanced database performance by introducing indexing and optimizing query performance by 30%",
+        "Developed RESTful APIs and integrated third-party APIs, streamlining data ﬂow and enabling efﬁcient crossapplication communication",
+        "Interviewed and mentored new hires, established new processes for peer reviews and career path progression",
+        "Conducted bi-weekly hands-on workshops on software engineering and web design",
+        "Presented to CTO, senior developers, and stakeholders about the state of technology and practices"
+      ],
+      "skills": [
+        "TypeScript",
+        "React",
+        "Ruby on Rails",
+        "Postgres",
+        "Node.js",
+        "Github Actions & CI"
+      ]
+    },
+    {
+      "company": "X-Team",
+      "date": "2019 - 2022",
+      "role": "Software Engineer",
+      "responsibilities": [
+        "Worked with major clients (PayPal, Coinbase) on external-facing API Gateways using Node.js and GraphQL",
+        "Built custom content management system and distributed applications with high throughput and low latency",
+        "Interviewed candidates, mentored trainees, and presented training sessions for technical teams",
+        "Hosted monthly Tech Talks to senior developers and managers on technical topics and industry trends",
+        "Rearchitect multipage web apps into a single-page app to improve performance by 17% with Next.js",
+        "Worked on enhancing frontend experience by implementing automated testing",
+        "Migrated products from mono-repos to microservices, reduced bundle size by 26%",
+        "Develop a systematic content management strategy using Contently",
+        "Revamp the corporate site to improve accessibility and increase lighthouse metrics by 45%"
+      ],
+      "skills": [
+        "TypeScript",
+        "React",
+        "Ruby on Rails",
+        "Postgres",
+        "Node.js",
+        "Github Actions & CI"
+      ]
+    },
+    {
+      "company": "Target",
+      "date": "2014 - 2019",
+      "role": "Senior Operations Manager",
+      "responsibilities": [
+        "Managed retail operations of $75M in annual volume with a team of 50+ direct reports",
+        "Grew online sales by 47% and improved gross margins by 38%",
+        "Improved operations by 10% and reduced liabilities by 15%",
+        "Piloted technological initiatives such as online ordering, same-day delivery, self-checkout, and RFID operations",
+        "Achieved the highest number of promotions and employee cultural satisfaction",
+        "Selected for advanced leadership accelerator program"
+      ],
+      "skills": [
+        "TypeScript",
+        "React",
+        "Ruby on Rails",
+        "Postgres",
+        "Node.js",
+        "Github Actions & CI"
+      ]
+    }
+  ],
+  "acaemicExperiance": [
+    {
+      "company": "Florida International University - Dept. of Biology",
+      "date": "2012 - 2014",
+      "role": "Student Teaching Assistant",
+      "responsibilities": [
+        "Lectured undergraduate pre-med students on Biology I & II",
+        "Administered testing and practice active learning pedagogies",
+        "Planned, built, and presented a curriculum covering topics in physics, biology, and chemistry",
+        "Collaborated with staff and faculty to assess and improve student engagement and performance"
+      ],
+      "skills": []
+    },
+    {
+      "company": "Apple Store",
+      "date": "2010 - 2012",
+      "role": "Software & Hardware Specialist",
+      "responsibilities": [
+        "Triaged software and hardware issues on phones, tablets, desktops, and laptops",
+        "Performed testing and analysis of critical electrical components and device modules",
+        "Managed technical appointments and trafﬁc, engaged both customers and teams to increase throughput",
+        "Performed and audited technical repairs, hardware upgrades, and data recovery and migrations",
+        "Trained and developed peers and new employees"
+      ],
+      "skills": []
+    }
+  ],
+  "education": [
+    {
+      "school": "University of Colorado, Boulder",
+      "dergree": "Master of Science",
+      "study": "Electrical Engineering",
+      "graduationDate": "2025"
+    },
+    {
+      "school": "Florida International University",
+      "dergree": "Bachelor of Arts",
+      "study": "Liberal Studies & Biology",
+      "graduationDate": "2014"
+    }
+  ],
+  "skills": [
+    "JavaScript",
+    "TypeScript",
+    "Python",
+    "Go",
+    "Rust",
+    "C",
+    " C++",
+    "HTML",
+    "CSS",
+    "Node.js",
+    "GraphQL",
+    "React.js",
+    "Next.js",
+    "Solid.js",
+    "SQL",
+    "PostgreSQL",
+    "MongoDB",
+    "Redis",
+    "Kafka",
+    "Docker",
+    "Kubernetes",
+    "Vercel",
+    "Heroku",
+    "AWS",
+    "Amazon Web Services",
+    "Datadog",
+    "Contently",
+    "Strapi",
+    "CodeFlow",
+    "Jenkins",
+    "Jest",
+    "SonarCloud",
+    "Code Climate",
+    "Optimizely",
+    "Git",
+    "CI/CD",
+    "Object-Oriented",
+    "Unit Testing",
+    "Integration Testing"
+  ],
+  "certificates": [
+    {
+      "organization": "Thinkful",
+      "certificate": "Software Engineering Bootcamp",
+      "year": "2019"
+    },
+    {
+      "organization": "DataCamp",
+      "certificate": "Data Scientist Track with Python",
+      "year": "2018"
+    }
+  ],
+  "projects": [
+    {
+      "title": "Spotify Clone",
+      "description": "A rendition of the popular Spotify service.",
+      "github_url": "https://github.com/petercorrea/spotify-clone",
+      "public_url": "https://spotify-clone-nu-virid.vercel.app/",
+      "tags": [
+        "React",
+        "Next.js",
+        "Supabase",
+        "Postgres",
+        "Stripe",
+        "Vercel",
+        "Tailwind"
+      ],
+      "image": "",
+      "features": [
+        "Built with Next.js and deplyed on Vercal",
+        "Integrated with Supabase and Stripe",
+        "Sign in with email or Github",
+        "Upload, search, and listen to music",
+        "Find music uploaded by others"
+      ]
+    }
+  ]
+}
