@@ -10,6 +10,11 @@ body {
 }
 
 * {
+  box-sizing: border-box;
+  border: 1px solid blue;
+}
+
+* {
   @apply transition-colors duration-200;
 }
 
@@ -25,3 +30,7 @@ html[data-theme='darky'] {
   --color-primary: white;
   --background: black;
 }
+
+/* .flow {
+  @apply transition duration-300 ease-in-out translate-y-4 scale-95;
+} */
