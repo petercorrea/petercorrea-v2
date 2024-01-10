@@ -3,8 +3,10 @@
     "name": "Peter Correa",
     "title": "Software Engineer",
     "email": "contact@petercorrea.com",
-    "linkedin": "linkedin.com/in/petercorrea",
-    "website": "petercorrea.com"
+    "linkedin": "https://www.linkedin.com/in/petercorrea",
+    "github": "https://www.github.com/petercorrea",
+    "website": "https://www.petercorrea.com",
+    "youtube": "https://www.youtube.com/@petercorrea"
   },
   "professionalSummary": "Experienced Full Stack Software Engineer with front-end and back-end development expertise, including JavaScript, TypeScript, Node.js, React.js, Next.js, GraphQL, SQL, and AWS. Proven skills in designing scalable distributed systems, advanced programming, performance testing, and systems integration. Skilled in deploying full-stack applications, migrating databases, improving developer experiences, writing test cases, and integrating APIs. Soft skills include collaborating with designers and stakeholders, presenting to staff, conducting code reviews, interviewing candidates, mentoring peers, and onboarding new team members. Notable projects include in-house billing services, vendor marketplaces, and mobile development.",
   "professionalExperiance": [
@@ -175,6 +177,7 @@
   ],
   "projects": [
     {
+      "type": "app",
       "title": "Spotify Clone",
       "description": "A rendition of the popular Spotify service.",
       "github_url": "https://github.com/petercorrea/spotify-clone",
@@ -188,7 +191,7 @@
         "Vercel",
         "Tailwind"
       ],
-      "image": "",
+      "image": "/spotify.png",
       "features": [
         "Built with Next.js and deplyed on Vercal",
         "Integrated with Supabase and Stripe",
@@ -196,6 +199,46 @@
         "Upload, search, and listen to music",
         "Find music uploaded by others"
       ]
+    },
+    {
+      "type": "video",
+      "title": "Linked Lists in JavaScript",
+      "description": "A code walkthrough about LinkedLists",
+      "github_url": "",
+      "public_url": "https://youtu.be/nkzHzvvSdcE",
+      "tags": ["Data Structures", "JavaScript"],
+      "image": "/linkedlists.png",
+      "features": []
+    },
+    {
+      "type": "video",
+      "title": "The JavaScript runtime engine",
+      "description": "A high level overview of the event loop and task queues powering the JS engine.",
+      "github_url": "",
+      "public_url": "https://youtu.be/9uAosfffLKc",
+      "tags": ["JavaScript"],
+      "image": "/engine.png",
+      "features": []
+    },
+    {
+      "type": "video",
+      "title": "Inheritance and Object Oriented Programming",
+      "description": "A review of some of the most popular design patterns",
+      "github_url": "",
+      "public_url": "https://youtu.be/x1kp0y_-zp8",
+      "tags": ["JavaScript", "OOP"],
+      "image": "/oop.png",
+      "features": []
+    },
+    {
+      "type": "video",
+      "title": "The Thinkful Experiance",
+      "description": "An online interview of my bootcamp experiance at Thinkful",
+      "github_url": "",
+      "public_url": "https://youtu.be/BKSnLuXu_dc",
+      "tags": ["Interview", "Bootcamps"],
+      "image": "/thinkful.png",
+      "features": []
     }
   ]
 }

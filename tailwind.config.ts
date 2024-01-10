@@ -24,6 +24,8 @@ const config: Config = {
         // functional
         primary: 'var(--color-primary)',
         opposite: 'var(--color-opposite)',
+        github: '#6cc644',
+        youtube: 'red',
       },
       transitionDelay: {
         '100': '100ms',

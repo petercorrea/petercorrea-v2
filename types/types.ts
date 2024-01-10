@@ -5,3 +5,14 @@ export type Experiance = {
   responsibilities: string[];
   skills: string[];
 };
+
+export type Project = {
+  type: string;
+  title: string;
+  description: string;
+  github_url: string;
+  public_url: string;
+  tags: string[];
+  image: string;
+  features: string[];
+};

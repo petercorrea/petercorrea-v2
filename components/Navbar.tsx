@@ -1,7 +1,8 @@
 import DarkModeButton from '@/components/DarkModeButton';
+import data from '@/db.json';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
-import { FaHamburger } from 'react-icons/fa';
+import { FaGithub, FaHamburger, FaYoutube } from 'react-icons/fa';
 import { toggleDarkThemeOff, toggleDarkThemeOn } from '../libs/helpers';
 
 const Navbar = () => {
@@ -17,49 +18,58 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="flex flex-row w-full justify-between items-center p-3 px-6 absolute">
+    <div className="flex flex-row w-full justify-end items-center p-3 px-6 absolute">
       <button>
         <FaHamburger size={24} className="text-primary md:hidden" />
       </button>
 
-      <div className="hidden md:flex flex-row justify-center items-center rounded-full bg-white opacity-80 backdrop-blur-xl">
+      <div className="hidden md:flex flex-row justify-end items-center opacity-80 backdrop-blur-xl">
         <Link
-          href=""
-          className="flex flex-row justify-center color-primary m-2 p-4 rounded-full w-20 bg-transparent"
+          href="#about"
+          className="flex flex-row justify-center text-primary rounded-full  hover:underline hover:underline-offset-1 mr-4"
         >
-          About
+          about
         </Link>
 
         <Link
-          href=""
-          className="flex flex-row justify-center color-primary m-2 p-4 rounded-full w-20"
+          href="#xp"
+          className="flex flex-row justify-center text-primary rounded-full  hover:underline hover:underline-offset-1 mr-4"
         >
-          XP
+          xp
         </Link>
         <Link
-          href=""
-          className="flex flex-row justify-center color-primary m-2 p-4 rounded-full w-20"
+          href="#projects"
+          className="flex flex-row justify-center text-primary rounded-full  hover:underline hover:underline-offset-1 mr-4"
         >
-          Projects
+          projects
         </Link>
         <Link
-          href=""
-          className="flex flex-row justify-center color-primary m-2 p-4 rounded-full w-20"
+          href="/posts"
+          className="flex flex-row justify-center text-primary rounded-full  hover:underline hover:underline-offset-1 mr-4"
         >
-          Posts
+          posts
         </Link>
         <Link
-          href=""
-          className="flex flex-row justify-center color-primary m-2 p-4 rounded-full w-20"
+          href="#contact"
+          className="flex flex-row justify-center text-primary rounded-full  hover:underline hover:underline-offset-1 mr-4"
         >
-          Contact
+          contact
         </Link>
-        <button className="flex flex-row justify-center color-primary m-2 p-4 rounded-full w-20">
-          Resume
-        </button>
+        <a
+          href="/Peter Correa Resume.pdf"
+          download="Peter Correa Resume"
+          className="flex flex-row justify-center text-primary rounded-full  hover:underline hover:underline-offset-1 mr-4"
+        >
+          resume
+        </a>
+        <Link href={data.contact.github}>
+          <FaGithub size={20} className="text-primary mr-4" />
+        </Link>
+        <Link href={data.contact.youtube}>
+          <FaYoutube size={20} className="text-primary mr-8" />
+        </Link>
+        <DarkModeButton setDarkMode={setDarkMode} darkMode={darkMode} />
       </div>
-
-      <DarkModeButton setDarkMode={setDarkMode} darkMode={darkMode} />
     </div>
   );
 };

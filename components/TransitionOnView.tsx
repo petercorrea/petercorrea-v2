@@ -36,7 +36,7 @@ const TransitionOnView = ({ children, delay }: TransitionOnViewProps) => {
   return (
     <div
       ref={ref}
-      className={`border border-red transition-all flow duration-1000 ease-in-out delay-${delay} ${
+      className={`transition-all flow duration-1000 ease-in-out delay-${delay} ${
         isVisible ? '-translate-y-0 opacity-100' : '-translate-y-4 opacity-0'
       }`}
     >

@@ -21,11 +21,11 @@ const DarkModeButton = ({ darkMode, setDarkMode }: DarkModeButtonProps) => {
   return (
     <button onClick={handleOnClick} className="">
       <HiOutlineMoon
-        size={35}
+        size={20}
         className={`${darkMode ? 'hidden' : 'text-primary'}`}
       />
       <HiOutlineSun
-        size={35}
+        size={20}
         className={`${darkMode ? 'text-primary' : 'hidden'}`}
       />
     </button>
