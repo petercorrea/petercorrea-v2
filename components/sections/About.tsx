@@ -1,24 +1,34 @@
-import Section from '../Section';
-import TransitionOnView from '../TransitionOnView';
+import Padding from '../Padding';
 
-const About = () => {
+interface AboutProps {
+  darkMode: boolean;
+}
+
+const About = ({ darkMode }: AboutProps) => {
   return (
-    <Section id="about" classname="bg-stone-200">
-      <div className="w-full mb-4">
-        <h1 className="text-4xl font-extrabold">About Me</h1>
-      </div>
-      <div className="w-[400px] h-screen flex flex-col justify-center items-center">
-        <TransitionOnView>
+    <Padding
+      id="about"
+      classname={`${darkMode ? 'bg-stone-500' : 'bg-stone-200'}`}
+    >
+      {/* flex parent */}
+      <div className="grid grid-cols-4 justify-start w-full">
+        <div className=" min-w-fit">
+          <h1 className="text-primary text-xs font-semibold sticky top-0 lowercase">
+            About Me
+          </h1>
+        </div>
+
+        <div className=" flex flex-col justify-center items-center col-span-3 p-8 pt-0 ">
           <p className="text-primary">
             A bit about me, my career began in retail management and operations.
-            However, coding eventually piqued my interest and led me to join a
-            software engineering bootcamp. Soon after, I was working in the
-            field and I&apos;m now pursuing an M.S. in Electrical Engineering.{' '}
+            Eventually, coding piqued my interest and led me to join a software
+            engineering bootcamp. Soon after, I was working in the field as a
+            Full Stack engineer and I&apos;m now pursuing an M.S. in Electrical
+            Engineering.{' '}
           </p>
-        </TransitionOnView>
-        <br />
 
-        <TransitionOnView delay="150">
+          <br />
+
           <p className="text-primary">
             My day-to-day responsibilities can vary widely. They include
             deploying full-stack applications, migrating databases, improving
@@ -31,18 +41,17 @@ const About = () => {
             platforms. My work spans mobile apps for a few hundred users to web
             apps that reach several million across the globe.
           </p>
-        </TransitionOnView>
-        <br />
 
-        <TransitionOnView delay="300">
+          <br />
+
           <p className="text-primary">
             Beyond general software engineering, I occasionally explore areas
             like cryptography, game theory, embedded systems, machine learning
             and playing the saxophone.{' '}
           </p>
-        </TransitionOnView>
+        </div>
       </div>
-    </Section>
+    </Padding>
   );
 };
 

@@ -181,7 +181,8 @@
       "title": "Spotify Clone",
       "description": "A rendition of the popular Spotify service.",
       "github_url": "https://github.com/petercorrea/spotify-clone",
-      "public_url": "https://spotify-clone-nu-virid.vercel.app/",
+      "youtube_url": "",
+      "production_url": "https://spotify-clone-nu-virid.vercel.app/",
       "tags": [
         "React",
         "Next.js",
@@ -205,7 +206,8 @@
       "title": "Linked Lists in JavaScript",
       "description": "A code walkthrough about LinkedLists",
       "github_url": "",
-      "public_url": "https://youtu.be/nkzHzvvSdcE",
+      "youtube_url": "https://youtu.be/nkzHzvvSdcE",
+      "production_url": "",
       "tags": ["Data Structures", "JavaScript"],
       "image": "/linkedlists.png",
       "features": []
@@ -215,7 +217,8 @@
       "title": "The JavaScript runtime engine",
       "description": "A high level overview of the event loop and task queues powering the JS engine.",
       "github_url": "",
-      "public_url": "https://youtu.be/9uAosfffLKc",
+      "youtube_url": "https://youtu.be/9uAosfffLKc",
+      "production_url": "",
       "tags": ["JavaScript"],
       "image": "/engine.png",
       "features": []
@@ -225,7 +228,8 @@
       "title": "Inheritance and Object Oriented Programming",
       "description": "A review of some of the most popular design patterns",
       "github_url": "",
-      "public_url": "https://youtu.be/x1kp0y_-zp8",
+      "youtube_url": "https://youtu.be/x1kp0y_-zp8",
+      "production_url": "",
       "tags": ["JavaScript", "OOP"],
       "image": "/oop.png",
       "features": []
@@ -235,7 +239,8 @@
       "title": "The Thinkful Experiance",
       "description": "An online interview of my bootcamp experiance at Thinkful",
       "github_url": "",
-      "public_url": "https://youtu.be/BKSnLuXu_dc",
+      "youtube_url": "https://youtu.be/BKSnLuXu_dc",
+      "production_url": "",
       "tags": ["Interview", "Bootcamps"],
       "image": "/thinkful.png",
       "features": []

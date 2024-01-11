@@ -6,9 +6,9 @@ interface TagProps {
 const Tag = ({ text, classname }: TagProps) => {
   return (
     <div
-      className={`rounded-lg p-1 px-2 flex flex-row justify-center items-center mr-4 mb-2 shadow-lg  ${classname}`}
+      className={`h-fit rounded-lg p-1 px-2 flex flex-row justify-center items-center mr-2 mb-2 shadow-lg border-[1px] border-primary ${classname}`}
     >
-      <p className="text-sm font-medium">{text}</p>
+      <p className="text-xs font-100 text-primary lowercase">{text}</p>
     </div>
   );
 };

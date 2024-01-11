@@ -8,13 +8,13 @@ interface XPCardProps {
 
 const XPCard = ({ experiance }: XPCardProps) => {
   return (
-    <div className="p-8  rounded-xl  mb-4 max-w-[800px]">
+    <div className="rounded-xl mb-20 max-w-[800px]">
       <h1 className="text-primary text-2xl font-semibold underline">
         {experiance.role}
       </h1>
       <div className="flex flex-row w-full justify-between mb-4">
-        <h2 className="text-sm text-gray-500 font">{experiance.company}</h2>
-        <h2 className="text-sm text-gray-500 font">{experiance.date}</h2>
+        <h2 className="text-sm text-primary font">{experiance.company}</h2>
+        <h2 className="text-xs text-primary font">{experiance.date}</h2>
       </div>
 
       {experiance.responsibilities.map((item, idx) => (
@@ -25,7 +25,7 @@ const XPCard = ({ experiance }: XPCardProps) => {
 
       <div className="flex flex-row mt-8 flex-wrap">
         {experiance.skills.map((item, idx) => (
-          <Tag key={idx} text={item} classname="border" />
+          <Tag key={idx} text={item} />
         ))}
       </div>
     </div>

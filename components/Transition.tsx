@@ -15,7 +15,7 @@ const Transition = ({ children, delay }: TransitionProps) => {
   // using custom 'flow' transition timing function
   return (
     <div
-      className={`transition-all flow duration-1000 ease-in-out delay-${delay} ${
+      className={`h-full flex flex-row justify-center transition-all flow duration-1000 ease-in-out delay-${delay} ${
         isLoaded ? '-translate-y-0 opacity-100' : '-translate-y-8 opacity-0'
       }`}
     >

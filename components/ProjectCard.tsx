@@ -8,75 +8,109 @@ import Link from 'next/link';
 
 interface ProjectCardProps {
   project: Project;
+  darkMode: boolean;
 }
 
-const ProjectCard = ({ project }: ProjectCardProps) => {
+const ProjectCard = ({ project, darkMode }: ProjectCardProps) => {
   return (
-    <div className="w-[400px] p-4  rounded-xl shadow-sm shadow-gray-400 mb-4 mr-4 flex flex-col justify-between">
-      <div>
-        <div className="flex flex-row justify-between">
-          <h1 className="text-primary text-2xl font-semibold mb-2 w-fit text-wrap">
-            {project.title}
-          </h1>
-          {project.type === 'video' ? <FaYoutube size={35} color="red" /> : ''}
-          {project.type === 'app' ? <FaGithub size={35} color="#6cc644" /> : ''}
-        </div>
-        <div className="flex flex-row justify-between">
-          <div className="flex flex-row w-full justify-between mb-4">
-            <div className="relative w-[150px] h-[80px]">
-              <Image
-                src={project.image}
-                alt="Image"
-                fill
-                className="object-cover"
-              />
-            </div>
-            <div className="flex flex-col justify-start items-end">
-              {project.github_url ? (
-                <div className="flex flex-row justify-center items-center mb-1">
-                  <Link
-                    href={project.github_url}
-                    className="text-sm text-gray-500 font-semibold mr-1"
-                  >
-                    GitHub
-                  </Link>
-                  <FiExternalLink />
-                </div>
-              ) : (
-                ''
-              )}
-              {project.public_url ? (
-                <div className="flex flex-row justify-center items-center">
-                  <Link
-                    href={project.public_url}
-                    className="text-sm text-gray-500 font-semibold mr-1"
-                  >
-                    URL
-                  </Link>
-                  <FiExternalLink />
-                </div>
-              ) : (
-                ''
-              )}
-            </div>
-          </div>
-        </div>
+    <div
+      className={`${
+        darkMode ? '' : 'shadow-lg'
+      } p-4 rounded-xl mb-16 mr-4 flex flex-col flex-start hover:shadow-lg hover:-translate-y-2 transition ease-in`}
+    >
+      {/* title */}
+      <Link href={project.production_url || project.youtube_url}>
+        <h1 className="text-primary text-3xl mb-2 w-fit text-wrap underline">
+          {project.title}
+        </h1>
+      </Link>
 
-        <p className="text-primary">{project.description}</p>
-      </div>
-      <div className="flex flex-row mt-4 flex-wrap">
-        <Tag
-          text={project.type}
-          classname="bg-red-300 shadow-red-200 text-red-800"
-        />
+      {/* description */}
+      <p className="text-primary text-sm mb-10">{project.description}</p>
 
-        {project.tags.map((item, idx) => (
-          <Tag
-            key={idx}
-            text={item}
-            classname="bg-blue-300 shadow-blue-200 text-blue-800"
+      {/* image */}
+      <Link href={project.production_url || project.youtube_url}>
+        <div className="relative w-full h-[200px] rounded-xl overflow-hidden mb-4">
+          <Image
+            src={project.image}
+            alt="Image"
+            fill
+            className="object-cover"
           />
-        ))}
+        </div>
+      </Link>
+
+      <div className="flex flex-row items-start justify-between">
+        {/* tags */}
+        <div className="flex flex-row flex-wrap">
+          <Tag text={project.type} />
+
+          {project.tags.map((item, idx) => (
+            <Tag key={idx} text={item} />
+          ))}
+        </div>
+
+        {/* icons */}
+        {project.youtube_url ? (
+          <Link href={project.youtube_url} className="">
+            <FaYoutube size={35} color="red" />
+          </Link>
+        ) : (
+          ''
+        )}
+
+        {project.github_url ? (
+          <Link href={project.github_url} className="">
+            <FaGithub size={35} color="#6cc644" />
+          </Link>
+        ) : (
+          ''
+        )}
+      </div>
+
+      {/* links */}
+      <div className="flex flex-row justify-start items-center">
+        {project.github_url ? (
+          <div className="flex flex-row mr-4">
+            <Link
+              href={project.github_url}
+              className="text-sm text-primary mr-1 hover:underline"
+            >
+              github
+            </Link>
+            <FiExternalLink className="text-primary" />
+          </div>
+        ) : (
+          ''
+        )}
+
+        {project.youtube_url ? (
+          <div className="flex flex-row items-center mr-4">
+            <Link
+              href={project.youtube_url}
+              className="text-sm text-primary mr-1 hover:underline"
+            >
+              youtube
+            </Link>
+            <FiExternalLink className="text-primary" size={15} />
+          </div>
+        ) : (
+          ''
+        )}
+
+        {project.production_url ? (
+          <div className="flex flex-row mr-4 items-center">
+            <Link
+              href={project.production_url}
+              className="text-sm text-primary mr-1 hover:underline"
+            >
+              demo
+            </Link>
+            <FiExternalLink className="text-primary" />
+          </div>
+        ) : (
+          ''
+        )}
       </div>
     </div>
   );

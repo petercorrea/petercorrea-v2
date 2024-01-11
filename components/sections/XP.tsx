@@ -1,17 +1,32 @@
 import data from '@/db.json';
-import Section from '../Section';
+import Padding from '../Padding';
 import XPCard from '../XPCard';
 
-const XP = () => {
+interface XPProps {
+  darkMode: boolean;
+}
+
+const XP = ({ darkMode }: XPProps) => {
   return (
-    <Section id="xp" classname="bg-stone-300">
-      <div className="w-full mb-4">
-        <h1 className="text-4xl font-extrabold">Experiance</h1>
+    <Padding
+      id="xp"
+      classname={`${darkMode ? 'bg-stone-600' : 'bg-stone-300'}`}
+    >
+      {/* flex parent */}
+      <div className="grid grid-cols-4  justify-start w-full">
+        <div className=" min-w-fit">
+          <h1 className="text-primary text-xs font-semibold sticky top-0 lowercase">
+            Experiance
+          </h1>
+        </div>
+
+        <div className="col-span-3 p-8 pt-0">
+          {data.professionalExperiance.map((xp, idx) => (
+            <XPCard key={idx} experiance={xp} />
+          ))}
+        </div>
       </div>
-      {data.professionalExperiance.map((xp, idx) => (
-        <XPCard key={idx} experiance={xp} />
-      ))}
-    </Section>
+    </Padding>
   );
 };
 export default XP;
