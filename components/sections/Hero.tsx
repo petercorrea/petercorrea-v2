@@ -4,49 +4,13 @@ import Image from 'next/image';
 
 const Hero = () => {
   return (
-    <div className="min-h-screen flex flex-col justify-center">
-      <Padding>
-        {/* sm screens */}
-        <div className="w-10/12 md:hidden flex flex-col justify-center items-center  ">
-          <Transition delay={'100'}>
-            <div className="w-full mb-8">
-              <h1 className="text-primary text-7xl font-bold">👋</h1>
-              <h1 className="text-primary  text-7xl font-bold">
-                I&apos;m Peter
-              </h1>
-            </div>
-          </Transition>
-
-          <Transition delay={'150'}>
-            <div className=" w-full flex flex-col justify-center items-center mb-8 max-w-[200px]">
-              <Image
-                src="/headshot.png"
-                alt="Image"
-                className="object-contain rounded-3xl"
-                height={250}
-                width={250}
-              />
-            </div>
-          </Transition>
-
-          <Transition delay={'200'}>
-            <div className="w-full">
-              <h1 className="text-primary text-4xl font-medium text-center">
-                Crafting engaging experiances
-              </h1>
-              <h1 className="text-primary text-4xl font-medium text-center">
-                from sunny Florida
-              </h1>
-            </div>
-          </Transition>
-        </div>
-
-        {/* md screens */}
-        <div className="hidden md:flex flex-row justify-center items-center">
-          <Transition delay="100">
-            <div className="w-full mr-20">
+    <Padding>
+      <div className="min-h-screen flex flex-col justify-center md:justify-center">
+        <div className=" flex flex-col md:flex-row justify-start md:justify-center items-center">
+          <Transition delay="100" direction="down">
+            <div className="w-full mr-20 mb-10 md:mb-0">
               <h1 className="text-primary text-7xl ">👋</h1>
-              <h1 className="text-primary text-7xl font-extrabold ">
+              <h1 className="text-primary text-7xl font-extrabold mb-5">
                 i&apos;m peter
               </h1>
               <h1 className="text-primary text-xl font-semibold ">
@@ -58,20 +22,21 @@ const Hero = () => {
             </div>
           </Transition>
 
-          <Transition delay="250">
-            <div className="w-full max-w-[300px] bg-pink-100 p-4 rounded-3xl">
+          <Transition delay="250" direction="down">
+            <div className="relative p-4 rounded-3xl w-64 h-64 md:w-56 md:h-56">
               <Image
                 src="/headshot.png"
                 alt="Image"
-                className="object-contain rounded-3xl min-h-80 min-w-80"
+                className="rounded-3xl"
                 height={500}
                 width={500}
+                priority
               />
             </div>
           </Transition>
         </div>
-      </Padding>
-    </div>
+      </div>
+    </Padding>
   );
 };
 

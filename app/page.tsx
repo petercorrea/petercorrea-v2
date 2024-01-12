@@ -7,7 +7,6 @@ import Footer from '@/components/sections/Footer';
 import Hero from '@/components/sections/Hero';
 import Projects from '@/components/sections/Projects';
 import XP from '@/components/sections/XP';
-import Image from 'next/image';
 import { useEffect, useState } from 'react';
 
 export default function Home() {
@@ -40,20 +39,16 @@ export default function Home() {
       <Projects darkMode={darkMode} />
       <Footer />
 
-      <div
-        id="beach"
-        className="fixed bottom-0 w-[100vw] h-[30vh] overflow-hidden"
-      >
-        <Transition delay="100">
-          <Image
+      <div id="beach" className="fixed bottom-0 w-full">
+        <Transition delay="100" classname="w-full" direction="up">
+          <div
+            id="beach"
+            className="w-full h-[20vh] flex flex-col justify-end "
             style={{
-              // minWidth: '110%',
-              objectPosition: '0px 40px',
+              backgroundPosition: 'bottom',
+              backgroundRepeat: 'repeat-x',
+              backgroundImage: "url('/beach.svg')",
             }}
-            src="/beach-svg.svg"
-            alt="Image"
-            fill
-            objectFit="cover"
           />
         </Transition>
       </div>

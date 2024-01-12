@@ -13,7 +13,7 @@ const XP = ({ darkMode }: XPProps) => {
       classname={`${darkMode ? 'bg-stone-600' : 'bg-stone-300'}`}
     >
       {/* flex parent */}
-      <div className="grid grid-cols-4  justify-start w-full">
+      <div className="grid grid-cols-4  justify-start w-full max-w-[1000px]">
         <div className=" min-w-fit">
           <h1 className="text-primary text-xs font-semibold sticky top-0 lowercase">
             Experiance

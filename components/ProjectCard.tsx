@@ -30,12 +30,15 @@ const ProjectCard = ({ project, darkMode }: ProjectCardProps) => {
 
       {/* image */}
       <Link href={project.production_url || project.youtube_url}>
-        <div className="relative w-full h-[200px] rounded-xl overflow-hidden mb-4">
+        <div className="relative w-[300px] h-[200px] rounded-xl overflow-hidden mb-4">
           <Image
             src={project.image}
             alt="Image"
             fill
-            className="object-cover"
+            sizes="500px"
+            style={{
+              objectFit: 'cover',
+            }}
           />
         </div>
       </Link>
