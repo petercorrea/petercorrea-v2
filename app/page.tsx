@@ -10,6 +10,11 @@ import XP from '@/components/sections/XP';
 import { useEffect, useState } from 'react';
 
 export default function Home() {
+  console.log(
+    `👋👋👋 Hi there!`,
+    `If you're seeing this, you should consider hiring me for your next project! https://www.linkedin.com/in/petercorrea`
+  );
+
   // slide beach as window is scrolled
   useEffect(() => {
     const beachDiv = document.getElementById('beach');

@@ -17,7 +17,6 @@ const Navbar = ({ darkMode, setDarkMode }: NavbarProps) => {
       '(prefers-color-scheme: dark)'
     ).matches;
 
-    console.log(`system initally ${systemTheme}`);
     setDarkMode(systemTheme);
     systemTheme ? toggleDarkThemeOn() : toggleDarkThemeOff();
   }, []);
