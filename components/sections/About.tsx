@@ -13,46 +13,45 @@ const About = ({ darkMode }: AboutProps) => {
       id="about"
       classname={`${darkMode ? 'bg-stone-500' : 'bg-stone-200'}`}
     >
-      <div className="max-w-[1000px]">
-        {/* flex parent */}
-        <div className="grid grid-cols-4 w-full">
-          <div className=" min-w-fit">
-            <h1 className="text-primary text-xs font-semibold sticky top-0 lowercase">
-              About peter
-            </h1>
-          </div>
+      <div className="flex flex-col md:grid md:grid-cols-4 w-full max-w-[1000px]">
+        {/* section heading */}
+        <div className="relative -top-4">
+          <h1 className="md:pt-4 text-primary text-xs font-semibold md:sticky top-0 lowercase mb-4 md:mb-0 min-w-fit h-fit">
+            About peter
+          </h1>
+        </div>
 
-          <div className="col-span-3">
-            <div className="flex flex-row">
-              <div className="mr-8 ml-0 max-w-[400px]">
-                {data.professionalSummary.map((paragraph, idx) => (
-                  <div key={idx}>
-                    <p className="text-primary">{paragraph}</p>
-                    <br />
-                  </div>
-                ))}
+        <div className="flex flex-col lg:flex-row md:col-span-3">
+          {/* Summary */}
+          <div className="mr-8 ml-0">
+            {data.professionalSummary.map((paragraph, idx) => (
+              <div key={idx}>
+                <p className="text-primary font-light">{paragraph}</p>
+                <br />
               </div>
-
-              <TransitionOnView delay="100">
-                <div className="flex flex-col justify-center items-start h-full">
-                  <div className="relative w-[320px] h-[400px] rounded-xl overflow-hidden">
-                    <Image
-                      src="/pic_1.jpeg"
-                      alt="Image"
-                      fill
-                      sizes="500px"
-                      style={{
-                        objectFit: 'cover',
-                      }}
-                    />
-                  </div>
-                  <p className="text-primary text-xs font-light">
-                    Barcelona, Spain
-                  </p>
-                </div>
-              </TransitionOnView>
-            </div>
+            ))}
           </div>
+
+          <TransitionOnView delay="100">
+            <div className="flex flex-col justify-center items-start h-full">
+              {/* pic */}
+              <div className="relative w-[320px] h-[400px] rounded-xl overflow-hidden">
+                <Image
+                  src="/pic_1.jpeg"
+                  alt="Image"
+                  fill
+                  sizes="500px"
+                  style={{
+                    objectFit: 'cover',
+                  }}
+                />
+              </div>
+              {/* caption */}
+              <p className="text-primary text-xs font-light">
+                Barcelona, Spain
+              </p>
+            </div>
+          </TransitionOnView>
         </div>
       </div>
     </Padding>

@@ -13,14 +13,14 @@ const XP = ({ darkMode }: XPProps) => {
       classname={`${darkMode ? 'bg-stone-600' : 'bg-stone-300'}`}
     >
       {/* flex parent */}
-      <div className="grid grid-cols-4  justify-start w-full max-w-[1000px]">
-        <div className=" min-w-fit">
-          <h1 className="text-primary text-xs font-semibold sticky top-0 lowercase">
+      <div className="flex flex-col md:grid md:grid-cols-4 md:justify-start w-full max-w-[1000px]">
+        <div className="relative -top-4">
+          <h1 className="md:pt-4 mb-4 md:mb-0 min-w-fit text-primary text-xs font-semibold md:sticky top-0 lowercase h-fit">
             Experiance
           </h1>
         </div>
 
-        <div className="col-span-3 p-8 pt-0">
+        <div className="col-span-3 pt-0">
           {data.professionalExperiance.map((xp, idx) => (
             <XPCard key={idx} experiance={xp} />
           ))}

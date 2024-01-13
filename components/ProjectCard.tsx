@@ -15,8 +15,8 @@ const ProjectCard = ({ project, darkMode }: ProjectCardProps) => {
   return (
     <div
       className={`${
-        darkMode ? '' : 'shadow-lg'
-      } p-4 rounded-xl mb-16 mr-4 flex flex-col flex-start justify-between hover:shadow-lg hover:-translate-y-2 transition ease-in`}
+        darkMode ? 'shadow-lightShadow' : 'shadow-lg'
+      } rounded-xl mb-16 mr-4 flex flex-col flex-start justify-between hover:shadow-darkShadow hover:-translate-y-2 transition ease-in max-w-[500px] p-4`}
     >
       <div>
         {/* title */}
@@ -27,21 +27,21 @@ const ProjectCard = ({ project, darkMode }: ProjectCardProps) => {
         </Link>
 
         {/* description */}
-        <p className="text-primary text-sm mb-10">{project.description}</p>
+        <p className="text-primary text-sm mb-10 font-light">
+          {project.description}
+        </p>
       </div>
 
       <div>
         {/* image */}
         <Link href={project.production_url || project.youtube_url}>
-          <div className="relative w-[320px] h-[200px] rounded-xl overflow-hidden mb-4">
+          <div className="min-h-[200px] max-w-[500px] max-h-[250px] relative rounded-xl overflow-hidden mb-4 flex flex-col justify-center bg-black">
             <Image
               src={project.image}
               alt="Image"
-              fill
-              sizes="500px"
-              style={{
-                objectFit: 'cover',
-              }}
+              layout="responsive"
+              width={500}
+              height={300}
             />
           </div>
         </Link>
@@ -81,7 +81,7 @@ const ProjectCard = ({ project, darkMode }: ProjectCardProps) => {
             <div className="flex flex-row items-center mr-4">
               <Link
                 href={project.github_url}
-                className="text-sm text-primary mr-1 hover:underline"
+                className="text-sm text-primary mr-1 hover:underline font-light"
               >
                 github
               </Link>
@@ -95,7 +95,7 @@ const ProjectCard = ({ project, darkMode }: ProjectCardProps) => {
             <div className="flex flex-row items-center mr-4">
               <Link
                 href={project.youtube_url}
-                className="text-sm text-primary mr-1 hover:underline"
+                className="text-sm text-primary mr-1 hover:underline font-light"
               >
                 youtube
               </Link>
@@ -109,7 +109,7 @@ const ProjectCard = ({ project, darkMode }: ProjectCardProps) => {
             <div className="flex flex-row mr-4 items-center">
               <Link
                 href={project.production_url}
-                className="text-sm text-primary mr-1 hover:underline"
+                className="text-sm text-primary mr-1 hover:underline font-light"
               >
                 demo
               </Link>

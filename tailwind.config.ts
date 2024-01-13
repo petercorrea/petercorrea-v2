@@ -41,6 +41,10 @@ const config: Config = {
       transitionTimingFunction: {
         flow: 'cubic-bezier(0.000, -0.005, 0.375, 1.005)',
       },
+      boxShadow: {
+        lightShadow: '-2px 1px 26px 5px rgba(0,0,0,0.20)',
+        darkShadow: '-2px 1px 26px 5px rgba(0,0,0,0.40)',
+      },
     },
   },
   variants: {},
