@@ -9,7 +9,7 @@ interface XPCardProps {
 const XPCard = ({ experiance }: XPCardProps) => {
   return (
     <div className="rounded-xl mb-20 max-w-[800px]">
-      <h1 className="text-primary text-2xl font-semibold underline">
+      <h1 className="text-primary text-3xl font-semibold underline">
         {experiance.role}
       </h1>
       <div className="flex flex-row w-full justify-between mb-4">

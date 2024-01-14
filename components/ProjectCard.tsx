@@ -9,19 +9,32 @@ import Link from 'next/link';
 interface ProjectCardProps {
   project: Project;
   darkMode: boolean;
+  idx: number;
 }
 
-const ProjectCard = ({ project, darkMode }: ProjectCardProps) => {
+const ProjectCard = ({ project, darkMode, idx }: ProjectCardProps) => {
+  const bgColors = [
+    'bg-red-200',
+    'bg-blue-200',
+    'bg-yellow-200',
+    'bg-orange-200',
+    'bg-green-200',
+  ];
+
   return (
     <div
       className={`${
         darkMode ? 'shadow-lightShadow' : 'shadow-lg'
-      } rounded-xl mb-16 mr-4 flex flex-col flex-start justify-between hover:shadow-darkShadow hover:-translate-y-2 transition ease-in max-w-[500px] p-4`}
+      }  rounded-xl mb-16 mr-4 flex flex-col flex-start justify-between hover:shadow-darkShadow hover:-translate-y-2 transition ease-in max-w-[500px] p-4`}
     >
       <div>
         {/* title */}
         <Link href={project.production_url || project.youtube_url}>
-          <h1 className="text-primary text-3xl mb-2 w-fit text-wrap underline">
+          <p>
+            {0}
+            {idx}
+          </p>
+          <h1 className="text-primary text-3xl font-semibold mb-2 w-fit text-wrap underline">
             {project.title}
           </h1>
         </Link>

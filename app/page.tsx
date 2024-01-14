@@ -44,7 +44,7 @@ export default function Home() {
       <Projects darkMode={darkMode} />
       <Footer />
 
-      <div id="beach" className="fixed bottom-0 w-full">
+      {/* <div id="beach" className="fixed bottom-0 w-full">
         <Transition delay="100" classname="w-full" direction="up">
           <div
             id="beach"
@@ -56,7 +56,7 @@ export default function Home() {
             }}
           />
         </Transition>
-      </div>
+      </div> */}
     </main>
   );
 }

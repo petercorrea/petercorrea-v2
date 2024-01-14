@@ -33,11 +33,11 @@ const Navbar = ({ darkMode, setDarkMode }: NavbarProps) => {
     <>
       {/* Sun and moon svg */}
       <div className={`${moonStyle} transition-transform duration-1000`}>
-        <Image src="/moon.svg" alt="Moon" width={150} height={150} priority />
+        <Image src="/moon.svg" alt="Moon" width={100} height={100} priority />
       </div>
 
       <div className={`${sunStyle} transition-transform duration-1000`}>
-        <Image src="/sun.svg" alt="Sun" width={150} height={150} priority />
+        <Image src="/sun.svg" alt="Sun" width={100} height={100} priority />
       </div>
 
       {/* mobile navbar */}

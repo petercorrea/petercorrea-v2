@@ -26,6 +26,9 @@ const config: Config = {
         opposite: 'var(--color-opposite)',
         github: '#6cc644',
         youtube: 'red',
+        bauhausRed: '#ef4444',
+        bauhausYellow: '#fde047',
+        bauhausBlue: '#2563eb',
       },
       transitionDelay: {
         '100': '100ms',
