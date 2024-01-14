@@ -48,13 +48,7 @@ const ProjectCard = ({ project, darkMode, idx }: ProjectCardProps) => {
         {/* image */}
         <Link href={project.production_url || project.youtube_url}>
           <div className="min-h-[200px] max-w-[500px] max-h-[250px] relative rounded-xl overflow-hidden mb-4 flex flex-col justify-center bg-black">
-            <Image
-              src={project.image}
-              alt="Image"
-              layout="responsive"
-              width={500}
-              height={300}
-            />
+            <Image src={project.image} alt="Image" width={500} height={300} />
           </div>
         </Link>
 
