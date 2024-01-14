@@ -18,7 +18,7 @@ const About = ({ darkMode }: AboutProps) => {
           </h1>
         </div>
 
-        <div className="flex flex-col lg:flex-row md:col-span-3">
+        <div className="flex flex-col justify-center items-center lg:flex-row md:col-span-3">
           {/* Summary */}
           <div className="mr-8 ml-0">
             {data.professionalSummary.map((paragraph, idx) => (

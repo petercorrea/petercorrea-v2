@@ -6,9 +6,9 @@ const Hero = () => {
   return (
     <Padding>
       <div className="min-h-screen flex flex-col justify-center md:justify-center">
-        <div className=" flex flex-col md:flex-row justify-start md:justify-center items-center">
+        <div className="flex flex-col md:flex-row justify-start md:justify-center items-center">
           <Transition delay="100" direction="down">
-            <div className="w-full mr-20 md:mb-0">
+            <div className="w-full md:mb-0">
               <div className="flex flex-row justify-start items-center mb-4">
                 <div className="w-2 h-2 rounded-full bg-green-600 mr-1"></div>
                 <p className="text-green-600 text-xs font-semibold">
