@@ -6,9 +6,9 @@ import Padding from '../Padding';
 const Footer = () => {
   return (
     <Padding id="contact" classname="bg-stone-800">
-      <div className=" grid grid-cols-4 justify-start w-full max-w-[1000px]">
+      <div className="flex flex-col md:grid md:grid-cols-4 justify-start w-full max-w-[1000px]">
         <div className=" min-w-fit">
-          <h1 className="text-white text-3xl font-semibold sticky top-0 lowercase">
+          <h1 className="text-white text-3xl font-semibold sticky top-0 lowercase pb-10 md:pb-0">
             Contact
           </h1>
         </div>
