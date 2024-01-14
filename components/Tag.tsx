@@ -1,14 +1,21 @@
 interface TagProps {
   text: string;
   classname?: string;
+  textColor?: string;
 }
 
-const Tag = ({ text, classname }: TagProps) => {
+const Tag = ({ text, classname, textColor }: TagProps) => {
   return (
     <div
-      className={`h-fit rounded-full p-1 px-3 flex flex-row justify-center items-center mr-2 mb-2 shadow-lg border-[1px] border-primary ${classname}`}
+      className={`h-fit rounded-full p-1 px-3 flex flex-row justify-center items-center mr-2 mb-2 shadow-lg  ${classname}`}
     >
-      <p className="text-xs font-100 text-primary lowercase">{text}</p>
+      <p
+        className={`text-xs font-100 ${
+          textColor ? textColor : 'text-white'
+        } lowercase`}
+      >
+        {text}
+      </p>
     </div>
   );
 };

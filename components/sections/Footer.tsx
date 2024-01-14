@@ -8,7 +8,7 @@ const Footer = () => {
     <Padding id="contact" classname="bg-stone-800">
       <div className=" grid grid-cols-4 justify-start w-full max-w-[1000px]">
         <div className=" min-w-fit">
-          <h1 className="text-white text-xs font-semibold sticky top-0 lowercase">
+          <h1 className="text-white text-3xl font-semibold sticky top-0 lowercase">
             Contact
           </h1>
         </div>
