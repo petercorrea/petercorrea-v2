@@ -44,9 +44,11 @@ const Hero = () => {
             </div>
           </Transition>
 
-          <p className="text-4xl font-semibold text-right text-primary">
-            Let&apos;s build something together
-          </p>
+          <Transition delay="350" direction="down">
+            <p className="text-4xl font-semibold text-right text-primary">
+              Let&apos;s build something together
+            </p>
+          </Transition>
 
           {/* <div className="tech-imgs relative flex flex-row justify-start items-center w-full h-14 border border-red-500 ">
             <div className="relative w-full h-full">
