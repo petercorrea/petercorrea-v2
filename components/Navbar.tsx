@@ -1,6 +1,5 @@
 import DarkModeButton from '@/components/DarkModeButton';
 import data from '@/db.json';
-import Image from 'next/image';
 import Link from 'next/link';
 import { Dispatch, SetStateAction, useEffect } from 'react';
 import { FaGithub, FaHamburger, FaYoutube } from 'react-icons/fa';
@@ -32,13 +31,13 @@ const Navbar = ({ darkMode, setDarkMode }: NavbarProps) => {
   return (
     <>
       {/* Sun and moon svg */}
-      <div className={`${moonStyle} transition-transform duration-1000`}>
-        <Image src="/moon.svg" alt="Moon" width={100} height={100} priority />
+      {/* <div className={`${moonStyle} transition-transform duration-1000`}>
+        <Image src="/moon.svg" alt="Moon" width={50} height={50} priority />
       </div>
 
       <div className={`${sunStyle} transition-transform duration-1000`}>
-        <Image src="/sun.svg" alt="Sun" width={100} height={100} priority />
-      </div>
+        <Image src="/sun.svg" alt="Sun" width={50} height={50} priority />
+      </div> */}
 
       {/* mobile navbar */}
       <div className="absolute flex flex-row md:hidden w-full justify-between items-center p-4">

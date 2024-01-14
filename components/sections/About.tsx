@@ -30,23 +30,22 @@ const About = ({ darkMode }: AboutProps) => {
           </div>
 
           <TransitionOnView delay="100">
-            <div className="flex flex-col justify-center items-start h-full">
-              {/* pic */}
-              <div className="relative w-[320px] h-[400px] rounded-xl overflow-hidden">
-                <Image
-                  src="/pic_1.jpeg"
-                  alt="Image"
-                  fill
-                  sizes="500px"
-                  style={{
-                    objectFit: 'cover',
-                  }}
-                />
+            <div className="bg-bauhausRed w-[258px] h-[258px] rounded-3xl flex flex-row justify-center items-center m-10">
+              <div className="flex flex-col justify-center items-start h-full">
+                {/* pic */}
+                <div className="relative w-64 h-64 -right-4 top-4  rounded-3xl overflow-hidden">
+                  <Image
+                    src="/pic_1.jpeg"
+                    alt="Image"
+                    fill
+                    sizes="500px"
+                    style={{
+                      objectFit: 'cover',
+                    }}
+                  />
+                </div>
+                {/* caption */}
               </div>
-              {/* caption */}
-              <p className="text-primary text-xs font-light">
-                Barcelona, Spain
-              </p>
             </div>
           </TransitionOnView>
         </div>
