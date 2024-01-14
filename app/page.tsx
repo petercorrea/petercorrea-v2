@@ -1,6 +1,7 @@
 'use client';
 
 import Navbar from '@/components/Navbar';
+import SocialLinks from '@/components/SocialLinks';
 import Transition from '@/components/Transition';
 import About from '@/components/sections/About';
 import Footer from '@/components/sections/Footer';
@@ -37,6 +38,7 @@ export default function Home() {
     <main>
       <Transition delay="100">
         <Navbar setDarkMode={setDarkMode} darkMode={darkMode} />
+        <SocialLinks />
       </Transition>
       <Hero />
       <About darkMode={darkMode} />

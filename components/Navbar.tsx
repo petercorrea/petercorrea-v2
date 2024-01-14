@@ -2,7 +2,7 @@ import DarkModeButton from '@/components/DarkModeButton';
 import data from '@/db.json';
 import Link from 'next/link';
 import { Dispatch, SetStateAction, useEffect } from 'react';
-import { FaGithub, FaHamburger, FaYoutube } from 'react-icons/fa';
+import { FaGithub, FaHamburger, FaLinkedinIn, FaYoutube } from 'react-icons/fa';
 import { toggleDarkThemeOff, toggleDarkThemeOn } from '../libs/helpers';
 
 interface NavbarProps {
@@ -89,6 +89,10 @@ const Navbar = ({ darkMode, setDarkMode }: NavbarProps) => {
           >
             resume
           </a>
+
+          <Link href={data.contact.linkedin}>
+            <FaLinkedinIn size={20} className="text-primary mr-4" />
+          </Link>
           <Link href={data.contact.github}>
             <FaGithub size={20} className="text-primary mr-4" />
           </Link>
