@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import { FaGithub, FaYoutube } from 'react-icons/fa';
-import { FiExternalLink } from 'react-icons/fi';
 import Tag from './Tag';
 
 import { Project } from '@/types/types';
@@ -63,10 +62,12 @@ const ProjectCard = ({ project, darkMode, idx }: ProjectCardProps) => {
         <div className="flex flex-row items-start justify-between">
           {/* tags */}
           <div className="flex flex-row flex-wrap">
-            <Tag text={project.type} />
-
             {project.tags.map((item, idx) => (
-              <Tag key={idx} text={item} />
+              <Tag
+                key={idx}
+                text={item}
+                classname="text-white bg-bauhausBlue"
+              />
             ))}
           </div>
 
@@ -89,7 +90,7 @@ const ProjectCard = ({ project, darkMode, idx }: ProjectCardProps) => {
         </div>
 
         {/* links */}
-        <div className="flex flex-row justify-start items-center">
+        {/* <div className="flex flex-row justify-start items-center">
           {project.github_url ? (
             <div className="flex flex-row items-center mr-4">
               <Link
@@ -131,7 +132,7 @@ const ProjectCard = ({ project, darkMode, idx }: ProjectCardProps) => {
           ) : (
             ''
           )}
-        </div>
+        </div> */}
       </div>
     </div>
   );
