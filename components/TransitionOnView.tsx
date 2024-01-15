@@ -14,11 +14,11 @@ const TransitionOnView = ({ children, delay }: TransitionOnViewProps) => {
       ([entry]) => {
         if (entry.isIntersecting) {
           setIsVisible(true);
-          observer.disconnect(); // Optional: Disconnect the observer after the element is visible
+          observer.disconnect();
         }
       },
       {
-        threshold: 0.01, // Trigger when at least 10% of the element is visible
+        threshold: 0.01,
       }
     );
 

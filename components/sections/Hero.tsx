@@ -24,9 +24,6 @@ const Hero = () => {
               <h1 className="text-stone-400 text-2xl font-semibold dark:text-stone-300">
                 based in Florida
               </h1>
-              {/* <h1 className="text-primary text-xl font-semibold ">
-                from sunny florida
-              </h1> */}
             </div>
           </Transition>
 
@@ -49,54 +46,6 @@ const Hero = () => {
               Let&apos;s build something together
             </p>
           </Transition>
-
-          {/* <div className="tech-imgs relative flex flex-row justify-start items-center w-full h-14 border border-red-500 ">
-            <div className="relative w-full h-full">
-              <Image
-                src="/tech/js.webp"
-                fill
-                // width={50}
-                // height={50}
-                alt="Image"
-                style={{ objectFit: 'contain' }}
-              />
-            </div>
-
-            <div className="relative w-full h-full">
-              <Image
-                src="/tech/python.png"
-                fill
-                // width={50}
-                // height={50}
-                alt="Image"
-                style={{
-                  objectFit: 'contain',
-                }}
-              />
-            </div>
-
-            <div className="relative w-full h-full">
-              <Image
-                src="/tech/html.png"
-                fill
-                // width={50}
-                // height={50}
-                alt="Image"
-                style={{ objectFit: 'contain' }}
-              />
-            </div>
-
-            <div className="relative w-full h-full">
-              <Image
-                src="/tech/css.svg"
-                fill
-                // width={50}
-                // height={50}
-                alt="Image"
-                style={{ objectFit: 'contain' }}
-              />
-            </div>
-          </div> */}
         </div>
       </div>
     </Padding>

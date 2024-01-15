@@ -21,14 +21,6 @@ const Navbar = ({ darkMode, setDarkMode }: NavbarProps) => {
     systemTheme ? toggleDarkThemeOn() : toggleDarkThemeOff();
   }, []);
 
-  // const sunStyle = darkMode
-  //   ? 'absolute top-20 left-0 -translate-x-full'
-  //   : 'absolute top-20 left-0 translate-x-full';
-
-  // const moonStyle = darkMode
-  //   ? 'absolute top-20 left-0 translate-x-full'
-  //   : 'absolute top-20 left-0 -translate-x-full';
-
   const navModal = useNavModal();
 
   const handleOnClick = () => {
@@ -43,15 +35,6 @@ const Navbar = ({ darkMode, setDarkMode }: NavbarProps) => {
 
   return (
     <>
-      {/* Sun and moon svg */}
-      {/* <div className={`${moonStyle} transition-transform duration-1000`}>
-        <Image src="/moon.svg" alt="Moon" width={50} height={50} priority />
-      </div>
-
-      <div className={`${sunStyle} transition-transform duration-1000`}>
-        <Image src="/sun.svg" alt="Sun" width={50} height={50} priority />
-      </div> */}
-
       {/* mobile navbar */}
       <div className="absolute flex flex-row md:hidden w-full justify-between items-center p-4">
         <button onClick={handleOnClick}>
@@ -83,12 +66,12 @@ const Navbar = ({ darkMode, setDarkMode }: NavbarProps) => {
           >
             projects
           </Link>
-          <Link
+          {/* <Link
             href="/posts"
             className="flex flex-row justify-center text-primary rounded-full hover:underline hover:underline-offset-1 mr-4"
           >
             posts
-          </Link>
+          </Link> */}
           <Link
             href="#contact"
             className="flex flex-row justify-center text-primary rounded-full hover:underline hover:underline-offset-1 mr-4"

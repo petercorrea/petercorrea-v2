@@ -45,20 +45,6 @@ export default function Home() {
       <XP darkMode={darkMode} />
       <Projects darkMode={darkMode} />
       <Footer />
-
-      {/* <div id="beach" className="fixed bottom-0 w-full">
-        <Transition delay="100" classname="w-full" direction="up">
-          <div
-            id="beach"
-            className="w-full h-[20vh] flex flex-col justify-end "
-            style={{
-              backgroundPosition: 'bottom',
-              backgroundRepeat: 'repeat-x',
-              backgroundImage: "url('/beach.svg')",
-            }}
-          />
-        </Transition>
-      </div> */}
     </main>
   );
 }
