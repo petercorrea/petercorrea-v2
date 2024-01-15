@@ -1,6 +1,7 @@
 import data from '@/db.json';
 import Link from 'next/link';
-import { FiExternalLink } from 'react-icons/fi';
+import { FaGithub, FaLinkedinIn, FaYoutube } from 'react-icons/fa';
+import { MdAlternateEmail } from 'react-icons/md';
 import Padding from '../Padding';
 
 const Footer = () => {
@@ -18,35 +19,20 @@ const Footer = () => {
             <h1 className="text-white text-2xl">{data.contact.name}</h1>
             <h1 className="text-white text-2xl mb-4">{data.contact.title}</h1>
 
-            <Link
-              className="text-white text-xs hover:underline"
-              href={data.contact.mailto}
-            >
-              <div className="flex flex-row items-center min-w-fit">
-                {data.contact.email}
-                <FiExternalLink className="text-white ml-2" />
-              </div>
-            </Link>
-
-            <Link
-              className="text-white text-xs hover:underline"
-              href={data.contact.linkedin}
-            >
-              <div className="flex flex-row items-center min-w-fit">
-                {data.contact.linkedin}
-                <FiExternalLink className="text-white ml-2" />
-              </div>
-            </Link>
-
-            <Link
-              className="text-white text-xs hover:underline"
-              href={data.contact.github}
-            >
-              <div className="flex flex-row items-center min-w-fit">
-                {data.contact.github}
-                <FiExternalLink className="text-white ml-2" />
-              </div>
-            </Link>
+            <div className="flex flex-row">
+              <a href={data.contact.mailto}>
+                <MdAlternateEmail size={20} className="text-primary mr-4" />
+              </a>
+              <Link href={data.contact.linkedin}>
+                <FaLinkedinIn size={20} className="text-primary mr-4" />
+              </Link>
+              <Link href={data.contact.github}>
+                <FaGithub size={20} className="text-primary mr-4" />
+              </Link>
+              <Link href={data.contact.youtube}>
+                <FaYoutube size={20} className="text-primary mr-1" />
+              </Link>
+            </div>
           </div>
         </div>
       </div>
