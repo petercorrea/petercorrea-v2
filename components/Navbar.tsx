@@ -4,6 +4,7 @@ import useNavModal from '@/hooks/useNavModal';
 import Link from 'next/link';
 import { Dispatch, SetStateAction, useEffect } from 'react';
 import { FaGithub, FaHamburger, FaLinkedinIn, FaYoutube } from 'react-icons/fa';
+import { MdAlternateEmail } from 'react-icons/md';
 import { toggleDarkThemeOff, toggleDarkThemeOn } from '../libs/helpers';
 
 interface NavbarProps {
@@ -72,18 +73,19 @@ const Navbar = ({ darkMode, setDarkMode }: NavbarProps) => {
           >
             posts
           </Link> */}
-          <Link
-            href="#contact"
-            className="flex flex-row justify-center text-primary rounded-full hover:underline hover:underline-offset-1 mr-4"
-          >
-            contact
-          </Link>
           <a
             href="/Peter Correa Resume.pdf"
             download="Peter Correa Resume"
             className="flex flex-row justify-center text-primary rounded-full hover:underline hover:underline-offset-1 mr-4"
           >
             resume
+          </a>
+
+          <a
+            href={data.contact.mailto}
+            className="flex flex-row justify-center text-primary rounded-full hover:underline hover:underline-offset-1 mr-4"
+          >
+            <MdAlternateEmail size={20} className="text-primary" />
           </a>
 
           <Link href={data.contact.linkedin}>

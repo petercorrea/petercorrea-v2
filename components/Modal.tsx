@@ -2,7 +2,7 @@ import data from '@/db.json';
 import useNavModal from '@/hooks/useNavModal';
 import Link from 'next/link';
 import { FaGithub, FaLinkedinIn, FaYoutube } from 'react-icons/fa';
-import { MdClose } from 'react-icons/md';
+import { MdAlternateEmail, MdClose } from 'react-icons/md';
 
 interface ModalProps {
   isOpen: boolean;
@@ -58,13 +58,6 @@ const Modal = ({ isOpen }: ModalProps) => {
           >
             posts
           </Link>
-          <Link
-            href="#contact"
-            className="text-primary p-5 hover:underline"
-            onClick={handleOnClick}
-          >
-            contact
-          </Link>
 
           <a
             href="/Peter Correa Resume.pdf"
@@ -76,6 +69,12 @@ const Modal = ({ isOpen }: ModalProps) => {
           </a>
 
           <div className="flex flex-row w-full h-full justify-center items-center mt-5">
+            <a
+              href={data.contact.mailto}
+              className="flex flex-row justify-center text-primary rounded-full hover:underline hover:underline-offset-1 mr-4"
+            >
+              <MdAlternateEmail size={20} className="text-primary mr-10" />
+            </a>
             <Link href={data.contact.linkedin} onClick={handleOnClick}>
               <FaLinkedinIn size={25} className="text-primary mr-10" />
             </Link>
