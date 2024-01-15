@@ -21,16 +21,16 @@ const Footer = () => {
 
             <div className="flex flex-row">
               <a href={data.contact.mailto}>
-                <MdAlternateEmail size={20} className="text-primary mr-4" />
+                <MdAlternateEmail size={20} className="text-white mr-4" />
               </a>
               <Link href={data.contact.linkedin}>
-                <FaLinkedinIn size={20} className="text-primary mr-4" />
+                <FaLinkedinIn size={20} className="text-white mr-4" />
               </Link>
               <Link href={data.contact.github}>
-                <FaGithub size={20} className="text-primary mr-4" />
+                <FaGithub size={20} className="text-white mr-4" />
               </Link>
               <Link href={data.contact.youtube}>
-                <FaYoutube size={20} className="text-primary mr-1" />
+                <FaYoutube size={20} className="text-white mr-1" />
               </Link>
             </div>
           </div>
