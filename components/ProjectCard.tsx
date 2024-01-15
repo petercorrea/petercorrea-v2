@@ -29,7 +29,7 @@ const ProjectCard = ({ project, darkMode, idx }: ProjectCardProps) => {
       <div>
         {/* title */}
         <Link href={project.production_url || project.youtube_url}>
-          <p>
+          <p className="text-primary">
             {0}
             {idx}
           </p>

@@ -5,7 +5,7 @@ import Padding from '../Padding';
 
 const Footer = () => {
   return (
-    <Padding id="contact" classname="lg:hidden bg-stone-800">
+    <Padding id="contact" classname="lg:hidden bg-bauhausBlue">
       <div className="flex flex-col md:grid md:grid-cols-4 justify-start w-full max-w-[1000px]">
         <div className=" min-w-fit">
           <h1 className="text-white text-3xl font-semibold sticky top-0 lowercase pb-10 md:pb-0">

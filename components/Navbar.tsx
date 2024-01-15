@@ -1,5 +1,6 @@
 import DarkModeButton from '@/components/DarkModeButton';
 import data from '@/db.json';
+import useNavModal from '@/hooks/useNavModal';
 import Link from 'next/link';
 import { Dispatch, SetStateAction, useEffect } from 'react';
 import { FaGithub, FaHamburger, FaLinkedinIn, FaYoutube } from 'react-icons/fa';
@@ -20,13 +21,25 @@ const Navbar = ({ darkMode, setDarkMode }: NavbarProps) => {
     systemTheme ? toggleDarkThemeOn() : toggleDarkThemeOff();
   }, []);
 
-  const sunStyle = darkMode
-    ? 'absolute top-20 left-0 -translate-x-full'
-    : 'absolute top-20 left-0 translate-x-full';
+  // const sunStyle = darkMode
+  //   ? 'absolute top-20 left-0 -translate-x-full'
+  //   : 'absolute top-20 left-0 translate-x-full';
 
-  const moonStyle = darkMode
-    ? 'absolute top-20 left-0 translate-x-full'
-    : 'absolute top-20 left-0 -translate-x-full';
+  // const moonStyle = darkMode
+  //   ? 'absolute top-20 left-0 translate-x-full'
+  //   : 'absolute top-20 left-0 -translate-x-full';
+
+  const navModal = useNavModal();
+
+  const handleOnClick = () => {
+    if (navModal.isOpen) {
+      console.log('closing modal');
+      navModal.onClose();
+    } else {
+      console.log('opening modal');
+      navModal.onOpen();
+    }
+  };
 
   return (
     <>
@@ -41,7 +54,7 @@ const Navbar = ({ darkMode, setDarkMode }: NavbarProps) => {
 
       {/* mobile navbar */}
       <div className="absolute flex flex-row md:hidden w-full justify-between items-center p-4">
-        <button>
+        <button onClick={handleOnClick}>
           <FaHamburger size={24} className="text-primary md:hidden" />
         </button>
 

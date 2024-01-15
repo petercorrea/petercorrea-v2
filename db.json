@@ -17,7 +17,7 @@
   "professionalExperiance": [
     {
       "company": "RoadRunner",
-      "date": "2022-2023",
+      "date": "2022 - 2023",
       "role": "Software Engineer",
       "responsibilities": [
         "Support our in-house billing and invoicing projects built on React, Node.js, Ruby on Rails, Digital Ocean, Heroku, and Redis."
