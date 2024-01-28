@@ -51,13 +51,13 @@ const Modal = ({ isOpen }: ModalProps) => {
           >
             projects
           </Link>
-          <Link
+          {/* <Link
             href="/posts"
             className="text-primary p-5 hover:underline"
             onClick={handleOnClick}
           >
             posts
-          </Link>
+          </Link> */}
 
           <a
             href="/Peter Correa Resume.pdf"
