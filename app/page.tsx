@@ -36,6 +36,7 @@ export default function Home() {
 
   return (
     <main>
+      <link rel="icon" href="/headshot.png" sizes="any" />
       <Transition delay="100">
         <Navbar setDarkMode={setDarkMode} darkMode={darkMode} />
         <SocialLinks />
