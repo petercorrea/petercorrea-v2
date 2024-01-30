@@ -17,8 +17,8 @@ const XP = ({ darkMode }: XPProps) => {
         </div>
 
         <div className="col-span-3 pt-0">
-          {data.professionalExperiance.map((xp, idx) => (
-            <XPCard key={idx} experiance={xp} />
+          {data.professionalExperience.map((xp, idx) => (
+            <XPCard key={idx} experience={xp} />
           ))}
         </div>
       </div>

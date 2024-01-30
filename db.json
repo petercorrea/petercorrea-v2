@@ -10,11 +10,11 @@
     "youtube": "https://www.youtube.com/@petercorrea"
   },
   "professionalSummary": [
-    "I've worked on a range of notable projects, from in-house billing services and vendor marketplaces to personalization platforms. My work spans mobile apps for a few hundred users to web apps that reach several million across the globe. I've built software for a variety of organizations inclucing a waste management start-up, and at an agency where I worked with major clients like PayPal and Coinbase.",
+    "I've worked on a range of notable projects, from in-house billing services and vendor marketplaces to personalization platforms. My work spans mobile apps for a few hundred users to web apps that reach several million across the globe. I've built software for a variety of organizations including a waste management start-up, and at an agency where I worked with major clients like PayPal and Coinbase.",
     "My day-to-day responsibilities normally include deploying full-stack applications, migrating databases, improving developer experiences, writing test cases, and integrating APIs. When I'm not coding, I'm collaborating with designers and stakeholders, presenting to staff, conducting code reviews, interviewing candidates, mentoring peers, and onboarding new team members.",
     "Beyond general software engineering, I occasionally explore areas like cryptography, game theory, embedded systems, machine learning and playing the saxophone."
   ],
-  "professionalExperiance": [
+  "professionalExperience": [
     {
       "company": "RoadRunner",
       "date": "2022 - 2023",
@@ -43,7 +43,7 @@
       "skills": ["Management", "Operations", "Analytics"]
     }
   ],
-  "acaemicExperiance": [
+  "academicExperience": [
     {
       "company": "Florida International University - Dept. of Biology",
       "date": "2012 - 2014",
@@ -63,7 +63,7 @@
       "responsibilities": [
         "Triaged software and hardware issues on phones, tablets, desktops, and laptops",
         "Performed testing and analysis of critical electrical components and device modules",
-        "Managed technical appointments and trafﬁc, engaged both customers and teams to increase throughput",
+        "Managed technical appointments and traffic, engaged both customers and teams to increase throughput",
         "Performed and audited technical repairs, hardware upgrades, and data recovery and migrations",
         "Trained and developed peers and new employees"
       ],
@@ -73,13 +73,13 @@
   "education": [
     {
       "school": "University of Colorado, Boulder",
-      "dergree": "Master of Science",
+      "degree": "Master of Science",
       "study": "Electrical Engineering",
       "graduationDate": "2025"
     },
     {
       "school": "Florida International University",
-      "dergree": "Bachelor of Arts",
+      "degree": "Bachelor of Arts",
       "study": "Liberal Studies & Biology",
       "graduationDate": "2014"
     }
@@ -156,7 +156,7 @@
       ],
       "image": "/spotify.png",
       "features": [
-        "Built with Next.js and deplyed on Vercal",
+        "Built with Next.js and deployed on Vercel",
         "Integrated with Supabase and Stripe",
         "Sign in with email or Github",
         "Upload, search, and listen to music",
@@ -198,8 +198,8 @@
     },
     {
       "type": "video",
-      "title": "The Thinkful Experiance",
-      "description": "An online interview of my bootcamp experiance at Thinkful.",
+      "title": "The Thinkful Experience",
+      "description": "An online interview of my bootcamp experience at Thinkful.",
       "github_url": "",
       "youtube_url": "https://youtu.be/BKSnLuXu_dc",
       "production_url": "",

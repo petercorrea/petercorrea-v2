@@ -12,7 +12,7 @@ const Hero = () => {
               <div className="flex flex-row justify-start items-center mb-4">
                 <div className="w-2 h-2 rounded-full bg-green-600 mr-1"></div>
                 <p className="text-green-600 text-xs font-semibold">
-                  Avaliable for hire
+                  Available for hire
                 </p>
               </div>
               <h1 className="text-primary text-8xl font-extrabold mb-2">
