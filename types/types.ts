@@ -16,4 +16,5 @@ export type Project = {
   tags: string[];
   image: string;
   features: string[];
+  general_url: string;
 };

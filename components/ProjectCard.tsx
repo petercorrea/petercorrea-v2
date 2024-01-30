@@ -19,7 +19,11 @@ const ProjectCard = ({ project, darkMode, idx }: ProjectCardProps) => {
       }  rounded-xl mb-16 mr-4 flex flex-col flex-start justify-between hover:shadow-darkShadow hover:-translate-y-2 transition ease-in max-w-[500px] p-4`}
     >
       <div>
-        <Link href={project.production_url || project.youtube_url}>
+        <Link
+          href={
+            project.production_url || project.youtube_url || project.general_url
+          }
+        >
           <p className="text-primary">
             {0}
             {idx}
@@ -35,7 +39,11 @@ const ProjectCard = ({ project, darkMode, idx }: ProjectCardProps) => {
       </div>
 
       <div>
-        <Link href={project.production_url || project.youtube_url}>
+        <Link
+          href={
+            project.production_url || project.youtube_url || project.general_url
+          }
+        >
           <div className="min-h-[200px] max-w-[500px] max-h-[250px] relative rounded-xl overflow-hidden mb-4 flex flex-col justify-center bg-black">
             <Image src={project.image} alt="Image" width={500} height={300} />
           </div>

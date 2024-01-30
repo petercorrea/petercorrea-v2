@@ -197,6 +197,18 @@
       "features": []
     },
     {
+      "type": "article",
+      "title": "On playing the saxophone and Berklee College of Music.",
+      "description": "An written interview about me and my journey from music to tech.",
+      "github_url": "",
+      "youtube_url": "",
+      "production_url": "",
+      "general_url": "https://x-team.com/blog/interview-peter-correa/",
+      "tags": ["Interview"],
+      "image": "/sax.jpg",
+      "features": []
+    },
+    {
       "type": "video",
       "title": "The Thinkful Experience",
       "description": "An online interview of my bootcamp experience at Thinkful.",
