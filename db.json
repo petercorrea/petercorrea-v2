@@ -145,6 +145,7 @@
       "github_url": "https://github.com/petercorrea/spotify-clone",
       "youtube_url": "",
       "production_url": "https://spotify-clone-nu-virid.vercel.app/",
+      "general_url": "",
       "tags": [
         "React",
         "Next.js",
@@ -170,6 +171,7 @@
       "github_url": "",
       "youtube_url": "https://youtu.be/nkzHzvvSdcE",
       "production_url": "",
+      "general_url": "",
       "tags": ["Data Structures", "JavaScript"],
       "image": "/linkedlists.png",
       "features": []
@@ -181,6 +183,7 @@
       "github_url": "",
       "youtube_url": "https://youtu.be/9uAosfffLKc",
       "production_url": "",
+      "general_url": "",
       "tags": ["JavaScript"],
       "image": "/engine.png",
       "features": []
@@ -192,6 +195,7 @@
       "github_url": "",
       "youtube_url": "https://youtu.be/x1kp0y_-zp8",
       "production_url": "",
+      "general_url": "",
       "tags": ["JavaScript", "OOP"],
       "image": "/oop.png",
       "features": []
@@ -215,6 +219,7 @@
       "github_url": "",
       "youtube_url": "https://youtu.be/BKSnLuXu_dc",
       "production_url": "",
+      "general_url": "",
       "tags": ["Interview", "Bootcamps"],
       "image": "/thinkful.png",
       "features": []
