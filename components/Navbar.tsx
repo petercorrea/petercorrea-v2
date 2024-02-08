@@ -36,13 +36,15 @@ const Navbar = ({ darkMode, setDarkMode }: NavbarProps) => {
   return (
     <>
       {/* mobile navbar */}
-      <div className="absolute flex flex-row md:hidden w-full justify-between items-center p-4">
-        <button onClick={handleOnClick}>
-          <FaHamburger size={24} className="text-primary md:hidden" />
-        </button>
+      <Transition delay="100" direction="down">
+        <div className="absolute flex flex-row md:hidden w-full justify-between items-center p-4">
+          <button onClick={handleOnClick}>
+            <FaHamburger size={24} className="text-primary md:hidden" />
+          </button>
 
-        <DarkModeButton setDarkMode={setDarkMode} darkMode={darkMode} />
-      </div>
+          <DarkModeButton setDarkMode={setDarkMode} darkMode={darkMode} />
+        </div>
+      </Transition>
 
       {/* navbar */}
       <Transition delay="100" direction="down">
