@@ -15,7 +15,7 @@ const Footer = () => {
         </div>
 
         <div className="col-span-3">
-          <div className="h-[200px] flex flex-col w-full">
+          <div className="flex flex-col w-full">
             <h1 className="text-white text-2xl">{data.contact.name}</h1>
             <h1 className="text-white text-2xl mb-4">{data.contact.title}</h1>
 

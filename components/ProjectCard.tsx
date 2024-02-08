@@ -33,7 +33,7 @@ const ProjectCard = ({ project, darkMode, idx }: ProjectCardProps) => {
           </h1>
         </Link>
 
-        <p className="text-primary text-sm mb-10 font-light">
+        <p className="text-primary dark:text-stone-400 text-sm mb-10 font-light">
           {project.description}
         </p>
       </div>
