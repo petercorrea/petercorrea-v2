@@ -56,10 +56,10 @@ const Hero = () => {
             </div>
           </Transition>
 
-          <div className="flex flex-row mb-20">
-            <Transition delay="100" direction="down">
-              <div className="bg-bauhausRed w-[120px] h-[120px] md:w-[240px] md:h-[240px] rounded-3xl flex flex-row justify-center items-center mr-4 -rotate-2">
-                <div className="relative w-32 h-32 md:w-60 md:h-60 -right-2 top-2  rounded-3xl overflow-hidden">
+          <div className="flex flex-row justify-center mb-20 min-w-full min-h-[200px]">
+            <Transition delay="100" direction="down" classname="w-full">
+              <div className="bg-bauhausRed rounded-3xl flex flex-row justify-center items-center mr-4 -rotate-2 h-full w-full">
+                <div className="relative -right-2 top-2  rounded-3xl overflow-hidden h-full w-full">
                   <Image
                     src="/pic_1.jpeg"
                     alt="Image"
@@ -73,9 +73,9 @@ const Hero = () => {
               </div>
             </Transition>
 
-            <Transition delay="250" direction="down">
-              <div className="bg-bauhausYellow w-[120px] h-[120px] md:w-[240px] md:h-[240px] rounded-3xl flex flex-row justify-center items-center mr-4 rotate-2">
-                <div className="relative w-32 h-32 md:w-60 md:h-60 -right-2 top-2  rounded-3xl overflow-hidden">
+            <Transition delay="250" direction="down" classname="w-full">
+              <div className="bg-bauhausYellow rounded-3xl flex flex-row justify-center items-center mr-4 rotate-2 h-full w-full">
+                <div className="relative -right-2 top-2  rounded-3xl overflow-hidden h-full w-full">
                   <Image
                     src="/kota.jpeg"
                     alt="Image"
@@ -89,9 +89,9 @@ const Hero = () => {
               </div>
             </Transition>
 
-            <Transition delay="400" direction="down">
-              <div className="bg-bauhausBlue w-[120px] h-[120px] md:w-[240px] md:h-[240px] rounded-3xl flex flex-row justify-center items-center mr-4 -rotate-2">
-                <div className="relative w-32 h-32 md:w-60 md:h-60 -right-2 top-2  rounded-3xl overflow-hidden">
+            <Transition delay="400" direction="down" classname="w-full">
+              <div className="bg-bauhausBlue  rounded-3xl flex flex-row justify-center items-center mr-4 -rotate-2 h-full w-full">
+                <div className="relative -right-2 top-2  rounded-3xl overflow-hidden h-full w-full">
                   <Image
                     src="/morocco.jpeg"
                     alt="Image"
