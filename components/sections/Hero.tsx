@@ -9,7 +9,7 @@ import { MdAlternateEmail } from 'react-icons/md';
 const Hero = () => {
   return (
     <Padding>
-      <div className="max-w-screen min-h-screen flex flex-col justify-center md:justify-center max-w-[1000px] mt-10 md:mt-0">
+      <div className="max-w-screen max-h-screen min-h-screen flex flex-col justify-center md:justify-center max-w-[1000px] mt-10 md:mt-0">
         <div className="flex flex-col justify-start md:justify-center items-center">
           <Transition delay="50" direction="down">
             <div className="w-full mb-8">
@@ -19,7 +19,7 @@ const Hero = () => {
                   Available for hire
                 </p>
               </div>
-              <h1 className="text-primary text-6xl font-extrabold mb-5">
+              <h1 className="text-primary text-4xl md:text-6xl font-extrabold mb-5">
                 Software Engineer & Saxophonist
               </h1>
               <p className="font-light dark:text-stone-400 text-stone-500 mb-4">
@@ -105,12 +105,6 @@ const Hero = () => {
               </div>
             </Transition>
           </div>
-
-          <Transition delay="500" direction="up">
-            <p className="text-4xl font-semibold text-right text-primary">
-              Let&apos;s build something together
-            </p>
-          </Transition>
         </div>
       </div>
     </Padding>
