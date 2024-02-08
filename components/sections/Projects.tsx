@@ -10,7 +10,7 @@ const Projects = ({ darkMode }: ProjectsProps) => {
   return (
     <Padding id="projects" classname={`${darkMode ? 'bg-black' : 'bg-white'}`}>
       <div className="flex flex-col md:grid md:grid-cols-4 justify-start w-full max-w-[1000px]">
-        <div className="relative -top-4">
+        <div className="relative md:-top-4">
           <h1 className="md:pt-4 mb-4 md:mb-0 text-bauhausBlue text-5xl font-extrabold md:sticky top-0 lowercase min-w-fit h-fit">
             Projects
           </h1>
