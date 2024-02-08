@@ -23,12 +23,12 @@ const Hero = () => {
                 Software Engineer & Saxophonist
               </h1>
               <p className="font-light dark:text-stone-400 text-stone-500 mb-4">
-                I'm Peter, a Full Stack Engineer based in Florida. I specialize
-                in creating engaging web experiences backed by resilient,
-                scalable systems. You can often find me working with TypeScript,
-                Python, Go, React, NodeJs, Express, NextJs, and Postgres. When
-                I'm away from my desk, you'll catch me working on people and
-                their development.
+                I&apos;m Peter, a Full Stack Engineer based in Florida. I
+                specialize in creating engaging web experiences backed by
+                resilient, scalable systems. You can often find me working with
+                TypeScript, Python, Go, React, NodeJs, Express, NextJs, and
+                Postgres. When I&apos;m away from my desk, you&apos;ll catch me
+                working on people and their development.
               </p>
 
               <div className="flex flex-row">
