@@ -2,7 +2,17 @@ import React, { useEffect, useState } from 'react';
 
 interface TransitionProps {
   children: React.ReactNode;
-  delay: '100' | '150' | '200' | '250' | '300' | '350' | '400' | '450' | '500';
+  delay:
+    | '50'
+    | '100'
+    | '150'
+    | '200'
+    | '250'
+    | '300'
+    | '350'
+    | '400'
+    | '450'
+    | '500';
   classname?: string;
   direction?: string;
 }

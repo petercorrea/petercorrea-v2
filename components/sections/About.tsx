@@ -1,7 +1,5 @@
 import data from '@/db.json';
-import Image from 'next/image';
 import Padding from '../Padding';
-import TransitionOnView from '../TransitionOnView';
 
 interface AboutProps {
   darkMode: boolean;
@@ -26,24 +24,6 @@ const About = ({ darkMode }: AboutProps) => {
               </div>
             ))}
           </div>
-
-          <TransitionOnView delay="100">
-            <div className="bg-bauhausRed w-[258px] h-[258px] rounded-3xl flex flex-row justify-center items-center m-10">
-              <div className="flex flex-col justify-center items-start h-full">
-                <div className="relative w-64 h-64 -right-4 top-4  rounded-3xl overflow-hidden">
-                  <Image
-                    src="/pic_1.jpeg"
-                    alt="Image"
-                    fill
-                    sizes="500px"
-                    style={{
-                      objectFit: 'cover',
-                    }}
-                  />
-                </div>
-              </div>
-            </div>
-          </TransitionOnView>
         </div>
       </div>
     </Padding>
