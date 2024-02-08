@@ -74,7 +74,7 @@ const Hero = () => {
             </Transition>
 
             <Transition delay="250" direction="down">
-              <div className="bg-bauhausYellow w-[120px] h-[120px] md:w-[240px] md:h-[240px] rounded-3xl flex flex-row justify-center items-center mr-4 -rotate-1">
+              <div className="bg-bauhausYellow w-[120px] h-[120px] md:w-[240px] md:h-[240px] rounded-3xl flex flex-row justify-center items-center mr-4 rotate-2">
                 <div className="relative w-32 h-32 md:w-60 md:h-60 -right-2 top-2  rounded-3xl overflow-hidden">
                   <Image
                     src="/kota.jpeg"
@@ -90,7 +90,7 @@ const Hero = () => {
             </Transition>
 
             <Transition delay="400" direction="down">
-              <div className="bg-bauhausBlue w-[120px] h-[120px] md:w-[240px] md:h-[240px] rounded-3xl flex flex-row justify-center items-center mr-4 rotate-2">
+              <div className="bg-bauhausBlue w-[120px] h-[120px] md:w-[240px] md:h-[240px] rounded-3xl flex flex-row justify-center items-center mr-4 -rotate-2">
                 <div className="relative w-32 h-32 md:w-60 md:h-60 -right-2 top-2  rounded-3xl overflow-hidden">
                   <Image
                     src="/morocco.jpeg"
