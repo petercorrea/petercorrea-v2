@@ -22,11 +22,15 @@ const DarkModeButton = ({ darkMode, setDarkMode }: DarkModeButtonProps) => {
     <button onClick={handleOnClick} className="">
       <HiOutlineMoon
         size={20}
-        className={`${darkMode ? 'hidden' : 'text-primary'}`}
+        className={`duration-0 ${
+          darkMode ? 'hidden' : 'text-stone-500 hover:text-primary'
+        }`}
       />
       <HiOutlineSun
         size={20}
-        className={`${darkMode ? 'text-primary' : 'hidden'}`}
+        className={`duration-0 ${
+          darkMode ? 'text-stone-500 hover:text-primary' : 'hidden'
+        }`}
       />
     </button>
   );

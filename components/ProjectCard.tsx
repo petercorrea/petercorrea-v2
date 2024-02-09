@@ -15,8 +15,8 @@ const ProjectCard = ({ project, darkMode, idx }: ProjectCardProps) => {
   return (
     <div
       className={`${
-        darkMode ? 'shadow-lightShadow' : 'shadow-lg'
-      }  rounded-xl mb-16 mr-4 flex flex-col flex-start justify-between hover:shadow-darkShadow hover:-translate-y-2 transition ease-in max-w-[500px] p-4`}
+        darkMode ? 'shadow-lightShadow hover:bg-stone-900' : 'shadow-lg'
+      }  rounded-xl mb-16 mr-4 flex flex-col flex-start justify-between hover:cursor-pointer hover:bg-stone-100 transition ease-in max-w-[500px] p-4`}
     >
       <div>
         <Link

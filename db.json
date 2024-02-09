@@ -17,7 +17,7 @@
   "professionalExperience": [
     {
       "company": "RoadRunner",
-      "date": "2022 - 2023",
+      "date": "2022 –– 2023",
       "role": "Software Engineer",
       "responsibilities": [
         "Support our in-house billing and invoicing projects built on React, Node.js, Ruby on Rails, Digital Ocean, Heroku, and Redis."
@@ -26,7 +26,7 @@
     },
     {
       "company": "X-Team",
-      "date": "2019 - 2022",
+      "date": "2019 –– 2022",
       "role": "Software Engineer",
       "responsibilities": [
         "Worked with PayPal to build out their federated GraphQL API gateway, Stargate and developing the HoneyDeals marketplace for their mobile app. Additionally I was building out frontend experiences for the Coinbase homepage."
@@ -35,7 +35,7 @@
     },
     {
       "company": "Target",
-      "date": "2014 - 2019",
+      "date": "2014 –– 2019",
       "role": "Sr. Operations Manager",
       "responsibilities": [
         "Managed retail operations of $75M in annual volume with a team of 50+ direct reports. Piloted technological initiatives such as online ordering, same-day delivery, self-checkout, and RFID operations. Achieved the highest number of promotions and employee cultural satisfaction. Selected for advanced leadership accelerator program."

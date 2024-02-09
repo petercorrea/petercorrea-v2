@@ -11,16 +11,28 @@ const SocialLinks = () => {
         href={data.contact.mailto}
         className="flex flex-row justify-center text-primary rounded-full hover:underline hover:underline-offset-1"
       >
-        <MdAlternateEmail size={20} className="text-primary mr-4" />
+        <MdAlternateEmail
+          size={20}
+          className="duration-0 text-stone-500 hover:text-primary mr-4"
+        />
       </a>
       <Link href={data.contact.linkedin}>
-        <FaLinkedinIn size={20} className="text-primary mr-4" />
+        <FaLinkedinIn
+          size={20}
+          className="duration-0 text-stone-500 hover:text-primary mr-4"
+        />
       </Link>
       <Link href={data.contact.github}>
-        <FaGithub size={20} className="text-primary mr-4" />
+        <FaGithub
+          size={20}
+          className="duration-0 text-stone-500 hover:text-primary mr-4"
+        />
       </Link>
       <Link href={data.contact.youtube}>
-        <FaYoutube size={20} className="text-primary mr-1" />
+        <FaYoutube
+          size={20}
+          className="duration-0 text-stone-500 hover:text-primary mr-1"
+        />
       </Link>
     </div>
   );
