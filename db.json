@@ -178,7 +178,7 @@
     },
     {
       "type": "video",
-      "title": "The JavaScript runtime engine",
+      "title": "The JavaScript Runtime Engine",
       "description": "A high level overview of the event loop and task queues powering the JS engine.",
       "github_url": "",
       "youtube_url": "https://youtu.be/9uAosfffLKc",
