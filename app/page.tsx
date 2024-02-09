@@ -8,6 +8,7 @@ import Footer from '@/components/sections/Footer';
 import Hero from '@/components/sections/Hero';
 import Projects from '@/components/sections/Projects';
 import XP from '@/components/sections/XP';
+import ModalProvider from '@/providers/ModalProvider';
 import { useEffect, useState } from 'react';
 
 export default function Home() {
@@ -45,6 +46,8 @@ export default function Home() {
       <About darkMode={darkMode} />
       <XP darkMode={darkMode} />
       <Projects darkMode={darkMode} />
+      <ModalProvider />
+
       <Footer />
     </main>
   );

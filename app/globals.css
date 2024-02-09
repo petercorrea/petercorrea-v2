@@ -36,3 +36,11 @@ html[data-theme='darky'] {
 .tech-imgs img {
   filter: grayscale(100%);
 }
+
+h1 {
+  font-size: x-large;
+}
+
+h2 {
+  font-size: large;
+}

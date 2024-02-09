@@ -19,16 +19,14 @@ const Navbar = ({ darkMode, setDarkMode }: NavbarProps) => {
 
     setDarkMode(systemTheme);
     systemTheme ? toggleDarkThemeOn() : toggleDarkThemeOff();
-  }, []);
+  }, [setDarkMode]);
 
   const navModal = useNavModal();
 
   const handleOnClick = () => {
     if (navModal.isOpen) {
-      console.log('closing modal');
       navModal.onClose();
     } else {
-      console.log('opening modal');
       navModal.onOpen();
     }
   };
