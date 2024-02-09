@@ -49,7 +49,7 @@ export default function Post({
     <article>
       <h1 className="text-5xl font-bold mb-8">{post?.title}</h1>
       <p className="text-xs">{post?.date}</p>
-      {post?.content?.map(renderContentBlock)}
+      {post?.content?.map((post, idx) => renderContentBlock(post, idx))}
     </article>
   );
 }
