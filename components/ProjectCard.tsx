@@ -15,25 +15,29 @@ const ProjectCard = ({ project, darkMode, idx }: ProjectCardProps) => {
   return (
     <div className="relative flex flex-row group">
       <div
-        className={`bg-transparent border border-stone-100 relative z-10  rounded-xl  flex flex-col flex-start justify-between hover:cursor-pointer  transition ease-in max-w-[500px] p-4`}
+        className={`bg-transparent border border-stone-100 relative z-10  rounded-xl  flex flex-col justify-between hover:cursor-pointer  transition ease-in max-w-[500px] p-4`}
       >
-        <Link
-          href={
-            project.production_url || project.youtube_url || project.general_url
-          }
-        >
-          <p className="text-primary">
-            {0}
-            {idx}
-          </p>
-          <h1 className="text-primary text-3xl font-semibold mb-2 w-fit text-wrap underline">
-            {project.title}
-          </h1>
-        </Link>
+        <div>
+          <Link
+            href={
+              project.production_url ||
+              project.youtube_url ||
+              project.general_url
+            }
+          >
+            <p className="text-primary">
+              {0}
+              {idx}
+            </p>
+            <h1 className="text-primary text-3xl font-semibold mb-2 w-fit text-wrap underline">
+              {project.title}
+            </h1>
+          </Link>
 
-        <p className="text-primary dark:text-stone-400 text-sm mb-10 font-light">
-          {project.description}
-        </p>
+          <p className="text-primary dark:text-stone-400 text-sm mb-10 font-light">
+            {project.description}
+          </p>
+        </div>
 
         <div>
           <Link

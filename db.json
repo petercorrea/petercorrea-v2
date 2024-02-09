@@ -20,7 +20,7 @@
       "date": "2022 –– 2023",
       "role": "Software Engineer",
       "responsibilities": [
-        "Support our in-house billing and invoicing projects built on React, Node.js, Ruby on Rails, Digital Ocean, Heroku, and Redis."
+        "Supported in-house billing and invoicing projects built on React, Node.js, Ruby on Rails, Digital Ocean, Heroku, and Redis. Improved developer experience by containerizing local environments and GitHub codespaces. Established new engineering docs on Confluence."
       ],
       "skills": ["TypeScript", "React", "Ruby on Rails", "Postgres", "Node.js"]
     },
@@ -29,7 +29,7 @@
       "date": "2019 –– 2022",
       "role": "Software Engineer",
       "responsibilities": [
-        "Worked with PayPal to build out their federated GraphQL API gateway, Stargate and developing the HoneyDeals marketplace for their mobile app. Additionally I was building out frontend experiences for the Coinbase homepage."
+        "Worked with PayPal to build out their federated GraphQL API gateway (Stargate) and develop the HoneyDeals marketplace on mobile. Additionally I built out frontend experiences for the Coinbase homepage and international pages."
       ],
       "skills": ["TypeScript", "GraphQL", "Node.js"]
     },
