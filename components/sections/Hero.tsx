@@ -14,7 +14,9 @@ const Hero = () => {
           <Transition delay="50" direction="down">
             <div className="w-full mb-8">
               <div className="flex flex-row justify-start items-center mb-4">
-                <div className="w-2 h-2 rounded-full bg-green-600 mr-1"></div>
+                <div className="w-2 h-2 rounded-full bg-green-600 mr-1">
+                  <div className="animate-ping w-2 h-2 rounded-full bg-green-600 mr-1"></div>
+                </div>
                 <p className="text-green-600 text-xs font-semibold">
                   Available for hire
                 </p>

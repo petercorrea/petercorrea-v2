@@ -13,12 +13,10 @@ interface ProjectCardProps {
 
 const ProjectCard = ({ project, darkMode, idx }: ProjectCardProps) => {
   return (
-    <div
-      className={`${
-        darkMode ? 'shadow-lightShadow hover:bg-stone-900' : 'shadow-lg'
-      }  rounded-xl mb-16 mr-4 flex flex-col flex-start justify-between hover:cursor-pointer hover:bg-stone-100 transition ease-in max-w-[500px] p-4`}
-    >
-      <div>
+    <div className="relative flex flex-row group">
+      <div
+        className={`bg-transparent border border-stone-100 relative z-10  rounded-xl  flex flex-col flex-start justify-between hover:cursor-pointer  transition ease-in max-w-[500px] p-4`}
+      >
         <Link
           href={
             project.production_url || project.youtube_url || project.general_url
@@ -36,47 +34,50 @@ const ProjectCard = ({ project, darkMode, idx }: ProjectCardProps) => {
         <p className="text-primary dark:text-stone-400 text-sm mb-10 font-light">
           {project.description}
         </p>
-      </div>
 
-      <div>
-        <Link
-          href={
-            project.production_url || project.youtube_url || project.general_url
-          }
-        >
-          <div className="min-h-[200px] max-w-[500px] max-h-[250px] relative rounded-xl overflow-hidden mb-4 flex flex-col justify-center bg-black">
-            <Image src={project.image} alt="Image" width={500} height={300} />
+        <div>
+          <Link
+            href={
+              project.production_url ||
+              project.youtube_url ||
+              project.general_url
+            }
+          >
+            <div className="min-h-[200px] max-w-[500px] max-h-[250px] relative rounded-xl overflow-hidden mb-4 flex flex-col justify-center bg-black">
+              <Image src={project.image} alt="Image" width={500} height={300} />
+            </div>
+          </Link>
+
+          <div className="flex flex-row items-start justify-between">
+            <div className="flex flex-row flex-wrap">
+              {project.tags.map((item, idx) => (
+                <Tag
+                  key={idx}
+                  text={item}
+                  classname="text-white bg-bauhausBlue"
+                />
+              ))}
+            </div>
+
+            {project.youtube_url ? (
+              <Link href={project.youtube_url} className="">
+                <FaYoutube size={35} color="red" />
+              </Link>
+            ) : (
+              ''
+            )}
+
+            {project.github_url ? (
+              <Link href={project.github_url} className="">
+                <FaGithub size={35} color="#6cc644" />
+              </Link>
+            ) : (
+              ''
+            )}
           </div>
-        </Link>
-
-        <div className="flex flex-row items-start justify-between">
-          <div className="flex flex-row flex-wrap">
-            {project.tags.map((item, idx) => (
-              <Tag
-                key={idx}
-                text={item}
-                classname="text-white bg-bauhausBlue"
-              />
-            ))}
-          </div>
-
-          {project.youtube_url ? (
-            <Link href={project.youtube_url} className="">
-              <FaYoutube size={35} color="red" />
-            </Link>
-          ) : (
-            ''
-          )}
-
-          {project.github_url ? (
-            <Link href={project.github_url} className="">
-              <FaGithub size={35} color="#6cc644" />
-            </Link>
-          ) : (
-            ''
-          )}
         </div>
       </div>
+      <div className="dark:bg-stone-600 bg-stone-100 opacity-0 group-hover:opacity-100 dark:group-hover:opacity-30 rounded-xl w-full h-full scale-[0.80] dark:scale-[0.30] group-hover:scale-100 transition pointer-events-auto absolute"></div>
     </div>
   );
 };
