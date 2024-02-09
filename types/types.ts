@@ -18,3 +18,20 @@ export type Project = {
   features: string[];
   general_url: string;
 };
+
+export type ContentBlock = {
+  type: string;
+  level?: number;
+  text?: string;
+  language?: string;
+  code?: string;
+};
+
+export type Post = {
+  href: string;
+  title: string;
+  author: string;
+  date: string;
+  tags: string[];
+  content: ContentBlock[];
+};

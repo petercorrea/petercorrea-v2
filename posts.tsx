@@ -1,4 +1,4 @@
-export const post1 = {
+export const asyncAwait = {
   href: 'async-await',
   title: 'Understanding Async/Await in JavaScript',
   author: 'Jane Doe',
@@ -35,7 +35,7 @@ export const post1 = {
   ],
 };
 
-export const post2 = {
+export const javaScriptBasics = {
   href: 'javascript-basics',
   title: 'JavaScript Basics',
   author: 'Jane Doe',
@@ -72,8 +72,10 @@ export const post2 = {
   ],
 };
 
-export const posts = [post1, post2];
+export const posts = [asyncAwait, javaScriptBasics];
+
+// consider only keeping the map
 export const postsmap = {
-  'javascript-basics': post2,
-  'async-await': post1,
+  'javascript-basics': javaScriptBasics,
+  'async-await': asyncAwait,
 };

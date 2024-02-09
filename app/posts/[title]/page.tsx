@@ -1,14 +1,8 @@
-import { posts, postsmap } from '@/posts.js';
+import { posts, postsmap } from '@/posts';
+import { ContentBlock } from '@/types/types';
 import React from 'react';
 import CodeBlock from '../../../components/CodeBlock';
 
-type Block = {
-  type: string;
-  level?: number;
-  text?: string;
-  language?: string;
-  code?: string;
-};
 export const generateStaticParams = async () => {
   return posts.map((post) => ({
     title: post.title,
@@ -23,7 +17,7 @@ export default function Post({
   const { title } = params;
   const post = postsmap[title];
 
-  const renderContentBlock = (block: Block, index: number) => {
+  const renderContentBlock = (block: ContentBlock, index: number) => {
     switch (block.type) {
       case 'heading':
         return React.createElement(
