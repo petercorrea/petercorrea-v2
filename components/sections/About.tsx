@@ -25,9 +25,9 @@ const About = ({ darkMode }: AboutProps) => {
               </div>
             ))} */}
             <p className="dark:text-stone-400 text-stone-500 font-light inline">
-              I've worked on a range of notable projects, from in-house billing
-              services and vendor marketplaces to personalization platforms. My
-              work spans {''}
+              I&apos;ve worked on a range of notable projects, from in-house
+              billing services and vendor marketplaces to personalization
+              platforms. My work spans {''}
             </p>
             <p className="text-bauhausRed inline underline decoration-wavy font-light ">
               mobile apps {''}
@@ -40,10 +40,10 @@ const About = ({ darkMode }: AboutProps) => {
             </p>{' '}
             <p className="inline font-light dark:text-stone-400 text-stone-500">
               {' '}
-              that reach several million across the globe. I've built software
-              for a variety of organizations including a waste management
-              start-up, and at an agency where I worked with major clients like{' '}
-              {''}
+              that reach several million across the globe. I&apos;ve built
+              software for a variety of organizations including a waste
+              management start-up, and at an agency where I worked with major
+              clients like {''}
             </p>
             <p className="inline underline font-light text-bauhausYellow">
               PayPal {''}
@@ -65,7 +65,7 @@ const About = ({ darkMode }: AboutProps) => {
             <p className=" font-light inline dark:text-stone-400 text-stone-500">
               {' '}
               developer experiences, writing test cases, and integrating APIs.
-              When I'm not coding, I'm{' '}
+              When I&apos;m not coding, I&apos;m{' '}
             </p>{' '}
             <p className="underline font-light inline decoration-double text-bauhausYellow">
               collaborating
