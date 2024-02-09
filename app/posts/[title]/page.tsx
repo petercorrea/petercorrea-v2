@@ -1,9 +1,10 @@
-import { posts, postsmap } from '@/posts';
+import Padding from '@/components/Padding';
+import { postsmap } from '@/posts/posts';
 import { ContentBlock } from '@/types/types';
-import React from 'react';
 import CodeBlock from '../../../components/CodeBlock';
 
 export const generateStaticParams = async () => {
+  let posts = Object.values(postsmap);
   return posts.map((post) => ({
     title: post.title,
   }));
@@ -20,15 +21,30 @@ export default function Post({
   const renderContentBlock = (block: ContentBlock, index: number) => {
     switch (block.type) {
       case 'heading':
-        return React.createElement(
-          `h${block.level}`,
-          { key: index },
-          block.text
-        );
+        if (block.level == 1)
+          return (
+            <h1 className="text-primary text-5xl" key={index}>
+              {block.text}
+            </h1>
+          );
+        if (block.level == 2)
+          return (
+            <h2 className="text-primary text-xl font-bold" key={index}>
+              {block.text}
+            </h2>
+          );
+        if (block.level == 3)
+          return (
+            <h3 className="text-primary font-medium" key={index}>
+              {block.text}
+            </h3>
+          );
       case 'paragraph':
         return (
           <>
-            <p key={index}>{block.text}</p>
+            <p className="font-light text-primary" key={index}>
+              {block.text}
+            </p>
             <br />
           </>
         );
@@ -40,16 +56,23 @@ export default function Post({
             code={block.code || ''}
           />
         );
+      case 'component':
+        const Component = block.component;
+        return <Component className={block.classes}>{block.text}</Component>;
       default:
         return null;
     }
   };
 
   return (
-    <article>
-      <h1 className="text-5xl font-bold mb-8">{post?.title}</h1>
-      <p className="text-xs">{post?.date}</p>
-      {post?.content?.map((post, idx) => renderContentBlock(post, idx))}
-    </article>
+    <Padding>
+      <article>
+        <h1 className="text-primary text-5xl">{post?.title}</h1>
+        <p className="text-stone-500 dark:text-stone-400 text-xs mb-8">
+          {post?.date}
+        </p>
+        {post?.content?.map((post, idx) => renderContentBlock(post, idx))}
+      </article>
+    </Padding>
   );
 }

@@ -1,6 +1,6 @@
 'use client';
 
-import Modal from '@/components/Modal';
+import NavModal from '@/components/NavModal';
 import useNavModal from '@/hooks/useNavModal';
 import { useEffect, useState } from 'react';
 
@@ -19,7 +19,7 @@ const ModalProvider = () => {
 
   return (
     <>
-      <Modal isOpen={navModal.isOpen} />
+      <NavModal isOpen={navModal.isOpen} />
     </>
   );
 };

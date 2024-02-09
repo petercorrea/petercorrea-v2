@@ -1,3 +1,5 @@
+import Navbar from '@/components/Navbar';
+import ModalProvider from '@/providers/ModalProvider';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
@@ -16,7 +18,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} h-fit`}>{children}</body>
+      <body className={`${inter.className} h-fit`}>
+        <Navbar />
+        <ModalProvider />
+        {children}
+      </body>
     </html>
   );
 }

@@ -1,36 +1,41 @@
-import { Dispatch, SetStateAction } from 'react';
+'use client';
+
+import useDarkMode from '@/hooks/useDarkMode';
+import { useEffect } from 'react';
 import { HiOutlineMoon } from 'react-icons/hi';
 import { HiOutlineSun } from 'react-icons/hi2';
 import { toggleDarkThemeOff, toggleDarkThemeOn } from '../libs/helpers';
 
-interface DarkModeButtonProps {
-  setDarkMode: Dispatch<SetStateAction<boolean>>;
-  darkMode: boolean;
-}
+const DarkModeButton = () => {
+  const darkMode = useDarkMode();
 
-const DarkModeButton = ({ darkMode, setDarkMode }: DarkModeButtonProps) => {
+  useEffect(() => {
+    const systemTheme = window.matchMedia(
+      '(prefers-color-scheme: dark)'
+    ).matches;
+
+    systemTheme ? toggleDarkThemeOn() : toggleDarkThemeOff();
+  }, []);
+
   const handleOnClick = () => {
-    if (darkMode) {
+    if (darkMode.darkMode) {
       toggleDarkThemeOff();
+      darkMode.turnOffDarkMode();
     } else {
       toggleDarkThemeOn();
+      darkMode.turnOnDarkMode();
     }
-    setDarkMode(!darkMode);
   };
 
   return (
     <button onClick={handleOnClick} className="">
       <HiOutlineMoon
         size={20}
-        className={`duration-0 ${
-          darkMode ? 'hidden' : 'text-stone-500 hover:text-primary'
-        }`}
+        className="duration-0 flex dark:hidden dark:text-stone-400 text-stone-500 hover:text-primary"
       />
       <HiOutlineSun
         size={20}
-        className={`duration-0 ${
-          darkMode ? 'text-stone-500 hover:text-primary' : 'hidden'
-        }`}
+        className="duration-0 dark:text-stone-400 text-stone-500 hover:text-primary hidden dark:flex"
       />
     </button>
   );

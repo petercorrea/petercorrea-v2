@@ -32,6 +32,17 @@ export type Post = {
   title: string;
   author: string;
   date: string;
-  tags: string[];
+  tags:
+    | 'experience'
+    | 'career'
+    | 'javascript'
+    | 'python'
+    | 'frontend'
+    | 'backend'
+    | 'machine learning'
+    | 'css'
+    | 'html'
+    | 'react'
+    | 'nextjs';
   content: ContentBlock[];
 };

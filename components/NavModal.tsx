@@ -4,11 +4,11 @@ import Link from 'next/link';
 import { FaGithub, FaLinkedinIn, FaYoutube } from 'react-icons/fa';
 import { MdAlternateEmail, MdClose } from 'react-icons/md';
 
-interface ModalProps {
+interface NavModalProps {
   isOpen: boolean;
 }
 
-const Modal = ({ isOpen }: ModalProps) => {
+const NavModal = ({ isOpen }: NavModalProps) => {
   const navModal = useNavModal();
 
   const handleOnClick = () => {
@@ -19,7 +19,7 @@ const Modal = ({ isOpen }: ModalProps) => {
     <div
       className={`${
         isOpen ? 'flex' : 'hidden'
-      } fixed top-0 right-0 w-full h-full bg-white dark:bg-black flex flex-col justify-center items-center transition`}
+      } z-50 fixed top-0 right-0 w-full h-full bg-white dark:bg-black flex flex-col justify-center items-center transition`}
     >
       <button
         onClick={handleOnClick}
@@ -50,13 +50,13 @@ const Modal = ({ isOpen }: ModalProps) => {
         >
           projects
         </Link>
-        {/* <Link
-            href="/posts"
-            className="text-primary p-5 hover:underline"
-            onClick={handleOnClick}
-          >
-            posts
-          </Link> */}
+        <Link
+          href="/posts"
+          className="text-primary p-5 hover:underline"
+          onClick={handleOnClick}
+        >
+          posts
+        </Link>
 
         <a
           href="/Peter Correa Resume.pdf"
@@ -89,4 +89,4 @@ const Modal = ({ isOpen }: ModalProps) => {
   );
 };
 
-export default Modal;
+export default NavModal;

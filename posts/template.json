@@ -1,0 +1,17 @@
+{
+  "href": "",
+  "title": "",
+  "author": "Peter Correa",
+  "date": "",
+  "content": [
+    { "type": "heading", "level": 1, "text": "" },
+    { "type": "heading", "level": 2, "text": "" },
+    { "type": "heading", "level": 3, "text": "" },
+    { "type": "paragraph", "text": "" },
+    {
+      "type": "code",
+      "language": "javascript",
+      "code": ""
+    }
+  ]
+}

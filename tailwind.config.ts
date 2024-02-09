@@ -16,6 +16,9 @@ const config: Config = {
     'delay-400',
     'delay-450',
     'delay-500',
+    // for dynamic posts
+    'text-red-500',
+    'text-blue-500',
   ],
   darkMode: 'class',
   theme: {

@@ -7,11 +7,10 @@ import Link from 'next/link';
 
 interface ProjectCardProps {
   project: Project;
-  darkMode: boolean;
   idx: number;
 }
 
-const ProjectCard = ({ project, darkMode, idx }: ProjectCardProps) => {
+const ProjectCard = ({ project, idx }: ProjectCardProps) => {
   return (
     <div className="relative flex flex-row group">
       <div
@@ -81,6 +80,7 @@ const ProjectCard = ({ project, darkMode, idx }: ProjectCardProps) => {
           </div>
         </div>
       </div>
+      {/* hover effect */}
       <div className="dark:bg-stone-600 bg-stone-100 opacity-0 group-hover:opacity-100 dark:group-hover:opacity-30 rounded-xl w-full h-full scale-[0.80] dark:scale-[0.30] group-hover:scale-100 transition pointer-events-auto absolute"></div>
     </div>
   );
