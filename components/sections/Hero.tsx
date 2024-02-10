@@ -63,7 +63,7 @@ const Hero = () => {
               <div className="bg-bauhausRed rounded-3xl flex flex-row justify-center items-center mr-4 -rotate-2 h-full w-full">
                 <div className="relative -right-2 top-2  rounded-3xl overflow-hidden h-full w-full">
                   <Image
-                    src="/pic_1.jpeg"
+                    src="/afk/pic_1.jpeg"
                     alt="Image"
                     fill
                     sizes="500px"
@@ -79,7 +79,7 @@ const Hero = () => {
               <div className="bg-bauhausYellow rounded-3xl flex flex-row justify-center items-center mr-4 rotate-2 h-full w-full">
                 <div className="relative -right-2 top-2  rounded-3xl overflow-hidden h-full w-full">
                   <Image
-                    src="/kota.jpeg"
+                    src="/afk/kota.jpeg"
                     alt="Image"
                     fill
                     sizes="500px"
@@ -95,7 +95,7 @@ const Hero = () => {
               <div className="bg-bauhausBlue  rounded-3xl flex flex-row justify-center items-center mr-4 -rotate-2 h-full w-full">
                 <div className="relative -right-2 top-2  rounded-3xl overflow-hidden h-full w-full">
                   <Image
-                    src="/morocco.jpeg"
+                    src="/afk/morocco.jpeg"
                     alt="Image"
                     fill
                     sizes="500px"
