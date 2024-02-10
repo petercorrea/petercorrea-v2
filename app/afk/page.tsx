@@ -16,7 +16,7 @@ const directoryPath = path.join(process.cwd(), '/public/afk');
 
 const ImageContainer = ({ src }: { src: string }) => {
   return (
-    <div className="flex flex-grow relative border border-stone-100 dark:border-stone-600 min-w-[300px] min-h-[400px] h-full rounded-xl overflow-hidden m-2">
+    <div className="flex flex-grow relative border border-stone-100 dark:border-stone-600 min-w-[300px] min-h-[400px] max-w-[600px] h-full rounded-xl overflow-hidden m-2">
       <Image
         src={src}
         priority
