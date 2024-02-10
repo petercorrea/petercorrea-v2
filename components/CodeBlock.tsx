@@ -22,15 +22,13 @@ export default function CodeBlock({
   );
 
   return (
-    <div className="flex flex-row justify-center w-full mt-8">
-      <div className="w-[600px] rounded-3xl overflow-hidden">
-        <pre>
-          <code
-            className="language-javascript"
-            dangerouslySetInnerHTML={{ __html: highlightedCode }}
-          ></code>
-        </pre>
-      </div>
+    <div className="my-10">
+      <pre className="rounded-3xl">
+        <code
+          className="language-javascript"
+          dangerouslySetInnerHTML={{ __html: highlightedCode }}
+        ></code>
+      </pre>
     </div>
   );
 }

@@ -1,3 +1,5 @@
+import { JSXElementConstructor } from 'react';
+
 export type Experience = {
   company: string;
   date: string;
@@ -25,6 +27,8 @@ export type ContentBlock = {
   text?: string;
   language?: string;
   code?: string;
+  component?: string | JSXElementConstructor<HTMLElement>;
+  classes?: string;
 };
 
 export type Post = {

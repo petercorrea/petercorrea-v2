@@ -36,33 +36,33 @@ const Navbar = () => {
           <div className="flex flex-row justify-end items-center opacity-80 backdrop-blur-xl">
             <Link
               href="/#about"
-              className="flex flex-row justify-center dark:text-stone-400 text-stone-500 rounded-full hover:text-primary hover:underline hover:underline-offset-1 mr-4"
+              className="flex flex-row justify-center dark:text-stone-400 text-stone-500 rounded-full hover:text-primary dark:hover:text-primary hover:underline hover:underline-offset-1 mr-4"
             >
               about
             </Link>
 
             <Link
               href="/#xp"
-              className="flex flex-row justify-center dark:text-stone-400 text-stone-500 rounded-full hover:text-primary hover:underline hover:underline-offset-1 mr-4"
+              className="flex flex-row justify-center dark:text-stone-400 text-stone-500 rounded-full hover:text-primary dark:hover:text-primary hover:underline hover:underline-offset-1 mr-4"
             >
               xp
             </Link>
             <Link
               href="/#projects"
-              className="flex flex-row justify-center dark:text-stone-400 text-stone-500 rounded-full hover:text-primary hover:underline hover:underline-offset-1 mr-4"
+              className="flex flex-row justify-center dark:text-stone-400 text-stone-500 rounded-full hover:text-primary dark:hover:text-primary hover:underline hover:underline-offset-1 mr-4"
             >
               projects
             </Link>
             <Link
               href="/posts"
-              className="flex flex-row justify-center dark:text-stone-400 text-stone-500 rounded-full hover:text-primary hover:underline hover:underline-offset-1 mr-4"
+              className="flex flex-row justify-center dark:text-stone-400 text-stone-500 rounded-full dark:hover:text-primary hover:text-primary hover:underline hover:underline-offset-1 mr-4"
             >
               posts
             </Link>
             <a
               href="/Peter Correa Resume.pdf"
               download="Peter Correa Resume"
-              className="flex flex-row justify-center dark:text-stone-400 text-stone-500 rounded-full hover:text-primary hover:underline hover:underline-offset-1 mr-4"
+              className="flex flex-row justify-center dark:text-stone-400 text-stone-500 rounded-full dark:hover:text-primary hover:text-primary hover:underline hover:underline-offset-1 mr-4"
             >
               resume
             </a>
