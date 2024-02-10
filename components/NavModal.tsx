@@ -57,6 +57,13 @@ const NavModal = ({ isOpen }: NavModalProps) => {
         >
           posts
         </Link>
+        <Link
+          href="/afk"
+          className="text-primary p-5 hover:underline"
+          onClick={handleOnClick}
+        >
+          afk
+        </Link>
 
         <a
           href="/Peter Correa Resume.pdf"

@@ -59,6 +59,12 @@ const Navbar = () => {
             >
               posts
             </Link>
+            <Link
+              href="/afk"
+              className="flex flex-row justify-center dark:text-stone-400 text-stone-500 rounded-full dark:hover:text-primary hover:text-primary hover:underline hover:underline-offset-1 mr-4"
+            >
+              afk
+            </Link>
             <a
               href="/Peter Correa Resume.pdf"
               download="Peter Correa Resume"
