@@ -19,6 +19,7 @@ const content = (
     {posts.map((post, idx) => (
       <Hover key={idx}>
         <Link
+          prefetch
           href={`/posts/${post.href}`}
           className={`bg-transparent relative z-10  rounded-xl  flex flex-col justify-between hover:cursor-pointer  transition ease-in`}
         >
