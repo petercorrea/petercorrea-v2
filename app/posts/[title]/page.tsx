@@ -131,7 +131,7 @@ export default function Post({
             {block.links?.map(
               (link: { href: string; text: string }, idx: number) => (
                 <Link href={link.href} key={idx}>
-                  <p className="font-light text-sm text-stone-600 hover:text-blue-500 ">
+                  <p className="font-light text-sm text-stone-600 dark:text-stone-500 hover:text-blue-500 dark:hover:text-blue-500 ">
                     {link.text}
                   </p>
                 </Link>
