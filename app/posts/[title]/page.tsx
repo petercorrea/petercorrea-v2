@@ -146,13 +146,17 @@ export default function Post({
 
   return (
     <Padding>
-      <article className="w-full  max-w-[1000px]">
-        <h1 className="decoration-wavy text-primary text-5xl">{post?.title}</h1>
-        <p className="text-stone-500 dark:text-stone-400 text-xs mb-8">
-          {post?.date}
-        </p>
-        {post?.content?.map((post, idx) => renderContentBlock(post, idx))}
-      </article>
+      <div className="pb-10">
+        <article className="w-full  max-w-[1000px]">
+          <h1 className="decoration-wavy text-primary text-5xl">
+            {post?.title}
+          </h1>
+          <p className="text-stone-500 dark:text-stone-400 text-xs mb-8">
+            {post?.date}
+          </p>
+          {post?.content?.map((post, idx) => renderContentBlock(post, idx))}
+        </article>
+      </div>
     </Padding>
   );
 }
