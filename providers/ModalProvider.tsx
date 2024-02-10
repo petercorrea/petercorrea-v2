@@ -1,7 +1,7 @@
 'use client';
 
-import NavModal from '@/components/NavModal';
-import useNavModal from '@/hooks/useNavModal';
+import NavModal from '@/components/nav/NavModal';
+import useNavModal from '@/stores/useNavModal';
 import { useEffect, useState } from 'react';
 
 const ModalProvider = () => {

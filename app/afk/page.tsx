@@ -1,4 +1,4 @@
-import Padding from '@/components/Padding';
+import Padding from '@/components/layouts/Padding';
 import fs from 'fs/promises';
 import Image from 'next/image';
 import path from 'path';

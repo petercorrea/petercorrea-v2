@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { FaGithub, FaYoutube } from 'react-icons/fa';
 import { FaLinkedinIn } from 'react-icons/fa6';
 import { MdAlternateEmail } from 'react-icons/md';
-import Transition from './Transition';
+import Transition from '../effects/Transition';
 
 const SocialLinks = () => {
   return (

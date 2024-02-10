@@ -1,10 +1,10 @@
 'use client';
 
-import useDarkMode from '@/hooks/useDarkMode';
+import useDarkMode from '@/stores/useDarkMode';
 import { useEffect } from 'react';
 import { HiOutlineMoon } from 'react-icons/hi';
 import { HiOutlineSun } from 'react-icons/hi2';
-import { toggleDarkThemeOff, toggleDarkThemeOn } from '../libs/helpers';
+import { toggleDarkThemeOff, toggleDarkThemeOn } from '../../libs/helpers';
 
 const DarkModeButton = () => {
   const darkMode = useDarkMode();

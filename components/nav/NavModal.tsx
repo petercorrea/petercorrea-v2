@@ -1,5 +1,5 @@
 import data from '@/db/content.json';
-import useNavModal from '@/hooks/useNavModal';
+import useNavModal from '@/stores/useNavModal';
 import Link from 'next/link';
 import { FaGithub, FaLinkedinIn, FaYoutube } from 'react-icons/fa';
 import { MdAlternateEmail, MdClose } from 'react-icons/md';

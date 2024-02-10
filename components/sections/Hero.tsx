@@ -1,5 +1,5 @@
-import Padding from '@/components/Padding';
-import Transition from '@/components/Transition';
+import Transition from '@/components/effects/Transition';
+import Padding from '@/components/layouts/Padding';
 import data from '@/db/content.json';
 import Image from 'next/image';
 import Link from 'next/link';

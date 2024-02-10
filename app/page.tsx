@@ -1,7 +1,7 @@
 'use client';
 
-import SocialLinks from '@/components/SocialLinks';
-import Transition from '@/components/Transition';
+import Transition from '@/components/effects/Transition';
+import SocialLinks from '@/components/nav/SocialLinks';
 import About from '@/components/sections/About';
 import Footer from '@/components/sections/Footer';
 import Hero from '@/components/sections/Hero';

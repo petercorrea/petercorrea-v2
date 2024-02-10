@@ -1,4 +1,4 @@
-import Navbar from '@/components/Navbar';
+import Navbar from '@/components/nav/Navbar';
 import ModalProvider from '@/providers/ModalProvider';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';

@@ -1,6 +1,6 @@
 import CodeBlock from '@/components/CodeBlock';
-import Padding from '@/components/Padding';
-import StatelessTransition from '@/components/StatelessTransition';
+import StatelessTransition from '@/components/effects/StatelessTransition';
+import Padding from '@/components/layouts/Padding';
 import { postsmap } from '@/db/posts/postsmap';
 import { ContentBlock } from '@/types/types';
 import Link from 'next/link';

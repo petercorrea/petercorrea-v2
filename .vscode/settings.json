@@ -1,6 +1,7 @@
 {
   "cSpell.words": [
     "Bootcamp",
+    "classname",
     "Correa",
     "deallocate",
     "DSLs",
@@ -8,6 +9,7 @@
     "multicore",
     "nextjs",
     "prismjs",
-    "tailwindcss"
+    "tailwindcss",
+    "zustand"
   ]
 }

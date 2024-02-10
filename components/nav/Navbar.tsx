@@ -1,9 +1,9 @@
 'use client';
-import DarkModeButton from '@/components/DarkModeButton';
-import useNavModal from '@/hooks/useNavModal';
+import DarkModeButton from '@/components/nav/DarkModeButton';
+import useNavModal from '@/stores/useNavModal';
 import Link from 'next/link';
 import { FaHamburger } from 'react-icons/fa';
-import Transition from './Transition';
+import Transition from '../effects/Transition';
 
 const Navbar = () => {
   const navModal = useNavModal();
