@@ -9,7 +9,7 @@ const heading = (
 );
 
 const content = (
-  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 ">
+  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
     {data.projects.map((item, idx) => (
       <ProjectCard idx={idx} key={idx} project={item} />
     ))}
