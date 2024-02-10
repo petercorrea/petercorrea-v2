@@ -4,7 +4,7 @@ This is my personal website v2.0. It's built on Next.js and deploy on Vercel.
 
 ## Built With
 
-**Zustand** for state managment
+**Zustand** for state management
 
 **Tailwind** for styling
 
