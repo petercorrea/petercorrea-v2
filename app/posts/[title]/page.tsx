@@ -146,7 +146,7 @@ export default function Post({
 
   return (
     <Padding>
-      <div className="pb-10">
+      <div className="pt-5 pb-10">
         <article className="w-full  max-w-[1000px]">
           <h1 className="decoration-wavy text-primary text-5xl">
             {post?.title}
