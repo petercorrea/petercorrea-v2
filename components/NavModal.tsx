@@ -30,21 +30,21 @@ const NavModal = ({ isOpen }: NavModalProps) => {
 
       <div className="flex flex-col justify-center items-center w-full">
         <Link
-          href="#about"
+          href="/#about"
           className="text-primary p-5 hover:underline"
           onClick={handleOnClick}
         >
           about
         </Link>
         <Link
-          href="#xp"
+          href="/#xp"
           className="text-primary p-5 hover:underline"
           onClick={handleOnClick}
         >
           xp
         </Link>
         <Link
-          href="#projects"
+          href="/#projects"
           className="text-primary p-5 hover:underline"
           onClick={handleOnClick}
         >
