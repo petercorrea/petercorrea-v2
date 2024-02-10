@@ -1,7 +1,7 @@
 'use client';
 
+import '@/shades-of-purple.css';
 import Prism from 'prismjs';
-import 'prismjs/themes/shades-of-purple.css';
 import { useEffect } from 'react';
 
 export default function CodeBlock({
