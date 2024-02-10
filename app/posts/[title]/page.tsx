@@ -76,7 +76,7 @@ export default function Post({
       case 'underline':
         return (
           <span key={idx}>
-            <p className="inline text-blue-500 underline decoration-wavy font-bold">
+            <p className="inline text-bauhausBlue underline decoration-wavy font-bold">
               {block.text}
             </p>{' '}
           </span>
@@ -93,7 +93,7 @@ export default function Post({
       case 'blue':
         return (
           <span key={idx}>
-            <p className={`inline font-bold text-blue-500 ${block.classes}`}>
+            <p className={`inline font-bold text-bauhausBlue ${block.classes}`}>
               {block.text}
             </p>{' '}
           </span>

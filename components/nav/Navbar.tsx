@@ -17,13 +17,29 @@ const Navbar = () => {
     }
   };
 
+  const links = [
+    { text: 'about', href: '/#about' },
+    { text: 'xp', href: '/#xp' },
+    { text: 'projects', href: '/#projects' },
+    { text: 'posts', href: '/posts' },
+    { text: 'afk', href: '/afk' },
+    {
+      text: 'resume',
+      href: '/Peter Correa Resume.pdf',
+      download: 'Peter Correa Resume',
+    },
+  ];
+
   return (
     <>
       {/* mobile navbar */}
       <Transition delay="100" direction="down">
         <div className="flex flex-row md:hidden w-full justify-between items-center p-4">
           <button onClick={handleOnClick}>
-            <FaHamburger size={24} className="text-primary md:hidden" />
+            <FaHamburger
+              size={24}
+              className="text-primary md:hidden hover:text-blue-500 dark:hover:text-blue-500 duration-0"
+            />
           </button>
 
           <DarkModeButton />
@@ -34,46 +50,16 @@ const Navbar = () => {
       <Transition delay="100" direction="down">
         <div className="hidden md:flex flex-row w-full justify-end items-center p-3 px-6 ">
           <div className="flex flex-row justify-end items-center opacity-80 backdrop-blur-xl">
-            <Link
-              href="/#about"
-              className="flex flex-row justify-center dark:text-stone-400 text-stone-500 rounded-full hover:text-primary dark:hover:text-primary hover:underline hover:underline-offset-1 mr-4"
-            >
-              about
-            </Link>
-
-            <Link
-              href="/#xp"
-              className="flex flex-row justify-center dark:text-stone-400 text-stone-500 rounded-full hover:text-primary dark:hover:text-primary hover:underline hover:underline-offset-1 mr-4"
-            >
-              xp
-            </Link>
-            <Link
-              href="/#projects"
-              className="flex flex-row justify-center dark:text-stone-400 text-stone-500 rounded-full hover:text-primary dark:hover:text-primary hover:underline hover:underline-offset-1 mr-4"
-            >
-              projects
-            </Link>
-            <Link
-              href="/posts"
-              className="flex flex-row justify-center dark:text-stone-400 text-stone-500 rounded-full dark:hover:text-primary hover:text-primary hover:underline hover:underline-offset-1 mr-4"
-            >
-              posts
-            </Link>
-            <Link
-              prefetch
-              href="/afk"
-              className="flex flex-row justify-center dark:text-stone-400 text-stone-500 rounded-full dark:hover:text-primary hover:text-primary hover:underline hover:underline-offset-1 mr-4"
-            >
-              afk
-            </Link>
-            <a
-              href="/Peter Correa Resume.pdf"
-              download="Peter Correa Resume"
-              className="flex flex-row justify-center dark:text-stone-400 text-stone-500 rounded-full dark:hover:text-primary hover:text-primary hover:underline hover:underline-offset-1 mr-4"
-            >
-              resume
-            </a>
-
+            {links.map((link, idx) => (
+              <Link
+                key={idx}
+                href={link.href}
+                download={link.download}
+                className="flex flex-row justify-center dark:text-stone-400 text-stone-500 rounded-full hover:text-blue-500 dark:hover:text-blue-500 hover:underline hover:underline-offset-1 mr-4"
+              >
+                {link.text}
+              </Link>
+            ))}
             <DarkModeButton />
           </div>
         </div>

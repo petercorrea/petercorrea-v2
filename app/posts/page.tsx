@@ -31,7 +31,7 @@ const content = (
               <Tag
                 text={tag}
                 key={idx}
-                classname="w-fit bg-blue-500 my-5"
+                classname="w-fit bg-bauhausBlue my-5"
                 textColor="text-white"
               />
             ))}

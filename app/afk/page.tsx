@@ -40,7 +40,7 @@ export default async function AFK() {
           Some of my favorite moments away from my keyboard.
         </p>
       </div>
-      <div className="border border-stone-200 dark:border-stone-600 w-full min-h-[300px] flex flex-col md:flex-row flex-wrap justify-evenly rounded-xl">
+      <div className=" w-full min-h-[300px] flex flex-col md:flex-row flex-wrap justify-evenly rounded-xl">
         {images &&
           images?.map((img, idx) => (
             <ImageContainer src={`/afk/${img}`} key={idx} />

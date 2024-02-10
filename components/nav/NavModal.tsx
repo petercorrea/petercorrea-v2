@@ -15,6 +15,19 @@ const NavModal = ({ isOpen }: NavModalProps) => {
     navModal.onClose();
   };
 
+  const links = [
+    { text: 'about', href: '/#about' },
+    { text: 'xp', href: '/#xp' },
+    { text: 'projects', href: '/#projects' },
+    { text: 'posts', href: '/posts' },
+    { text: 'afk', href: '/afk' },
+    {
+      text: 'resume',
+      href: '/Peter Correa Resume.pdf',
+      download: 'Peter Correa Resume',
+    },
+  ];
+
   return (
     <div
       className={`${
@@ -29,66 +42,44 @@ const NavModal = ({ isOpen }: NavModalProps) => {
       </button>
 
       <div className="flex flex-col justify-center items-center w-full">
-        <Link
-          href="/#about"
-          className="text-primary p-5 hover:underline"
-          onClick={handleOnClick}
-        >
-          about
-        </Link>
-        <Link
-          href="/#xp"
-          className="text-primary p-5 hover:underline"
-          onClick={handleOnClick}
-        >
-          xp
-        </Link>
-        <Link
-          href="/#projects"
-          className="text-primary p-5 hover:underline"
-          onClick={handleOnClick}
-        >
-          projects
-        </Link>
-        <Link
-          href="/posts"
-          className="text-primary p-5 hover:underline"
-          onClick={handleOnClick}
-        >
-          posts
-        </Link>
-        <Link
-          href="/afk"
-          className="text-primary p-5 hover:underline"
-          onClick={handleOnClick}
-        >
-          afk
-        </Link>
+        <div className="flex flex-col items-center ">
+          {links.map((link, idx) => (
+            <Link
+              href={link.href}
+              download={link.download}
+              className="text-primary hover:underline hover:text-blue-500 p-4 px-20 w-full text-center"
+              onClick={handleOnClick}
+              key={idx}
+            >
+              {link.text}
+            </Link>
+          ))}
+        </div>
 
-        <a
-          href="/Peter Correa Resume.pdf"
-          download="Peter Correa Resume"
-          className="text-primary p-5 hover:underline"
-          onClick={handleOnClick}
-        >
-          resume
-        </a>
-
-        <div className="flex flex-row w-full h-full justify-center items-center mt-5">
-          <a
-            href={data.contact.mailto}
-            className="flex flex-row justify-center text-primary rounded-full hover:underline hover:underline-offset-1 mr-4"
-          >
-            <MdAlternateEmail size={20} className="text-primary mr-10" />
+        <div className="flex flex-row w-full h-full justify-center items-center mt-20">
+          <a href={data.contact.mailto} className=" mr-4">
+            <MdAlternateEmail
+              size={20}
+              className="text-primary mr-10 hover:text-blue-500 transition duration-0"
+            />
           </a>
           <Link href={data.contact.linkedin} onClick={handleOnClick}>
-            <FaLinkedinIn size={25} className="text-primary mr-10" />
+            <FaLinkedinIn
+              size={25}
+              className="text-primary mr-10 hover:text-blue-500 transition duration-0"
+            />
           </Link>
           <Link href={data.contact.github} onClick={handleOnClick}>
-            <FaGithub size={25} className="text-primary mr-10" />
+            <FaGithub
+              size={25}
+              className="text-primary mr-10 hover:text-blue-500 transition duration-0"
+            />
           </Link>
           <Link href={data.contact.youtube} onClick={handleOnClick}>
-            <FaYoutube size={25} className="text-primary" />
+            <FaYoutube
+              size={25}
+              className="text-primary hover:text-blue-500 transition duration-0"
+            />
           </Link>
         </div>
       </div>
