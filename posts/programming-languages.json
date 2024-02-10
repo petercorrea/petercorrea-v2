@@ -70,7 +70,7 @@
       "type": "span",
       "text": "The program then uses these declarations to deduce conclusions, making it particularly suitable for problems that involve complex rules and constraints, such as scheduling or solving puzzles."
     },
-    { "type": "h2", "text": "Declarative vs imperative" },
+    { "type": "h2", "text": "Declarative & Imperative" },
     {
       "type": "span",
       "text": "A programming language is characterized as either declarative or imperative based on how it expresses the logic of computation."
@@ -127,7 +127,7 @@
       "type": "code",
       "code": "const numbers = [1, 2, 3, 4, 5];\nconst doubledEvens = numbers.filter(n => n % 2 === 0).map(n => n * 2);\nconsole.log(doubledEvens); // [4, 8]"
     },
-    { "type": "h2", "text": "Static vs Dynamic Languages" },
+    { "type": "h2", "text": "Static & Dynamic" },
     {
       "type": "span",
       "text": "Static typing means the data type of a variable is known at compile time."
@@ -169,7 +169,7 @@
       "type": "span",
       "text": "Errors related to unexpected data types might only surface during execution, potentially making debugging more challenging."
     },
-    { "type": "h2", "text": "Loosely Typed vs Strongly Typed Languages" },
+    { "type": "h2", "text": "Loosely Typed & Strongly Typed" },
     {
       "type": "span",
       "text": "Another crucial aspect in programming languages is the distinction between loosely typed and strongly typed systems."
@@ -260,7 +260,7 @@
       "type": "span",
       "text": "However, the trade-off is that it can introduce overhead and unpredictability in performance, particularly in terms of garbage collection pauses."
     },
-    { "type": "h2", "text": "Performance and Optimization" },
+    { "type": "h2", "text": "Performance & Optimization" },
     {
       "type": "span",
       "text": "Performance and optimization are pivotal in programming, influencing how efficiently a program runs."
@@ -309,7 +309,7 @@
       "type": "span",
       "text": "They are often used in contexts where the ease of development and maintenance is more important than raw performance."
     },
-    { "type": "h2", "text": "General Languages vs Domain-Specific Languages" },
+    { "type": "h2", "text": "General Languages & Domain-Specific" },
     {
       "type": "span",
       "text": "In programming, we encounter a wide array of languages, each designed with specific goals in mind."
@@ -358,7 +358,7 @@
       "type": "span",
       "text": "However, their specialized nature means they are not suitable for general-purpose programming tasks."
     },
-    { "type": "h2", "text": "Concurrency and Parallelism" },
+    { "type": "h2", "text": "Concurrency & Parallelism" },
     {
       "type": "span",
       "text": "Efficiently managing multiple tasks is a common challenge."
@@ -407,7 +407,7 @@
       "type": "span",
       "text": "Parallelism is key in applications that require heavy data processing or computations, as it allows for more work to be done in the same amount of time."
     },
-    { "type": "h2", "text": "Security Features and Considerations" },
+    { "type": "h2", "text": "Security Features & Considerations" },
     {
       "type": "span",
       "text": "In today’s digital landscape, security is paramount."
@@ -456,7 +456,7 @@
       "type": "span",
       "text": "Regular code reviews, static and dynamic code analysis, and staying updated with security advisories are part of this vigilant approach."
     },
-    { "type": "h2", "text": "History and Evolution of Programming Languages" },
+    { "type": "h2", "text": "History & Evolution of Programming Languages" },
     {
       "type": "span",
       "text": "The history of programming languages is a fascinating journey, marked by continuous innovation and adaptation."
@@ -612,7 +612,7 @@
       "type": "span",
       "text": "Lastly, Zig, emerging in 2015, aims to simplify system programming with its strong typing and manual memory management, making it versatile for a range of applications from embedded systems to software development."
     },
-    { "type": "h2", "text": "Language Syntax and Readability" },
+    { "type": "h2", "text": "Language Syntax & Readability" },
     {
       "type": "span",
       "text": "The syntax and readability of a programming language significantly influence its usability and popularity."
@@ -661,7 +661,7 @@
       "type": "span",
       "text": "Choosing a language involves considering the syntax in relation to the project requirements and the team's familiarity with the language."
     },
-    { "type": "h2", "text": "Ecosystem and Community Support" },
+    { "type": "h2", "text": "Ecosystem & Community Support" },
     {
       "type": "span",
       "text": "When choosing a programming language, one must consider not just the language itself but also its ecosystem and community support."
@@ -714,7 +714,7 @@
       "type": "span",
       "text": "Similarly, the development of frameworks like React and Angular has kept JavaScript at the forefront of web development."
     },
-    { "type": "h2", "text": "Popular Use Cases and Applications" },
+    { "type": "h2", "text": "Popular Use Cases & Applications" },
     {
       "type": "span",
       "text": "Programming languages, each with their unique features and capabilities, are often associated with specific use cases and applications."
@@ -777,7 +777,7 @@
       "type": "span",
       "text": "Their ease of use and flexibility make them suitable for a wide range of automation scenarios."
     },
-    { "type": "h2", "text": "Cross-Platform Development and Portability" },
+    { "type": "h2", "text": "Cross-Platform Development & Portability" },
     {
       "type": "span",
       "text": "In today's interconnected world, the ability to develop software that runs across various platforms is invaluable."
@@ -828,7 +828,7 @@
       "type": "span",
       "text": "Languages that emphasize portability, like Python and C#, help ensure that code remains functional and efficient across different environments."
     },
-    { "type": "h2", "text": "Future Trends and Emerging Languages" },
+    { "type": "h2", "text": "Future Trends & Emerging Languages" },
     {
       "type": "span",
       "text": "The field of programming is ever-evolving, with new languages emerging and existing ones adapting to meet the challenges of modern technology."
