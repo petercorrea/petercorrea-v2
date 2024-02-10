@@ -1,6 +1,6 @@
 import Padding from '@/components/Padding';
 import Tag from '@/components/Tag';
-import { postsmap } from '@/posts/posts';
+import { postsmap } from '@/db/posts/postsmap';
 import Link from 'next/link';
 
 export default function Posts() {

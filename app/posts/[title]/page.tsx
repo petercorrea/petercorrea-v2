@@ -1,6 +1,6 @@
 import CodeBlock from '@/components/CodeBlock';
 import Padding from '@/components/Padding';
-import { postsmap } from '@/posts/posts';
+import { postsmap } from '@/db/posts/postsmap';
 import { ContentBlock } from '@/types/types';
 import Link from 'next/link';
 import React from 'react';

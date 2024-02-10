@@ -1,4 +1,4 @@
-import data from '@/db.json';
+import data from '@/db/content.json';
 import Padding from '../Padding';
 import XPCard from '../XPCard';
 

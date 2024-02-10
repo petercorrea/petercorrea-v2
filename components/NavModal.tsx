@@ -1,4 +1,4 @@
-import data from '@/db.json';
+import data from '@/db/content.json';
 import useNavModal from '@/hooks/useNavModal';
 import Link from 'next/link';
 import { FaGithub, FaLinkedinIn, FaYoutube } from 'react-icons/fa';

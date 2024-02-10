@@ -1,6 +1,6 @@
 import Padding from '@/components/Padding';
 import Transition from '@/components/Transition';
-import data from '@/db.json';
+import data from '@/db/content.json';
 import Image from 'next/image';
 import Link from 'next/link';
 import { FaGithub, FaLinkedinIn, FaYoutube } from 'react-icons/fa';
