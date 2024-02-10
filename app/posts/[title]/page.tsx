@@ -2,6 +2,7 @@ import CodeBlock from '@/components/CodeBlock';
 import Padding from '@/components/Padding';
 import { postsmap } from '@/posts/posts';
 import { ContentBlock } from '@/types/types';
+import Link from 'next/link';
 import React from 'react';
 
 export const generateStaticParams = async () => {
@@ -123,6 +124,20 @@ export default function Post({
               {block.text}
             </span>{' '}
           </span>
+        );
+      case 'links':
+        return (
+          <div key={idx}>
+            {block.links?.map(
+              (link: { href: string; text: string }, idx: number) => (
+                <Link href={link.href} key={idx}>
+                  <p className="font-light text-sm text-stone-600 hover:text-blue-500 ">
+                    {link.text}
+                  </p>
+                </Link>
+              )
+            )}
+          </div>
         );
       default:
         return null;

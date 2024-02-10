@@ -6,10 +6,15 @@
   "description": "A survey of Programming Languages and the features that separate them.",
   "tags": ["languages"],
   "content": [
+    { "type": "h2", "text": "Introduction" },
+    {
+      "type": "span",
+      "text": "In this post we're going to cover different aspects of programming languages, some of the features that distinguishes them, and a bit of history."
+    },
     { "type": "h2", "text": "Programming Paradigms" },
     {
       "type": "span",
-      "text": "Programming Paradigms, they’re not a language, but a philosophy, a way of structuring and approaching programming tasks."
+      "text": "Programming Paradigms, they’re not a language but a philosophy, a way of structuring and approaching programming tasks."
     },
     {
       "type": "span",
@@ -19,10 +24,10 @@
       "type": "span",
       "text": "There are four notable paradigms: Procedural Programming, Object-Oriented Programming, Functional Programming, and Logic Programming."
     },
-    { "type": "nl", "text": "Procedural Programming is foundational." },
+    { "type": "nl", "text": "Procedural Programming (PP) is foundational." },
     {
       "type": "span",
-      "text": "It organizes code into procedures, functions that execute sequences of instructions."
+      "text": "PP organizes code into procedures, functions that execute sequences of instructions."
     },
     {
       "type": "span",
@@ -34,7 +39,7 @@
     },
     {
       "type": "nl",
-      "text": "Object-Oriented Programming, introduces a different perspective."
+      "text": "Object-Oriented Programming (OOP), introduces a different perspective."
     },
     {
       "type": "span",
@@ -42,15 +47,15 @@
     },
     {
       "type": "span",
-      "text": "OOP is characterized by concepts such as encapsulation, inheritance, and polymorphism, enabling programmers to create modular, reusable code."
+      "text": "OOP is characterized by concepts such as encapsulation, abstraction, inheritance, and polymorphism, enabling programmers to create modular, reusable code."
     },
     {
       "type": "nl",
-      "text": "Functional Programming holds a mathematical perspective."
+      "text": "Functional Programming (FP) holds a mathematical perspective."
     },
     {
       "type": "span",
-      "text": "Its goal is to focus on functions without side effects, meaning it doesn't change any logic outside of its scope, and which always produces the same output for the same input."
+      "text": "Its goal is to focus on functions without side effects, meaning it doesn't change any logic outside of its scope, and which always produces the same output given the same input."
     },
     {
       "type": "span",
@@ -60,7 +65,7 @@
       "type": "span",
       "text": "It excels in scenarios where predictability and simplicity in testing are paramount."
     },
-    { "type": "nl", "text": "Finally we have Logic Programming." },
+    { "type": "nl", "text": "Finally we have Logic Programming (LP)." },
     { "type": "span", "text": "Logic programming is based on formal logic." },
     {
       "type": "span",
@@ -73,7 +78,7 @@
     { "type": "h2", "text": "Declarative & Imperative" },
     {
       "type": "span",
-      "text": "A programming language is characterized as either declarative or imperative based on how it expresses the logic of computation."
+      "text": "A programming language can be characterized as either declarative or imperative based on how it expresses the logic of computation."
     },
     {
       "type": "span",
@@ -101,7 +106,7 @@
     },
     {
       "type": "span",
-      "text": "The programmer must explicitly specify the sequence of operations required to solve a problem, controlling the computer's architecture directly."
+      "text": "The programmer must explicitly specify the sequence of operations required to solve a problem, controlling the computer's architecture directly. Below is a simple example of this, take not of how explicit each step is."
     },
     {
       "type": "code",
@@ -121,7 +126,7 @@
     },
     {
       "type": "span",
-      "text": "This approach abstracts the control flow and leaves the 'how' up to the language's interpreter or compiler, allowing for more concise, readable code that emphasizes the logic of computation over its implementation."
+      "text": "This approach abstracts the control flow and leaves the 'how' up to the language's interpreter or compiler, allowing for more concise, readable code that emphasizes the logic of computation over its implementation. The declarative code below, written in the same language, achieves the same effect as the imperative version."
     },
     {
       "type": "code",
@@ -167,7 +172,7 @@
     },
     {
       "type": "span",
-      "text": "Errors related to unexpected data types might only surface during execution, potentially making debugging more challenging."
+      "text": "Errors related to unexpected data types might only surface during execution (runtime), potentially making debugging more challenging."
     },
     { "type": "h2", "text": "Loosely Typed & Strongly Typed" },
     {
@@ -180,7 +185,7 @@
     },
     {
       "type": "span",
-      "text": "In these languages, variables can often be implicitly converted between different types, known as type coercion."
+      "text": "In these languages, variables can often be implicitly converted between different types, known as 'type coercion'."
     },
     {
       "type": "span",
@@ -209,7 +214,7 @@
     },
     {
       "type": "span",
-      "text": "It promotes code clarity and reliability, especially beneficial in large systems."
+      "text": "It promotes code clarity and reliability, which is especially beneficial in large systems."
     },
     {
       "type": "span",
@@ -258,9 +263,9 @@
     },
     {
       "type": "span",
-      "text": "However, the trade-off is that it can introduce overhead and unpredictability in performance, particularly in terms of garbage collection pauses."
+      "text": "However, the trade-off is that it can introduce overhead and unpredictability in performance, particularly in terms of garbage collection pauses. With this understanding, we can now group languages in another way, compiled or interpreted."
     },
-    { "type": "h2", "text": "Performance & Optimization" },
+    { "type": "h2", "text": "Compiled & Interpreted" },
     {
       "type": "span",
       "text": "Performance and optimization are pivotal in programming, influencing how efficiently a program runs."
@@ -309,10 +314,14 @@
       "type": "span",
       "text": "They are often used in contexts where the ease of development and maintenance is more important than raw performance."
     },
+    {
+      "type": "span",
+      "text": "Optimizations and advance techniques exist to make interpreted languages more performant. One such is just-in-time compilation where compilation happens during runtime instead of before execution. These techniques place languages closer in the middle of the spectrum. JavaScript is a notable example of this."
+    },
     { "type": "h2", "text": "General Languages & Domain-Specific" },
     {
       "type": "span",
-      "text": "In programming, we encounter a wide array of languages, each designed with specific goals in mind."
+      "text": "In programming, we encounter a wide array of languages, each designed with specific goals in mind and each attempting to solve particular problems."
     },
     {
       "type": "span",
@@ -356,7 +365,7 @@
     },
     {
       "type": "span",
-      "text": "However, their specialized nature means they are not suitable for general-purpose programming tasks."
+      "text": "However, their specialized nature means they are not suitable for general-purpose programming tasks as they are designed to solve more specific tasks."
     },
     { "type": "h2", "text": "Concurrency & Parallelism" },
     {
@@ -377,7 +386,7 @@
     },
     {
       "type": "span",
-      "text": "It's about dealing with lots of things at once."
+      "text": "It's about dealing with lots of things at once by switching between tasks rapidly, completing a bit of each task during each switch before returning to the original task."
     },
     {
       "type": "span",
@@ -433,7 +442,7 @@
       "text": "Additionally, languages may have built-in functions to sanitize inputs, preventing injection attacks, and features to handle errors gracefully, avoiding crashes that could be exploited."
     },
     {
-      "type": "span",
+      "type": "nl",
       "text": "Beyond language features, secure coding practices are vital."
     },
     {
@@ -459,23 +468,23 @@
     { "type": "h2", "text": "History & Evolution of Programming Languages" },
     {
       "type": "span",
-      "text": "The history of programming languages is a fascinating journey, marked by continuous innovation and adaptation."
+      "text": "Now that we have the vocabulary to talk about programming languages let's talk a look at how they have evolved. The history of programming languages is a fascinating journey, marked by continuous innovation and adaptation. What we'll cover is a concise and cursory overview, but it'll highlight enough to provide the reader context on the landscape."
     },
     {
-      "type": "span",
+      "type": "nl",
       "text": "Understanding this evolution provides valuable insights into how and why current languages are designed the way they are."
     },
     {
       "type": "span",
-      "text": "In the early days, programming was done in machine language and assembly, languages closely tied to the hardware."
+      "text": "In the early days, programming was done in machine language and assembly, languages closely tied to the hardware. At these 'levels of abstraction' writing meaningful code is slow and error-prone due to its highly imperative nature."
     },
     {
       "type": "span",
-      "text": "This changed with the introduction of Fortran in the 1950s, a language that revolutionized programming by introducing a higher level of abstraction."
+      "text": "This changed in the 1950s with the introduction of Fortran, designed by IBM, this language revolutionized programming by introducing a higher level of abstraction. While not the first language in the strictest sense, Fortran is considered the first high-level, widely adopted language. This compiled, imperative language offered array operations, implicit typing, loops, conditional branching, functions and built-in mathematical functions to name a few. It was well suited for scientific application at the time, and ran on the worlds fastest supercomputers."
     },
     {
-      "type": "span",
-      "text": "Lisp, developed in the late 1950s, introduced key concepts in functional programming and influenced many later languages."
+      "type": "nl",
+      "text": "Lisp, developed in the late 1950s after Fortran and COBOL, introduced key concepts in functional programming and influenced many later languages. Lisp was influenced by IPL and with it, became a popular choice for AI research. Some of the innovative features Lisp introduced include first-class functions, garbage collection, recursion, expressions, and full language features available at load time, compile time, and run time."
     },
     {
       "type": "span",
@@ -483,7 +492,7 @@
     },
     {
       "type": "span",
-      "text": "Languages like C, developed in the early 1970s, exemplified this approach with their emphasis on structured, modular code."
+      "text": "Languages like C which was created at Bell Labs, developed in the early 1970s, exemplified this approach with their emphasis on structured, modular code. C is an imperative procedural language with lexical variable scope, a static and weak type system, and low-level access to memory with features that map efficiently to machine instructions while focusing on cross-platform portability as well. C runs with very little overhead and serves as the defacto benchmark for program performance."
     },
     {
       "type": "span",
@@ -495,7 +504,7 @@
     },
     {
       "type": "span",
-      "text": "This paradigm, focusing on objects and classes, became a dominant force in software development."
+      "text": "This paradigm, focusing on objects and classes, became a dominant force in software development. Smalltalk is one of the first purely OOP languages and provided message passing, classes and instances, inheritance, dynamic typing, garbage collection, reflection, even its own Integrated Development Environment (IDE)."
     },
     {
       "type": "span",
@@ -510,8 +519,8 @@
       "text": "These languages have become integral in web development, data science, and automation."
     },
     {
-      "type": "span",
-      "text": "More recently, languages like Go and Rust are gaining attention for their performance and safety features, addressing modern computational challenges and multicore processing needs."
+      "type": "nl",
+      "text": "More recently, languages like Go and Rust are gaining attention for their performance and safety features, addressing modern computational challenges and multicore processing needs. Go, built at Google, is a statically typed, compiled language. Go was created to address specific challenges faced in modern software development, such as managing dependencies, simplifying concurrent programming, and achieving high performance for networked services and large-scale, distributed systems. Some of the key features of improvement include simplicity, readability, and pragmatism in its design, an innovative concurrent model, a high-performance garbage collector that provides automatic memory management without sacrificing speed or performance, static typing with type inference, a comprehensive standard library and integrated toolchains."
     },
     {
       "type": "span",
@@ -523,144 +532,9 @@
     },
     {
       "type": "span",
-      "text": "This historical perspective helps us appreciate the diversity and capabilities of the languages we use today."
+      "text": "This historical perspective helps us appreciate the diversity and capabilities of the languages we use today. Let's now quickly explore aspects of a language outside of itself."
     },
-    { "type": "h2", "text": "Specific Languages" },
-    {
-      "type": "span",
-      "text": "Let's embark on a journey through the landscape of programming languages."
-    },
-    {
-      "type": "span",
-      "text": "We'll explore each language's key characteristics like typing, memory management, and supported paradigms, and how these features translate into specific use cases."
-    },
-    { "type": "span", "text": "Fortran came out in 1957." },
-    {
-      "type": "span",
-      "text": "Designed for numeric and scientific computing, Fortran is strongly and statically typed, adhering to the procedural paradigm."
-    },
-    {
-      "type": "span",
-      "text": "Its precision in numerical computations makes it a mainstay in scientific research."
-    },
-    { "type": "span", "text": "Next, we encounter Lisp, born in 1958." },
-    {
-      "type": "span",
-      "text": "A pioneer in AI and functional programming, Lisp's dynamic typing and automatic memory management cater to a range of uses, from artificial intelligence to educational tools."
-    },
-    {
-      "type": "span",
-      "text": "In 1972, C emerged as a cornerstone for system programming."
-    },
-    {
-      "type": "span",
-      "text": "With its weak typing and manual memory management, C offers unparalleled control for system software and embedded systems development."
-    },
-    {
-      "type": "span",
-      "text": "The 1980s introduced Smalltalk, shaping the object-oriented programming landscape."
-    },
-    {
-      "type": "span",
-      "text": "Its dynamic typing and focus on objects make it a valuable educational tool for exploring object-oriented concepts."
-    },
-    {
-      "type": "span",
-      "text": "C++, evolving from C in 1983, blends object-oriented features with manual memory management, making it ideal for software development where performance is key, including gaming and real-time systems."
-    },
-    {
-      "type": "span",
-      "text": "Erlang, created in 1986, excels in concurrent operations, making it perfect for telecommunications and distributed systems thanks to its functional paradigm and dynamic typing."
-    },
-    {
-      "type": "span",
-      "text": "Haskell, introduced in 1990, brings the purely functional paradigm to the forefront."
-    },
-    {
-      "type": "span",
-      "text": "Its strong, static typing and focus on immutability are well-suited for academic research and complex computations."
-    },
-    {
-      "type": "nl",
-      "text": "Python, appearing in 1991, offers versatility with its dynamic typing and support for multiple paradigms."
-    },
-    {
-      "type": "span",
-      "text": "It's become a favorite in web development and data science for its readability and extensive libraries."
-    },
-    {
-      "type": "span",
-      "text": "JavaScript, since 1995, has dominated web development."
-    },
-    {
-      "type": "span",
-      "text": "Its weak typing and automatic memory management make it adaptable for both client and server-side scripting."
-    },
-    {
-      "type": "span",
-      "text": "In 2009, Go brought simplicity and efficiency to concurrent programming, becoming a go-to for cloud computing and scalable servers with its strong typing and automatic memory management."
-    },
-    {
-      "type": "span",
-      "text": "Rust, from 2010, focuses on safety in system programming."
-    },
-    {
-      "type": "span",
-      "text": "It combines strong, static typing with manual memory management, ideal for performance-sensitive applications."
-    },
-    {
-      "type": "span",
-      "text": "Lastly, Zig, emerging in 2015, aims to simplify system programming with its strong typing and manual memory management, making it versatile for a range of applications from embedded systems to software development."
-    },
-    { "type": "h2", "text": "Language Syntax & Readability" },
-    {
-      "type": "span",
-      "text": "The syntax and readability of a programming language significantly influence its usability and popularity."
-    },
-    {
-      "type": "span",
-      "text": "Syntax refers to the set of rules that define the combinations of symbols considered correctly structured programs in that language."
-    },
-    {
-      "type": "span",
-      "text": "Readability is about how easy it is for humans to read and understand the code."
-    },
-    {
-      "type": "span",
-      "text": "Languages with a syntax resembling natural language, like Python, are often considered easier for beginners due to their readability and simplicity."
-    },
-    {
-      "type": "span",
-      "text": "In contrast, languages with more complex and verbose syntax, such as C++, pose a steeper learning curve but offer more control and precision in certain aspects of programming."
-    },
-    {
-      "type": "span",
-      "text": "Readability is not just about writing code; it's about maintaining it."
-    },
-    {
-      "type": "span",
-      "text": "Clear, readable code is easier to debug, update, and share with others."
-    },
-    {
-      "type": "span",
-      "text": "This is why languages that emphasize readability, like Ruby, are popular for their maintainability."
-    },
-    {
-      "type": "nl",
-      "text": "Conversely, languages that allow for more terse and cryptic code can lead to challenges in understanding and maintaining the codebase, especially in larger projects."
-    },
-    {
-      "type": "span",
-      "text": "The diversity in syntax among programming languages reflects the variety of uses and preferences in the programming community."
-    },
-    {
-      "type": "span",
-      "text": "For instance, JavaScript's syntax makes it well-suited for web development, while the concise syntax of Scala is advantageous in functional programming contexts."
-    },
-    {
-      "type": "span",
-      "text": "Choosing a language involves considering the syntax in relation to the project requirements and the team's familiarity with the language."
-    },
+
     { "type": "h2", "text": "Ecosystem & Community Support" },
     {
       "type": "span",
@@ -786,7 +660,6 @@
       "type": "span",
       "text": "Cross-platform development and portability are key considerations in modern software engineering, influencing the choice of programming languages and tools."
     },
-    { "type": "h3", "text": "The Need for Cross-Platform Development" },
     {
       "type": "span",
       "text": "With the diversity of operating systems and devices, software needs to be accessible on multiple platforms to reach a broader audience."
@@ -795,12 +668,9 @@
       "type": "span",
       "text": "This requirement has led to the rise of languages and frameworks that support cross-platform development."
     },
+
     {
-      "type": "h3",
-      "text": "Languages and Tools for Cross-Platform Development"
-    },
-    {
-      "type": "span",
+      "type": "nl",
       "text": "Languages like Java have been long favored for their 'write once, run anywhere' philosophy, made possible by the Java Virtual Machine (JVM)."
     },
     {
@@ -815,9 +685,8 @@
       "type": "span",
       "text": "These frameworks provide a native-like user experience while significantly reducing development time and costs."
     },
-    { "type": "h3", "text": "Portability Considerations" },
     {
-      "type": "span",
+      "type": "nl",
       "text": "Portability is about how easily software can be transferred from one environment to another."
     },
     {
@@ -837,16 +706,14 @@
       "type": "span",
       "text": "Keeping an eye on future trends and emerging languages is crucial for staying ahead in the dynamic landscape of software development."
     },
-    { "type": "h3", "text": "Emerging Trends in Programming" },
     {
-      "type": "span",
+      "type": "nl",
       "text": "Recent trends in programming point towards an increased focus on performance, security, and ease of use."
     },
     {
       "type": "span",
       "text": "There's a growing emphasis on languages that can handle concurrent processing efficiently, catering to the needs of modern multi-core processors and cloud computing."
     },
-    { "type": "h3", "text": "Rise of New Languages" },
     {
       "type": "span",
       "text": "Languages like Rust and Go are at the forefront of these trends."
@@ -863,23 +730,50 @@
       "type": "span",
       "text": "Go, developed by Google, is known for its simplicity and efficiency in handling concurrent tasks, making it a go-to choice for cloud-based and networked applications."
     },
-    { "type": "h3", "text": "Advancements in AI and Machine Learning" },
     {
-      "type": "span",
+      "type": "nl",
       "text": "In the realm of AI and machine learning, we're witnessing advancements in languages and frameworks that facilitate these technologies."
     },
     {
       "type": "span",
       "text": "Python continues to lead due to its simplicity and powerful libraries, but other languages, like Julia, are emerging for their high-performance capabilities in mathematical and statistical computations."
     },
-    { "type": "h3", "text": "Adapting to Changing Technology" },
     {
-      "type": "span",
+      "type": "nl",
       "text": "Another significant trend is the adaptation of existing languages to new paradigms and platforms."
     },
     {
       "type": "span",
       "text": "For example, JavaScript’s expansion into server-side development with Node.js and the growing use of TypeScript for type safety in large-scale JavaScript applications."
+    },
+    {
+      "type": "h2",
+      "text": "Further Reading & Bibliography"
+    },
+    {
+      "type": "links",
+      "links": [
+        {
+          "text": "Programming Languages: History and Future",
+          "href": "https://dl.acm.org/doi/10.1145/361454.361485"
+        },
+        {
+          "text": "Programming Languages and Systems: A Historical Survey",
+          "href": "https://dl.acm.org/doi/pdf/10.1145/1464122.1464124"
+        },
+        {
+          "text": "Plankalkül: The First High-Level Programming Language and its Implementation",
+          "href": "https://ftp.mi.fu-berlin.de/pub/reports/TR-B-00-03.pdf"
+        },
+        {
+          "text": "Concepts of Programming Languages",
+          "href": "https://www.ime.usp.br/~alvaroma/ucsp/proglang/book.pdf"
+        },
+        {
+          "text": "Programming languages: Design and Implementation",
+          "href": "https://archive.org/details/programminglangu00prat/page/n5/mode/2up"
+        }
+      ]
     }
   ]
 }

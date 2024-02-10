@@ -29,6 +29,10 @@ export type ContentBlock = {
   code?: string;
   component?: string | JSXElementConstructor<HTMLElement>;
   classes?: string;
+  links?: {
+    text: string;
+    href: string;
+  }[];
 };
 
 export type Post = {
