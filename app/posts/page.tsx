@@ -2,7 +2,6 @@ import Padding from '@/components/Padding';
 import Tag from '@/components/Tag';
 import { postsmap } from '@/posts/posts';
 import Link from 'next/link';
-import 'prismjs/themes/shades-of-purple.css';
 
 export default function Posts() {
   let posts = Object.values(postsmap);
