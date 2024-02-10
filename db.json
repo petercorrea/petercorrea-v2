@@ -155,7 +155,7 @@
         "Vercel",
         "Tailwind"
       ],
-      "image": "/spotify.png",
+      "image": "/projects/spotify.png",
       "features": [
         "Built with Next.js and deployed on Vercel",
         "Integrated with Supabase and Stripe",
@@ -173,7 +173,7 @@
       "production_url": "",
       "general_url": "",
       "tags": ["Data Structures", "JavaScript"],
-      "image": "/linkedlists.png",
+      "image": "/projects/linkedlists.png",
       "features": []
     },
     {
@@ -185,7 +185,7 @@
       "production_url": "",
       "general_url": "",
       "tags": ["JavaScript"],
-      "image": "/engine.png",
+      "image": "/projects/engine.png",
       "features": []
     },
     {
@@ -197,7 +197,7 @@
       "production_url": "",
       "general_url": "",
       "tags": ["JavaScript", "OOP"],
-      "image": "/oop.png",
+      "image": "/projects/oop.png",
       "features": []
     },
     {
@@ -209,7 +209,7 @@
       "production_url": "",
       "general_url": "https://x-team.com/blog/interview-peter-correa/",
       "tags": ["Interview"],
-      "image": "/sax.jpg",
+      "image": "/projects/sax.jpg",
       "features": []
     },
     {
@@ -221,7 +221,7 @@
       "production_url": "",
       "general_url": "",
       "tags": ["Interview", "Bootcamps"],
-      "image": "/thinkful.png",
+      "image": "/projects/thinkful.png",
       "features": []
     }
   ]
