@@ -21,7 +21,7 @@ export default function Posts() {
                   href={`/posts/${post.href}`}
                   className={`bg-transparent border border-stone-100 relative z-10  rounded-xl  flex flex-col justify-between hover:cursor-pointer  transition ease-in p-4`}
                 >
-                  <p className="text-primary">{post.title}</p>
+                  <p className="text-primary font-medium">{post.title}</p>
                   <p className="text-sm text-primary">{post.description}</p>
                   <p className="text-xs text-stone-500">{post.date}</p>
                   <div className="flex flex-row">
