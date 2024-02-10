@@ -9,7 +9,7 @@ import { MdAlternateEmail } from 'react-icons/md';
 const Hero = () => {
   return (
     <Padding>
-      <div className="max-w-screen max-h-screen min-h-screen flex flex-col justify-center md:justify-center max-w-[1000px] mt-10 md:mt-0">
+      <div className="max-w-screen max-h-screen min-h-screen flex flex-col justify-center md:justify-center max-w-[1000px] md:mt-0">
         <div className="flex flex-col justify-start md:justify-center items-center">
           <Transition delay="50" direction="down">
             <div className="w-full mb-8">
