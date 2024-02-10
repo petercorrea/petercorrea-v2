@@ -44,7 +44,7 @@ const content = (
 
 export default function Posts() {
   return (
-    <Padding>
+    <Padding classname="flex items-center">
       <StatelessTransition delay="100" direction="up">
         <TwoCol heading={heading} content={content} />
       </StatelessTransition>

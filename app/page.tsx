@@ -1,6 +1,7 @@
 'use client';
 
 import Transition from '@/components/effects/Transition';
+import Padding from '@/components/layouts/Padding';
 import SocialLinks from '@/components/nav/SocialLinks';
 import About from '@/components/sections/About';
 import Footer from '@/components/sections/Footer';
@@ -20,10 +21,15 @@ export default function Home() {
       <Transition delay="100">
         <SocialLinks />
       </Transition>
-      <Hero />
-      <About />
-      <XP />
-      <Projects />
+
+      <Padding>
+        <div className="flex flex-col items-center">
+          <Hero />
+          <About />
+          <XP />
+          <Projects />
+        </div>
+      </Padding>
       <Footer />
     </main>
   );

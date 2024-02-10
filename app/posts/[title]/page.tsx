@@ -147,18 +147,20 @@ export default function Post({
 
   return (
     <Padding>
-      <StatelessTransition delay="100" direction="up">
-        <div className="pt-5 pb-10">
-          <article className="w-full  max-w-[1000px]">
-            <h1 className="decoration-wavy text-primary text-5xl">
-              {post?.title}
-            </h1>
-            <p className="text-stone-500 dark:text-stone-400 text-xs mb-8">
-              {post?.date}
-            </p>
-            {post?.content?.map((post, idx) => renderContentBlock(post, idx))}
-          </article>
-        </div>
+      <StatelessTransition
+        delay="100"
+        direction="up"
+        classname="flex flex-col items-center "
+      >
+        <article className="w-full max-w-[1000px]">
+          <h1 className="decoration-wavy text-primary text-5xl">
+            {post?.title}
+          </h1>
+          <p className="text-stone-500 dark:text-stone-400 text-xs mb-8">
+            {post?.date}
+          </p>
+          {post?.content?.map((post, idx) => renderContentBlock(post, idx))}
+        </article>
       </StatelessTransition>
     </Padding>
   );

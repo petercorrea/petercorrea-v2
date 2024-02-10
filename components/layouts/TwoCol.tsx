@@ -10,7 +10,7 @@ const TwoCol = ({
       <div className="relative md:-top-4 ">{heading}</div>
 
       <div className="flex flex-col lg:flex-row md:col-span-3">
-        <div className="mr-8 ml-0">{content}</div>
+        <div className="">{content}</div>
       </div>
     </div>
   );

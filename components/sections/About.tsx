@@ -1,4 +1,3 @@
-import Padding from '../layouts/Padding';
 import TwoCol from '../layouts/TwoCol';
 
 const heading = (
@@ -77,9 +76,9 @@ const content = (
 
 const About = () => {
   return (
-    <Padding id="about">
+    <div id="about">
       <TwoCol heading={heading} content={content} />
-    </Padding>
+    </div>
   );
 };
 

@@ -6,7 +6,7 @@ const Hover = ({ children }: HoverProps) => {
   return (
     <div className="relative flex flex-row group">
       <div
-        className={`bg-transparent border border-stone-100 relative z-10  rounded-xl  flex flex-col justify-between hover:cursor-pointer  transition ease-in max-w-[500px] p-4`}
+        className={`bg-transparent border border-stone-100 relative z-10  rounded-xl  flex flex-col justify-between hover:cursor-pointer  transition ease-in  p-4`}
       >
         {children}
       </div>

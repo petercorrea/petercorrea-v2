@@ -1,6 +1,5 @@
 import data from '@/db/content.json';
 import XPCard from '../XPCard';
-import Padding from '../layouts/Padding';
 import TwoCol from '../layouts/TwoCol';
 
 const heading = (
@@ -21,9 +20,9 @@ const content = (
 
 const XP = () => {
   return (
-    <Padding id="xp">
+    <div id="xp">
       <TwoCol heading={heading} content={content} />
-    </Padding>
+    </div>
   );
 };
 export default XP;

@@ -37,9 +37,11 @@ const content = (
 
 const Footer = () => {
   return (
-    <Padding id="contact" classname="lg:hidden bg-bauhausBlue">
-      <TwoCol heading={heading} content={content} />
-    </Padding>
+    <div id="contact" className="w-full lg:hidden bg-bauhausBlue">
+      <Padding>
+        <TwoCol heading={heading} content={content} />
+      </Padding>
+    </div>
   );
 };
 
