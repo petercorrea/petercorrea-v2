@@ -15,6 +15,7 @@ const DarkModeButton = () => {
     ).matches;
 
     systemTheme ? toggleDarkThemeOn() : toggleDarkThemeOff();
+    systemTheme ? darkMode.turnOnDarkMode() : darkMode.turnOffDarkMode();
   }, []);
 
   const handleOnClick = () => {
