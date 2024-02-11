@@ -3,7 +3,7 @@
   "title": "Programming Languages",
   "author": "Peter Correa",
   "date": "2024-01-07",
-  "description": "A survey of Programming Languages and the features that separate them.",
+  "description": "A survey of programming languages, the features that distinguishes them, and a bit of history.",
   "tags": ["languages"],
   "content": [
     { "type": "h2", "text": "Introduction" },
