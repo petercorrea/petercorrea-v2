@@ -18,11 +18,11 @@ const content = (
   </>
 );
 
-const XP = () => {
+const Work = () => {
   return (
     <div id="xp">
       <TwoCol heading={heading} content={content} />
     </div>
   );
 };
-export default XP;
+export default Work;

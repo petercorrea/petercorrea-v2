@@ -36,7 +36,7 @@ export default async function AFK() {
     <Padding>
       <div className="w-full mb-8">
         <h1 className="text-primary">afk</h1>
-        <p className="text-stone-500 dark:text-stone-400">
+        <p className="text-stone-600 dark:text-stone-400">
           Some of my favorite moments away from my keyboard.
         </p>
       </div>

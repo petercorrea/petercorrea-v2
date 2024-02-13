@@ -18,7 +18,7 @@ const XPCard = ({ experience: experience }: XPCardProps) => {
       {experience.responsibilities.map((item, idx) => (
         <p
           key={idx}
-          className="text-stone-500 leading-5 mb-3 dark:text-stone-400 small"
+          className="text-stone-600 leading-5 mb-3 dark:text-stone-400 small"
         >
           {item}
         </p>

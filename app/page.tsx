@@ -7,7 +7,7 @@ import About from '@/components/sections/About';
 import Footer from '@/components/sections/Footer';
 import Hero from '@/components/sections/Hero';
 import Projects from '@/components/sections/Projects';
-import XP from '@/components/sections/XP';
+import Work from '@/components/sections/Work';
 
 export default function Home() {
   console.log(
@@ -26,7 +26,7 @@ export default function Home() {
         <div className="flex flex-col items-center">
           <Hero />
           <About />
-          <XP />
+          <Work />
           <Projects />
         </div>
       </Padding>

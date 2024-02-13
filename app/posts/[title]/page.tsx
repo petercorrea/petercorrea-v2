@@ -132,7 +132,7 @@ export default function Post({
             {block.links?.map(
               (link: { href: string; text: string }, idx: number) => (
                 <Link href={link.href} key={idx}>
-                  <p className="text-sm text-stone-600 dark:text-stone-500 hover:text-blue-500 dark:hover:text-blue-500 ">
+                  <p className="text-sm text-stone-600 dark:text-stone-600 hover:text-blue-500 dark:hover:text-blue-500 ">
                     {link.text}
                   </p>
                 </Link>
@@ -154,7 +154,7 @@ export default function Post({
       >
         <article className="w-full max-w-[1000px]">
           <h1 className="text-primary mt-4">{post?.title}</h1>
-          <p className="text-stone-500 dark:text-stone-400 tiny mb-8">
+          <p className="text-stone-600 dark:text-stone-400 tiny mb-8">
             {post?.date}
           </p>
           {post?.content?.map((post, idx) => renderContentBlock(post, idx))}

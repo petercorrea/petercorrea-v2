@@ -22,7 +22,7 @@ const Hero = () => {
             <h1 className="text-primary md:text-6xl mb-5">
               Software Engineer & Saxophonist
             </h1>
-            <p className="dark:text-stone-400 text-stone-500 mb-4">
+            <p className="dark:text-stone-400 text-stone-600 mb-4">
               I&apos;m Peter, a Full Stack Engineer based in Florida. I
               specialize in creating engaging web experiences backed by
               resilient, scalable systems. You can often find me working with

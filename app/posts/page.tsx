@@ -23,9 +23,9 @@ const content = (
           href={`/posts/${post.href}`}
           className={`bg-transparent relative z-10  rounded-xl  flex flex-col justify-between hover:cursor-pointer  transition ease-in`}
         >
-          <h4 className="text-primary ">{post.title}</h4>
+          <h3 className="text-primary ">{post.title}</h3>
           <p className="small text-primary">{post.description}</p>
-          <p className="tiny text-stone-500">{post.date}</p>
+          <p className="tiny text-stone-600">{post.date}</p>
           <div className="flex flex-row">
             {post.tags.map((tag, idx) => (
               <Tag
