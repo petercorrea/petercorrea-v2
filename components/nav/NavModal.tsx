@@ -1,4 +1,5 @@
-import data from '@/db/content.json';
+import data from '@/content/text.json';
+import { routes } from '@/libs/constants';
 import useNavModal from '@/stores/useNavModal';
 import Link from 'next/link';
 import { FaGithub, FaLinkedinIn, FaYoutube } from 'react-icons/fa';
@@ -15,19 +16,6 @@ const NavModal = ({ isOpen }: NavModalProps) => {
     navModal.onClose();
   };
 
-  const links = [
-    { text: 'about', href: '/#about' },
-    { text: 'xp', href: '/#xp' },
-    { text: 'projects', href: '/#projects' },
-    { text: 'posts', href: '/posts' },
-    { text: 'afk', href: '/afk' },
-    {
-      text: 'resume',
-      href: '/Peter Correa Resume.pdf',
-      download: 'Peter Correa Resume',
-    },
-  ];
-
   return (
     <div
       className={`${
@@ -43,15 +31,15 @@ const NavModal = ({ isOpen }: NavModalProps) => {
 
       <div className="flex flex-col justify-center items-center w-full">
         <div className="flex flex-col items-center ">
-          {links.map((link, idx) => (
+          {routes.map((route, idx) => (
             <Link
-              href={link.href}
-              download={link.download}
+              href={route.href}
+              download={route.download}
               className="text-primary hover:underline hover:text-blue-500 p-4 px-20 w-full text-center"
               onClick={handleOnClick}
               key={idx}
             >
-              {link.text}
+              {route.text}
             </Link>
           ))}
         </div>

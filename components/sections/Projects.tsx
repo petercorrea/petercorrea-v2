@@ -1,4 +1,4 @@
-import data from '@/db/content.json';
+import data from '@/content/text.json';
 import ProjectCard from '../ProjectCard';
 import TwoCol from '../layouts/TwoCol';
 

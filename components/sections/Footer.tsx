@@ -1,4 +1,4 @@
-import data from '@/db/content.json';
+import data from '@/content/text.json';
 import Link from 'next/link';
 import { FaGithub, FaLinkedinIn, FaYoutube } from 'react-icons/fa';
 import { MdAlternateEmail } from 'react-icons/md';

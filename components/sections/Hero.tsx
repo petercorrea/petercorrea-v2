@@ -1,5 +1,5 @@
 import Transition from '@/components/effects/Transition';
-import data from '@/db/content.json';
+import data from '@/content/text.json';
 import Image from 'next/image';
 import Link from 'next/link';
 import { FaGithub, FaLinkedinIn, FaYoutube } from 'react-icons/fa';

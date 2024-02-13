@@ -1,5 +1,6 @@
 'use client';
 import DarkModeButton from '@/components/nav/DarkModeButton';
+import { routes } from '@/libs/constants';
 import useNavModal from '@/stores/useNavModal';
 import Link from 'next/link';
 import { FaHamburger } from 'react-icons/fa';
@@ -16,19 +17,6 @@ const Navbar = () => {
       navModal.onOpen();
     }
   };
-
-  const links = [
-    { text: 'about', href: '/#about' },
-    { text: 'xp', href: '/#xp' },
-    { text: 'projects', href: '/#projects' },
-    { text: 'posts', href: '/posts' },
-    { text: 'afk', href: '/afk' },
-    {
-      text: 'resume',
-      href: '/Peter Correa Resume.pdf',
-      download: 'Peter Correa Resume',
-    },
-  ];
 
   return (
     <>
@@ -50,14 +38,14 @@ const Navbar = () => {
       <Transition delay="100" direction="down">
         <div className="hidden md:flex flex-row w-full justify-end items-center p-3 px-6 ">
           <div className="flex flex-row justify-end items-center opacity-80 backdrop-blur-xl">
-            {links.map((link, idx) => (
+            {routes.map((route, idx) => (
               <Link
                 key={idx}
-                href={link.href}
-                download={link.download}
-                className="flex flex-row justify-center dark:text-stone-400 text-stone-500 rounded-full hover:text-blue-500 dark:hover:text-blue-500 hover:underline hover:underline-offset-1 mr-4"
+                href={route.href}
+                download={route.download}
+                className="flex flex-row justify-center  text-primary rounded-full hover:text-blue-500 dark:hover:text-blue-500 hover:underline hover:underline-offset-1 mr-4"
               >
-                {link.text}
+                {route.text}
               </Link>
             ))}
             <DarkModeButton />

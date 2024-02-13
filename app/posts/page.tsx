@@ -3,7 +3,7 @@ import Hover from '@/components/effects/Hover';
 import StatelessTransition from '@/components/effects/StatelessTransition';
 import Padding from '@/components/layouts/Padding';
 import TwoCol from '@/components/layouts/TwoCol';
-import { postsmap } from '@/db/posts/postsmap';
+import { postsmap } from '@/libs/constants';
 import Link from 'next/link';
 
 let posts = Object.values(postsmap);
