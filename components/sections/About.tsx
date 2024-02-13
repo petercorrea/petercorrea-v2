@@ -45,7 +45,7 @@ const content = (
     <p className="underline font-light inline text-bauhausBlue decoration-wavy">
       improving
     </p>
-    <p className=" font-light inline dark:text-stone-400 text-stone-500">
+    <p className="font-light inline dark:text-stone-400 text-stone-500">
       {' '}
       developer experiences, writing test cases, and integrating APIs. When
       I&apos;m not coding, I&apos;m{' '}

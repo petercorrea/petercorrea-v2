@@ -45,7 +45,7 @@ const NavModal = ({ isOpen }: NavModalProps) => {
         </div>
 
         <div className="flex flex-row w-full h-full justify-center items-center mt-20">
-          <a href={data.contact.mailto} className=" mr-4">
+          <a href={data.contact.mailto} className="mr-4">
             <MdAlternateEmail
               size={20}
               className="text-primary mr-10 hover:text-blue-500 transition duration-0"
