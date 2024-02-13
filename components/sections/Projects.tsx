@@ -3,7 +3,7 @@ import ProjectCard from '../ProjectCard';
 import TwoCol from '../layouts/TwoCol';
 
 const heading = (
-  <h1 className="md:pt-4 mb-4 md:mb-0 text-bauhausBlue md:sticky top-0 lowercase min-w-fit h-fit">
+  <h1 className="mb-4 md:mb-0 text-bauhausBlue md:sticky top-0 lowercase min-w-fit h-fit">
     Projects
   </h1>
 );

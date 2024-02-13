@@ -1,7 +1,7 @@
 import TwoCol from '../layouts/TwoCol';
 
 const heading = (
-  <h1 className="md:pt-4 text-bauhausRed md:sticky top-0 lowercase mb-4 md:mb-0 min-w-fit h-fit">
+  <h1 className="text-bauhausRed md:sticky top-0 lowercase mb-4 md:mb-0 min-w-fit h-fit">
     about peter
   </h1>
 );
