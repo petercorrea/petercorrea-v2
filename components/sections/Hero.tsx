@@ -34,22 +34,34 @@ const Hero = () => {
             <div className="flex flex-row">
               <Transition delay="100" direction="up">
                 <a href={data.contact.mailto}>
-                  <MdAlternateEmail size={20} className="text-primary mr-4" />
+                  <MdAlternateEmail
+                    size={20}
+                    className="text-primary mr-4 hover:text-blue-500 duration-0"
+                  />
                 </a>
               </Transition>
               <Transition delay="150" direction="up">
                 <Link href={data.contact.linkedin}>
-                  <FaLinkedinIn size={20} className="text-primary mr-4" />
+                  <FaLinkedinIn
+                    size={20}
+                    className="text-primary mr-4 hover:text-blue-500 duration-0"
+                  />
                 </Link>
               </Transition>
               <Transition delay="200" direction="up">
                 <Link href={data.contact.github}>
-                  <FaGithub size={20} className="text-primary mr-4" />
+                  <FaGithub
+                    size={20}
+                    className="text-primary mr-4 hover:text-blue-500 duration-0"
+                  />
                 </Link>
               </Transition>
               <Transition delay="250" direction="up">
                 <Link href={data.contact.youtube}>
-                  <FaYoutube size={20} className="text-primary mr-1" />
+                  <FaYoutube
+                    size={20}
+                    className="text-primary mr-1 hover:text-blue-500 duration-0"
+                  />
                 </Link>
               </Transition>
             </div>
