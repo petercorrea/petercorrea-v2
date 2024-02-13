@@ -26,19 +26,19 @@ export default function Post({
     switch (block.type) {
       case 'h1':
         return (
-          <h1 className="text-primary text-5xl" key={idx}>
+          <h1 className="text-primary" key={idx}>
             {block.text}
           </h1>
         );
       case 'h2':
         return (
-          <h2 className="text-primary text-xl font-bold mt-8" key={idx}>
+          <h2 className="text-primary mt-8" key={idx}>
             {block.text}
           </h2>
         );
       case 'h3':
         return (
-          <h3 className="text-primary font-medium mt-8" key={idx}>
+          <h3 className="text-primary mt-8" key={idx}>
             {block.text}
           </h3>
         );
@@ -46,7 +46,7 @@ export default function Post({
         return (
           <span key={idx}>
             <span
-              className={`font-light text-primary dark:text-stone-400 ${block.classes}`}
+              className={`text-primary dark:text-stone-400 ${block.classes}`}
             >
               {block.text}
             </span>{' '}
@@ -67,7 +67,7 @@ export default function Post({
         return (
           <span key={idx}>
             <p
-              className={`inline font-light text-primary dark:text-black bg-yellow-500 ${block.classes}`}
+              className={`inline text-primary dark:text-black bg-yellow-500 ${block.classes}`}
             >
               {block.text}
             </p>{' '}
@@ -84,7 +84,7 @@ export default function Post({
       case 'paragraph':
         return (
           <div key={idx}>
-            <p className={`font-light  dark:text-stone-400 ${block.classes}`}>
+            <p className={` dark:text-stone-400 ${block.classes}`}>
               {block.text}
             </p>
             <br />
@@ -121,7 +121,7 @@ export default function Post({
           <span key={idx}>
             <br />
             <br />
-            <span className={`font-light dark:text-stone-400 ${block.classes}`}>
+            <span className={`dark:text-stone-400 ${block.classes}`}>
               {block.text}
             </span>{' '}
           </span>
@@ -132,7 +132,7 @@ export default function Post({
             {block.links?.map(
               (link: { href: string; text: string }, idx: number) => (
                 <Link href={link.href} key={idx}>
-                  <p className="font-light text-sm text-stone-600 dark:text-stone-500 hover:text-blue-500 dark:hover:text-blue-500 ">
+                  <p className="text-sm text-stone-600 dark:text-stone-500 hover:text-blue-500 dark:hover:text-blue-500 ">
                     {link.text}
                   </p>
                 </Link>
@@ -153,10 +153,8 @@ export default function Post({
         classname="flex flex-col items-center "
       >
         <article className="w-full max-w-[1000px]">
-          <h1 className="decoration-wavy text-primary text-5xl">
-            {post?.title}
-          </h1>
-          <p className="text-stone-500 dark:text-stone-400 text-xs mb-8">
+          <h1 className="text-primary mt-4">{post?.title}</h1>
+          <p className="text-stone-500 dark:text-stone-400 tiny mb-8">
             {post?.date}
           </p>
           {post?.content?.map((post, idx) => renderContentBlock(post, idx))}

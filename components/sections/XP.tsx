@@ -4,7 +4,7 @@ import TwoCol from '../layouts/TwoCol';
 
 const heading = (
   <>
-    <h1 className="mb-4 md:mb-0 min-w-fit text-bauhausYellow text-5xl font-extrabold md:sticky top-0 lowercase h-fit">
+    <h1 className="mb-4 md:mb-0 min-w-fit text-bauhausYellow md:sticky top-0 lowercase h-fit">
       work
     </h1>
   </>

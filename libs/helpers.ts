@@ -1,5 +1,5 @@
 export const toggleDarkThemeOn = () => {
-  document.querySelector('html')?.setAttribute('data-theme', 'darky');
+  document.querySelector('html')?.setAttribute('data-theme', 'dark');
   document.documentElement.classList.add('dark');
 };
 

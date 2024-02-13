@@ -15,14 +15,14 @@ const Hero = () => {
               <div className="w-2 h-2 rounded-full bg-green-600 mr-1">
                 <div className="animate-ping w-2 h-2 rounded-full bg-green-600 mr-1"></div>
               </div>
-              <p className="text-green-600 text-xs font-semibold">
+              <p className="text-green-600 tiny font-semibold">
                 Available for hire
               </p>
             </div>
-            <h1 className="text-primary text-4xl md:text-6xl font-extrabold mb-5">
+            <h1 className="text-primary md:text-6xl mb-5">
               Software Engineer & Saxophonist
             </h1>
-            <p className="font-light dark:text-stone-400 text-stone-500 mb-4">
+            <p className="dark:text-stone-400 text-stone-500 mb-4">
               I&apos;m Peter, a Full Stack Engineer based in Florida. I
               specialize in creating engaging web experiences backed by
               resilient, scalable systems. You can often find me working with

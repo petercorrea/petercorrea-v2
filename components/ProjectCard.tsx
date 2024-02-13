@@ -13,9 +13,9 @@ interface ProjectCardProps {
 const ProjectCard = ({ project, idx }: ProjectCardProps) => {
   return (
     <Hover>
-      <div className="">
+      <div>
         {/* text */}
-        <div className="">
+        <div>
           <Link
             href={
               project.production_url ||
@@ -27,18 +27,18 @@ const ProjectCard = ({ project, idx }: ProjectCardProps) => {
               {0}
               {idx}
             </p>
-            <h1 className="text-primary text-3xl font-semibold mb-2 w-fit text-wrap underline">
+            <h2 className="text-primary mb-2 w-fit text-wrap underline">
               {project.title}
-            </h1>
+            </h2>
           </Link>
 
-          <p className="text-primary dark:text-stone-400 text-sm mb-10 font-light">
+          <p className="text-primary dark:text-stone-400 small mb-10">
             {project.description}
           </p>
         </div>
 
         {/* image */}
-        <div className="">
+        <div>
           <Link
             href={
               project.production_url ||
@@ -53,7 +53,7 @@ const ProjectCard = ({ project, idx }: ProjectCardProps) => {
         </div>
 
         {/* tags */}
-        <div className="">
+        <div>
           <div className="flex flex-row items-start justify-between">
             <div className="flex flex-row flex-wrap">
               {project.tags.map((item, idx) => (
@@ -66,7 +66,7 @@ const ProjectCard = ({ project, idx }: ProjectCardProps) => {
             </div>
 
             {project.youtube_url ? (
-              <Link href={project.youtube_url} className="">
+              <Link href={project.youtube_url}>
                 <FaYoutube size={35} color="red" />
               </Link>
             ) : (
@@ -74,7 +74,7 @@ const ProjectCard = ({ project, idx }: ProjectCardProps) => {
             )}
 
             {project.github_url ? (
-              <Link href={project.github_url} className="">
+              <Link href={project.github_url}>
                 <FaGithub size={35} color="#6cc644" />
               </Link>
             ) : (

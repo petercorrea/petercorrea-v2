@@ -29,7 +29,7 @@ const DarkModeButton = () => {
   };
 
   return (
-    <button onClick={handleOnClick} className="">
+    <button onClick={handleOnClick}>
       <HiOutlineMoon
         size={20}
         className="duration-0 flex dark:hidden dark:text-stone-400 text-primary hover:text-blue-500 dark:hover:text-blue-500"

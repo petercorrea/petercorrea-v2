@@ -27,7 +27,7 @@ body {
   }
 }
 
-html[data-theme='darky'] {
+html[data-theme='dark'] {
   --color-primary: white;
   --color-opposite: black;
   --background: black;
@@ -38,11 +38,46 @@ html[data-theme='darky'] {
 }
 
 h1 {
-  font-size: x-large;
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 800;
 }
 
 h2 {
-  font-size: large;
+  font-size: 1.875rem /* 30px */;
+  line-height: 2.25rem /* 36px */;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.25rem /* 20px */;
+  line-height: 1.75rem /* 28px */;
+  font-weight: 700;
+}
+
+h4 {
+  font-weight: 400;
+}
+
+h5 {
+  font-size: 0.875rem /* 14px */;
+  line-height: 1.25rem /* 20px */;
+  font-weight: 300;
+}
+
+span,
+p {
+  font-weight: 200;
+}
+
+.small {
+  font-size: 0.875rem /* 14px */;
+  line-height: 1.25rem /* 20px */;
+}
+
+.tiny {
+  font-size: 0.75rem /* 12px */;
+  line-height: 1rem /* 16px */;
 }
 
 @keyframes slideAndFade {

@@ -6,16 +6,14 @@ import Padding from '../layouts/Padding';
 import TwoCol from '../layouts/TwoCol';
 
 const heading = (
-  <h1 className="text-white text-3xl font-semibold sticky top-0 lowercase pb-10 md:pb-0">
-    Contact
-  </h1>
+  <h1 className="text-white sticky top-0 lowercase pb-10 md:pb-0">Contact</h1>
 );
 
 const content = (
   <>
     <div className="flex flex-col w-full">
-      <h1 className="text-white text-2xl">{data.contact.name}</h1>
-      <h1 className="text-white text-2xl mb-4">{data.contact.title}</h1>
+      <h2 className="text-white ">{data.contact.name}</h2>
+      <h2 className="text-white mb-4">{data.contact.title}</h2>
 
       <div className="flex flex-row">
         <a href={data.contact.mailto}>

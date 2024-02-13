@@ -9,11 +9,7 @@ const Tag = ({ text, classname, textColor }: TagProps) => {
     <div
       className={`h-fit rounded-full p-1 px-3 flex flex-row justify-center items-center mr-2 mb-2 shadow-lg  ${classname}`}
     >
-      <p
-        className={`text-xs font-100 ${
-          textColor ? textColor : 'text-white'
-        } lowercase`}
-      >
+      <p className={`tiny ${textColor ? textColor : 'text-white'} lowercase`}>
         {text}
       </p>
     </div>

@@ -25,7 +25,7 @@ export default function CodeBlock({
     <div className="my-10 overflow-auto max-w-screen">
       <pre className="rounded-3xl">
         <code
-          className="language-javascript"
+          className={`language-${language || 'javascript'}`}
           dangerouslySetInnerHTML={{ __html: highlightedCode }}
         ></code>
       </pre>
