@@ -106,7 +106,7 @@
     },
     {
       "type": "span",
-      "text": "The programmer must explicitly specify the sequence of operations required to solve a problem, controlling the computer's architecture directly. Below is a simple example of this, take not of how explicit each step is."
+      "text": "The programmer must explicitly specify the sequence of operations required to solve a problem, controlling the computer's architecture directly. Below is a simple example of this, take note of how explicit each step is."
     },
     {
       "type": "code",
