@@ -23,7 +23,7 @@ const ProjectCard = ({ project, idx }: ProjectCardProps) => {
               project.general_url
             }
           >
-            <p className="text-primary">
+            <p className="text-primary dark:text-primary">
               {0}
               {idx}
             </p>
