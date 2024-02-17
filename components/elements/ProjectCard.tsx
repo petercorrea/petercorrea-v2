@@ -2,8 +2,8 @@ import { Project } from '@/types/types';
 import Image from 'next/image';
 import Link from 'next/link';
 import { FaGithub, FaYoutube } from 'react-icons/fa';
+import Hover from '../effects/Hover';
 import Tag from './Tag';
-import Hover from './effects/Hover';
 
 interface ProjectCardProps {
   project: Project;

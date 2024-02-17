@@ -1,6 +1,6 @@
-import Tag from '@/components/Tag';
 import Hover from '@/components/effects/Hover';
 import StatelessTransition from '@/components/effects/StatelessTransition';
+import Tag from '@/components/elements/Tag';
 import Padding from '@/components/layouts/Padding';
 import TwoCol from '@/components/layouts/TwoCol';
 import { postsMap } from '@/libs/constants';

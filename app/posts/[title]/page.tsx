@@ -1,5 +1,5 @@
-import CodeBlock from '@/components/CodeBlock';
 import StatelessTransition from '@/components/effects/StatelessTransition';
+import CodeBlock from '@/components/elements/CodeBlock';
 import Padding from '@/components/layouts/Padding';
 import { postsMap } from '@/libs/constants';
 import { ContentBlock } from '@/types/types';

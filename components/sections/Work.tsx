@@ -1,5 +1,5 @@
 import data from '@/content/text.json';
-import XPCard from '../XPCard';
+import XPCard from '../elements/XPCard';
 import TwoCol from '../layouts/TwoCol';
 
 const heading = (

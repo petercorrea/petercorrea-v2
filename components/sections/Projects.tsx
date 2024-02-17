@@ -1,5 +1,5 @@
 import data from '@/content/text.json';
-import ProjectCard from '../ProjectCard';
+import ProjectCard from '../elements/ProjectCard';
 import TwoCol from '../layouts/TwoCol';
 
 const heading = (
