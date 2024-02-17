@@ -12,8 +12,8 @@ const heading = (
 const content = (
   <>
     <div className="flex flex-col w-full">
-      <h2 className="text-white ">{data.contact.name}</h2>
-      <h2 className="text-white mb-4">{data.contact.title}</h2>
+      <h3 className="text-white ">{data.contact.name}</h3>
+      <h3 className="text-white mb-4">{data.contact.title}</h3>
 
       <div className="flex flex-row">
         <a href={data.contact.mailto}>
