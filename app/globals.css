@@ -91,12 +91,12 @@ p {
   font-weight: 200;
 }
 
-.small {
+.font-small {
   font-size: 0.875rem /* 14px */;
   line-height: 1.25rem /* 20px */;
 }
 
-.tiny {
+.font-tiny {
   font-size: 0.75rem /* 12px */;
   line-height: 1rem /* 16px */;
 }

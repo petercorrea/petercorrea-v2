@@ -18,7 +18,7 @@ const XPCard = ({ experience: experience }: XPCardProps) => {
       {experience.responsibilities.map((item, idx) => (
         <p
           key={idx}
-          className="text-stone-600 leading-5 mb-3 dark:text-stone-400 small"
+          className="text-stone-600 mb-3 dark:text-stone-400 font-small"
         >
           {item}
         </p>
@@ -26,12 +26,7 @@ const XPCard = ({ experience: experience }: XPCardProps) => {
 
       <div className="flex flex-row flex-wrap">
         {experience.skills.map((item, idx) => (
-          <Tag
-            key={idx}
-            text={item}
-            classname="bg-bauhausYellow"
-            textColor="text-stone-900 dark:text-stone-900"
-          />
+          <Tag key={idx} text={item} />
         ))}
       </div>
     </div>

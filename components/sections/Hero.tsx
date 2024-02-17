@@ -15,7 +15,7 @@ const Hero = () => {
               <div className="w-2 h-2 rounded-full bg-green-600 mr-1">
                 <div className="animate-ping w-2 h-2 rounded-full bg-green-600 mr-1"></div>
               </div>
-              <p className="text-green-600 dark:text-green-600 tiny font-semibold">
+              <p className="text-green-600 dark:text-green-600 font-tiny font-semibold">
                 Available for hire
               </p>
             </div>

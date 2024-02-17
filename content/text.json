@@ -178,7 +178,7 @@
     },
     {
       "type": "video",
-      "title": "The JavaScript Runtime Engine",
+      "title": "The JS Runtime Engine",
       "description": "A high level overview of the event loop and task queues powering the JS engine.",
       "github_url": "",
       "youtube_url": "https://youtu.be/9uAosfffLKc",
@@ -190,7 +190,7 @@
     },
     {
       "type": "video",
-      "title": "Inheritance and Object Oriented Programming",
+      "title": "OOP in JS",
       "description": "A review of some of the most popular design patterns, prototypal inheritance and object oriented programming in JS.",
       "github_url": "",
       "youtube_url": "https://youtu.be/x1kp0y_-zp8",
@@ -202,7 +202,7 @@
     },
     {
       "type": "article",
-      "title": "On playing the saxophone and Berklee College of Music",
+      "title": "Saxophone, Berklee, & Code",
       "description": "An written interview about me and my journey from music to tech.",
       "github_url": "",
       "youtube_url": "",

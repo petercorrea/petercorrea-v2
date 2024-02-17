@@ -24,11 +24,11 @@ const content = (
           className={`bg-transparent relative z-10  rounded-xl  flex flex-col justify-between hover:cursor-pointer  transition ease-in`}
         >
           <h3 className="text-primary ">{post.title}</h3>
-          <p className="small text-primary">{post.description}</p>
-          <p className="tiny text-stone-600">{post.date}</p>
+          <p className="font-small text-primary">{post.description}</p>
+          <p className="font-tiny text-stone-600 mb-2">{post.date}</p>
           <div className="flex flex-row">
             {post.tags.map((tag, idx) => (
-              <Tag text={tag} key={idx} classname="w-fit bg-bauhausBlue my-5" />
+              <Tag text={tag} key={idx} />
             ))}
           </div>
         </Link>
