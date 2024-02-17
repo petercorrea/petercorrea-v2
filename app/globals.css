@@ -27,6 +27,14 @@ body {
   }
 }
 
+/* Dark Mode */
+html[data-theme='dark'] {
+  --color-primary: white;
+  --color-opposite: black;
+  --background: black;
+}
+
+/* Custom Styles */
 .wavy {
   @apply underline decoration-wavy;
 }
@@ -47,13 +55,6 @@ body {
 }
 .bauhausYellow {
   @apply text-bauhausYellow dark:text-bauhausYellow;
-}
-
-/* Dark Mode */
-html[data-theme='dark'] {
-  --color-primary: white;
-  --color-opposite: black;
-  --background: black;
 }
 
 /* Typography */

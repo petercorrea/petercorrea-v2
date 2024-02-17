@@ -28,12 +28,7 @@ const content = (
           <p className="tiny text-stone-600">{post.date}</p>
           <div className="flex flex-row">
             {post.tags.map((tag, idx) => (
-              <Tag
-                text={tag}
-                key={idx}
-                classname="w-fit bg-bauhausBlue my-5"
-                textColor="text-white"
-              />
+              <Tag text={tag} key={idx} classname="w-fit bg-bauhausBlue my-5" />
             ))}
           </div>
         </Link>

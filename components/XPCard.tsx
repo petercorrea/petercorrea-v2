@@ -30,7 +30,7 @@ const XPCard = ({ experience: experience }: XPCardProps) => {
             key={idx}
             text={item}
             classname="bg-bauhausYellow"
-            textColor="text-stone-600"
+            textColor="text-stone-900 dark:text-stone-900"
           />
         ))}
       </div>

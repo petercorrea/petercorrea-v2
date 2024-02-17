@@ -57,11 +57,7 @@ const ProjectCard = ({ project, idx }: ProjectCardProps) => {
           <div className="flex flex-row items-start justify-between">
             <div className="flex flex-row flex-wrap">
               {project.tags.map((item, idx) => (
-                <Tag
-                  key={idx}
-                  text={item}
-                  classname="text-white bg-bauhausBlue"
-                />
+                <Tag key={idx} text={item} classname="bg-bauhausBlue" />
               ))}
             </div>
 
