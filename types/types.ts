@@ -29,10 +29,6 @@ export type ContentBlock = {
   code?: string;
   component?: string | JSXElementConstructor<HTMLElement>;
   classes?: string;
-  links?: {
-    text: string;
-    href: string;
-  }[];
 };
 
 export type Post = {
@@ -53,4 +49,8 @@ export type Post = {
     | 'react'
     | 'nextjs';
   content: ContentBlock[];
+  bibliography?: {
+    text: string;
+    href: string;
+  }[];
 };

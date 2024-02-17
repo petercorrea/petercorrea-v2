@@ -37,7 +37,7 @@ export default async function AFK() {
       <div className="w-full mb-8">
         <h1 className="text-primary">afk</h1>
         <p className="text-stone-600 dark:text-stone-400">
-          Some of my favorite moments away from my keyboard.
+          Some of my favorite moments away from keyboard.
         </p>
       </div>
       <div className="w-full min-h-[300px] flex flex-col md:flex-row flex-wrap justify-evenly rounded-xl">

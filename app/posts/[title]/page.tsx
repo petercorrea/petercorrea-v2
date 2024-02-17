@@ -1,13 +1,13 @@
 import CodeBlock from '@/components/CodeBlock';
 import StatelessTransition from '@/components/effects/StatelessTransition';
 import Padding from '@/components/layouts/Padding';
-import { postsmap } from '@/libs/constants';
+import { postsMap } from '@/libs/constants';
 import { ContentBlock } from '@/types/types';
 import Link from 'next/link';
 import React from 'react';
 
 export const generateStaticParams = async () => {
-  let posts = Object.values(postsmap);
+  let posts = Object.values(postsMap);
   return posts.map((post, idx) => ({
     title: post.title,
     idx: idx,
@@ -17,10 +17,10 @@ export const generateStaticParams = async () => {
 export default function Post({
   params,
 }: {
-  params: { title: keyof typeof postsmap };
+  params: { title: keyof typeof postsMap };
 }) {
   const { title } = params;
-  const post = postsmap[title];
+  const post = postsMap[title];
 
   const renderContentBlock = (block: ContentBlock, idx: number) => {
     switch (block.type) {
@@ -126,20 +126,6 @@ export default function Post({
             </span>{' '}
           </span>
         );
-      case 'links':
-        return (
-          <div key={idx}>
-            {block.links?.map(
-              (link: { href: string; text: string }, idx: number) => (
-                <Link href={link.href} key={idx}>
-                  <p className="text-sm text-stone-600 dark:text-stone-600 hover:text-blue-500 dark:hover:text-blue-500 ">
-                    {link.text}
-                  </p>
-                </Link>
-              )
-            )}
-          </div>
-        );
       default:
         return null;
     }
@@ -158,6 +144,19 @@ export default function Post({
             {post?.date}
           </p>
           {post?.content?.map((post, idx) => renderContentBlock(post, idx))}
+
+          <h2 className="text-primary mt-8">Further Reading & Bibliography</h2>
+          <div>
+            {post?.bibliography?.map(
+              (link: { href: string; text: string }, idx: number) => (
+                <Link href={link.href} key={idx}>
+                  <p className="text-sm text-stone-600 dark:text-stone-600 hover:text-blue-500 dark:hover:text-blue-500 ">
+                    {link.text}
+                  </p>
+                </Link>
+              )
+            )}
+          </div>
         </article>
       </StatelessTransition>
     </Padding>

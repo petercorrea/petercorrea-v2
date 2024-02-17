@@ -745,35 +745,28 @@
     {
       "type": "span",
       "text": "For example, JavaScript’s expansion into server-side development with Node.js and the growing use of TypeScript for type safety in large-scale JavaScript applications."
+    }
+  ],
+  "bibliography": [
+    {
+      "text": "Programming Languages: History and Future",
+      "href": "https://dl.acm.org/doi/10.1145/361454.361485"
     },
     {
-      "type": "h2",
-      "text": "Further Reading & Bibliography"
+      "text": "Programming Languages and Systems: A Historical Survey",
+      "href": "https://dl.acm.org/doi/pdf/10.1145/1464122.1464124"
     },
     {
-      "type": "links",
-      "links": [
-        {
-          "text": "Programming Languages: History and Future",
-          "href": "https://dl.acm.org/doi/10.1145/361454.361485"
-        },
-        {
-          "text": "Programming Languages and Systems: A Historical Survey",
-          "href": "https://dl.acm.org/doi/pdf/10.1145/1464122.1464124"
-        },
-        {
-          "text": "Plankalkül: The First High-Level Programming Language and its Implementation",
-          "href": "https://ftp.mi.fu-berlin.de/pub/reports/TR-B-00-03.pdf"
-        },
-        {
-          "text": "Concepts of Programming Languages",
-          "href": "https://www.ime.usp.br/~alvaroma/ucsp/proglang/book.pdf"
-        },
-        {
-          "text": "Programming Languages: Design and Implementation",
-          "href": "https://archive.org/details/programminglangu00prat/page/n5/mode/2up"
-        }
-      ]
+      "text": "Plankalkül: The First High-Level Programming Language and its Implementation",
+      "href": "https://ftp.mi.fu-berlin.de/pub/reports/TR-B-00-03.pdf"
+    },
+    {
+      "text": "Concepts of Programming Languages",
+      "href": "https://www.ime.usp.br/~alvaroma/ucsp/proglang/book.pdf"
+    },
+    {
+      "text": "Programming Languages: Design and Implementation",
+      "href": "https://archive.org/details/programminglangu00prat/page/n5/mode/2up"
     }
   ]
 }

@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Base Styles */
+* {
+  box-sizing: border-box;
+}
+
 :root,
 html,
 body {
@@ -9,34 +14,49 @@ body {
   background: var(--background);
 }
 
-* {
-  box-sizing: border-box;
-  /* border: 1px solid blue; */
-}
-
-* {
-  @apply transition-colors duration-200;
-}
-
-/* base theme settings */
 @layer base {
   html {
     --color-primary: black;
     --color-opposite: white;
     --background: white;
   }
+
+  p,
+  span {
+    @apply dark:text-stone-400 text-stone-600;
+  }
 }
 
+.wavy {
+  @apply underline decoration-wavy;
+}
+
+.dbl-underline {
+  @apply underline decoration-double;
+}
+
+.dashed {
+  @apply underline decoration-dashed;
+}
+
+.bauhausRed {
+  @apply text-bauhausRed dark:text-bauhausRed;
+}
+.bauhausBlue {
+  @apply text-bauhausBlue dark:text-bauhausBlue;
+}
+.bauhausYellow {
+  @apply text-bauhausYellow dark:text-bauhausYellow;
+}
+
+/* Dark Mode */
 html[data-theme='dark'] {
   --color-primary: white;
   --color-opposite: black;
   --background: black;
 }
 
-.tech-imgs img {
-  filter: grayscale(100%);
-}
-
+/* Typography */
 h1 {
   font-size: 3rem;
   line-height: 1;
@@ -80,6 +100,11 @@ p {
   line-height: 1rem /* 16px */;
 }
 
+/* Effects */
+* {
+  @apply transition-colors duration-200;
+}
+
 @keyframes slideAndFade {
   from {
     transform: translateY(20px);
@@ -93,4 +118,9 @@ p {
 
 .animate-up {
   animation: slideAndFade 0.5s ease-in-out forwards;
+}
+
+/* Specific Classes */
+.tech-imgs img {
+  filter: grayscale(100%);
 }

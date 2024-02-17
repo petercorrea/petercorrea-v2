@@ -13,6 +13,6 @@ export const routes = [
   },
 ];
 
-export const postsmap = {
+export const postsMap = {
   'programming-languages': programmingLanguages,
 };

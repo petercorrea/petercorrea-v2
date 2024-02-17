@@ -3,10 +3,10 @@ import Hover from '@/components/effects/Hover';
 import StatelessTransition from '@/components/effects/StatelessTransition';
 import Padding from '@/components/layouts/Padding';
 import TwoCol from '@/components/layouts/TwoCol';
-import { postsmap } from '@/libs/constants';
+import { postsMap } from '@/libs/constants';
 import Link from 'next/link';
 
-let posts = Object.values(postsmap);
+let posts = Object.values(postsMap);
 
 const heading = (
   <h1 className="md:pt-4 text-bauhausBlue md:sticky top-0 lowercase mb-4 md:mb-0 min-w-fit h-fit">
