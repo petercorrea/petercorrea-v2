@@ -8,7 +8,7 @@ export const routes = [
   { text: 'afk', href: '/afk' },
 ];
 
-export const resume = '/Peter_Correa_resume.pdf';
+export const resume = '/Peter_Correa_Resume.pdf';
 
 export const postsMap = {
   'programming-languages': programmingLanguages,
