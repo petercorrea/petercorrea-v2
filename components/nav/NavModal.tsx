@@ -1,5 +1,5 @@
 import data from '@/content/text.json';
-import { routes } from '@/libs/constants';
+import { resume, routes } from '@/libs/constants';
 import useNavModal from '@/stores/useNavModal';
 import Link from 'next/link';
 import { FaGithub, FaLinkedinIn, FaYoutube } from 'react-icons/fa';
@@ -34,7 +34,6 @@ const NavModal = ({ isOpen }: NavModalProps) => {
           {routes.map((route, idx) => (
             <Link
               href={route.href}
-              download={route.download ? true : false}
               className="text-primary hover:underline hover:text-blue-500 p-4 px-20 w-full text-center"
               onClick={handleOnClick}
               key={idx}
@@ -42,6 +41,12 @@ const NavModal = ({ isOpen }: NavModalProps) => {
               {route.text}
             </Link>
           ))}
+          <a
+            href={resume}
+            className="text-primary hover:underline hover:text-blue-500 p-4 px-20 w-full text-center"
+          >
+            resume
+          </a>
         </div>
 
         <div className="flex flex-row w-full h-full justify-center items-center mt-20">
