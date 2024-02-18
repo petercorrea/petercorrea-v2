@@ -8,7 +8,7 @@ export const routes = [
   { text: 'afk', href: '/afk' },
   {
     text: 'resume',
-    href: '/Peter Correa Resume.pdf',
+    href: '/Peter%20Correa%20Resume.pdf',
     download: 'Peter Correa Resume',
   },
 ];
