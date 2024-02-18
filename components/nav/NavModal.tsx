@@ -34,7 +34,6 @@ const NavModal = ({ isOpen }: NavModalProps) => {
           {routes.map((route, idx) => (
             <Link
               href={route.href}
-              download={route.download}
               className="text-primary hover:underline hover:text-blue-500 p-4 px-20 w-full text-center"
               onClick={handleOnClick}
               key={idx}
@@ -42,6 +41,13 @@ const NavModal = ({ isOpen }: NavModalProps) => {
               {route.text}
             </Link>
           ))}
+          <a
+            href="/Peter_Correa_resume.pdf"
+            className="text-primary hover:underline hover:text-blue-500 p-4 px-20 w-full text-center"
+            onClick={handleOnClick}
+          >
+            resume
+          </a>
         </div>
 
         <div className="flex flex-row w-full h-full justify-center items-center mt-20">

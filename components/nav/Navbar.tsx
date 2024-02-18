@@ -41,12 +41,17 @@ const Navbar = () => {
               <Link
                 key={idx}
                 href={route.href}
-                download={route.download}
                 className="flex flex-row justify-center  text-primary rounded-full hover:text-blue-500 dark:hover:text-blue-500 hover:underline hover:underline-offset-1 mr-4"
               >
                 {route.text}
               </Link>
             ))}
+            <a
+              href="/Peter_Correa_resume.pdf"
+              className="flex flex-row justify-center  text-primary rounded-full hover:text-blue-500 dark:hover:text-blue-500 hover:underline hover:underline-offset-1 mr-4"
+            >
+              resume
+            </a>
             <DarkModeButton />
           </div>
         </div>
