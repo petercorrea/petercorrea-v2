@@ -1,5 +1,5 @@
 import data from '@/content/text.json';
-import { routes } from '@/libs/constants';
+import { resume, routes } from '@/libs/constants';
 import useNavModal from '@/stores/useNavModal';
 import Link from 'next/link';
 import { FaGithub, FaLinkedinIn, FaYoutube } from 'react-icons/fa';
@@ -42,11 +42,11 @@ const NavModal = ({ isOpen }: NavModalProps) => {
             </Link>
           ))}
           <a
-            href="/Peter_Correa_resume.pdf"
+            href={resume.href}
             className="text-primary hover:underline hover:text-blue-500 p-4 px-20 w-full text-center"
             onClick={handleOnClick}
           >
-            resume
+            {resume.text}
           </a>
         </div>
 
