@@ -6,7 +6,7 @@ export const routes = [
   { text: 'projects', href: '/#projects' },
   { text: 'posts', href: '/posts' },
   { text: 'afk', href: '/afk' },
-  { text: 'resume', href: '/Peter_Correa_Resume.pdf', download: 'true' },
+  { text: 'resume', href: '/Peter_Correa_resume.pdf', download: 'true' },
 ];
 
 export const postsMap = {
