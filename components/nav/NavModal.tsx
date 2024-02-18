@@ -34,7 +34,7 @@ const NavModal = ({ isOpen }: NavModalProps) => {
           {routes.map((route, idx) => (
             <Link
               href={route.href}
-              download={route.download}
+              download={route.download ? true : false}
               className="text-primary hover:underline hover:text-blue-500 p-4 px-20 w-full text-center"
               onClick={handleOnClick}
               key={idx}

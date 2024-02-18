@@ -42,7 +42,7 @@ const Navbar = () => {
               <Link
                 key={idx}
                 href={route.href}
-                download={route.download}
+                download={route.download ? true : false}
                 className="flex flex-row justify-center  text-primary rounded-full hover:text-blue-500 dark:hover:text-blue-500 hover:underline hover:underline-offset-1 mr-4"
               >
                 {route.text}

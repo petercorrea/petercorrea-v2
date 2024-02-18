@@ -8,8 +8,8 @@ export const routes = [
   { text: 'afk', href: '/afk' },
   {
     text: 'resume',
-    href: '/Peter%20Correa%20Resume.pdf',
-    download: 'Peter Correa Resume',
+    href: '/Peter_Correa_resume.pdf',
+    download: 'true',
   },
 ];
 
