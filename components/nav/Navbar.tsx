@@ -10,7 +10,6 @@ const Navbar = () => {
   const navModal = useNavModal();
 
   const handleOnClick = () => {
-    console.log('fired', navModal.isOpen);
     if (navModal.isOpen) {
       navModal.onClose();
     } else {
