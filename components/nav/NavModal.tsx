@@ -1,5 +1,5 @@
 import data from '@/content/text.json';
-import { resume, routes } from '@/libs/constants';
+import { routes } from '@/libs/constants';
 import useNavModal from '@/stores/useNavModal';
 import Link from 'next/link';
 import { FaGithub, FaLinkedinIn, FaYoutube } from 'react-icons/fa';
@@ -41,13 +41,6 @@ const NavModal = ({ isOpen }: NavModalProps) => {
               {route.text}
             </Link>
           ))}
-          <a
-            href={resume}
-            download
-            className="text-primary hover:underline hover:text-blue-500 p-4 px-20 w-full text-center"
-          >
-            resume
-          </a>
         </div>
 
         <div className="flex flex-row w-full h-full justify-center items-center mt-20">

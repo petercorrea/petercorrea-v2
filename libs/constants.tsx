@@ -6,9 +6,8 @@ export const routes = [
   { text: 'projects', href: '/#projects' },
   { text: 'posts', href: '/posts' },
   { text: 'afk', href: '/afk' },
+  { text: 'resume', href: '/Peter_Correa_Resume.pdf' },
 ];
-
-export const resume = '/Peter_Correa_Resume.pdf';
 
 export const postsMap = {
   'programming-languages': programmingLanguages,

@@ -1,6 +1,6 @@
 'use client';
 import DarkModeButton from '@/components/nav/DarkModeButton';
-import { resume, routes } from '@/libs/constants';
+import { routes } from '@/libs/constants';
 import useNavModal from '@/stores/useNavModal';
 import Link from 'next/link';
 import { FaHamburger } from 'react-icons/fa';
@@ -46,13 +46,6 @@ const Navbar = () => {
                 {route.text}
               </Link>
             ))}
-            <a
-              href={resume}
-              download
-              className="flex flex-row justify-center  text-primary rounded-full hover:text-blue-500 dark:hover:text-blue-500 hover:underline hover:underline-offset-1 mr-4"
-            >
-              resume
-            </a>
             <DarkModeButton />
           </div>
         </div>
