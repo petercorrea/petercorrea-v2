@@ -8,6 +8,7 @@ import Footer from '@/components/sections/Footer';
 import Hero from '@/components/sections/Hero';
 import Projects from '@/components/sections/Projects';
 import Work from '@/components/sections/Work';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 export default function Home() {
   console.log(
@@ -18,6 +19,8 @@ export default function Home() {
   return (
     <main>
       <link rel="icon" href="/headshot.png" sizes="any" />
+      <SpeedInsights />
+
       <Transition delay="100">
         <SocialLinks />
       </Transition>
