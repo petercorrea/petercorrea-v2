@@ -43,6 +43,7 @@ const NavModal = ({ isOpen }: NavModalProps) => {
           ))}
           <a
             href={resume}
+            download
             className="text-primary hover:underline hover:text-blue-500 p-4 px-20 w-full text-center"
           >
             resume

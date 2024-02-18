@@ -48,6 +48,7 @@ const Navbar = () => {
             ))}
             <a
               href={resume}
+              download
               className="flex flex-row justify-center  text-primary rounded-full hover:text-blue-500 dark:hover:text-blue-500 hover:underline hover:underline-offset-1 mr-4"
             >
               resume
