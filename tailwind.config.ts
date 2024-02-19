@@ -32,6 +32,7 @@ const config: Config = {
         bauhausRed: '#dc2626',
         bauhausYellow: '#facc15',
         bauhausBlue: '#1e40af',
+        grey: '#cacaca',
       },
       transitionDelay: {
         '100': '100ms',

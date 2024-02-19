@@ -8,7 +8,7 @@ interface XPCardProps {
 
 const XPCard = ({ experience: experience }: XPCardProps) => {
   return (
-    <div className="rounded-xl mb-10 max-w-[800px]">
+    <div className="rounded-xl max-w-[800px]">
       <h3 className="text-primary underline">{experience.role}</h3>
       <div className="flex flex-row w-full items-end mb-2">
         <h5 className="text-primary  mr-2">{`${experience.company}`}</h5>

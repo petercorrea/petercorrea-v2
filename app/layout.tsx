@@ -1,5 +1,4 @@
 import Navbar from '@/components/nav/Navbar';
-import ModalProvider from '@/providers/ModalProvider';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import type { Metadata } from 'next';
@@ -20,14 +19,16 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} h-fit`}>
+      <body
+        className={`${inter.className} max-w-screen max-h-screen overflow-x-hidden relative -z-50`}
+      >
         <link rel="icon" href="/headshot.png" sizes="any" />
-
-        <Navbar />
-        <ModalProvider />
-        {children}
         <SpeedInsights />
         <Analytics />
+
+        <Navbar />
+        {/* <ModalProvider /> */}
+        {children}
       </body>
     </html>
   );

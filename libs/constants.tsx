@@ -8,6 +8,14 @@ export const routes = [
   { text: 'afk', href: '/afk' },
 ];
 
+export const routesMap = {
+  about: { text: 'about', href: '/#about' },
+  xp: { text: 'xp', href: '/#xp' },
+  projects: { text: 'projects', href: '/#projects' },
+  posts: { text: 'posts', href: '/posts' },
+  akf: { text: 'afk', href: '/afk' },
+};
+
 export const resume = { text: 'resume', href: '/Peter_Correa_resume.pdf' };
 
 export const postsMap = {

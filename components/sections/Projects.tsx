@@ -1,6 +1,6 @@
 import data from '@/content/text.json';
 import ProjectCard from '../elements/ProjectCard';
-import TwoCol from '../layouts/TwoCol';
+import { TwoPanel } from '../layouts/TwoPanel';
 
 const heading = (
   <h1 className="mb-4 md:mb-0 text-bauhausBlue md:sticky top-0 lowercase min-w-fit h-fit">
@@ -9,7 +9,7 @@ const heading = (
 );
 
 const content = (
-  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+  <div className="grid grid-rows-1 gap-3">
     {data.projects.map((item, idx) => (
       <ProjectCard idx={idx} key={idx} project={item} />
     ))}
@@ -19,7 +19,7 @@ const content = (
 const Projects = () => {
   return (
     <div id="projects">
-      <TwoCol heading={heading} content={content} />
+      <TwoPanel heading={heading} content={content} />
     </div>
   );
 };

@@ -6,7 +6,10 @@ interface PaddingProps {
 
 const Padding = ({ children, classname, id }: PaddingProps) => {
   return (
-    <div id={id} className={`p-4 md:p-10 flex flex-col ${classname} `}>
+    <div
+      id={id}
+      className={`p-4 md:p-10 flex flex-col ${classname} w-full h-full`}
+    >
       {children}
     </div>
   );
