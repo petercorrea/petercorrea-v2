@@ -33,7 +33,7 @@ const ProjectCard = ({ project, idx }: ProjectCardProps) => {
               </h2>
             </Link>
 
-            <p className="text-primary dark:text-stone-400 font-small mb-10">
+            <p className="text-primary dark:text-stone-400 mb-10">
               {project.description}
             </p>
           </div>

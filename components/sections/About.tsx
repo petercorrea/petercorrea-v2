@@ -7,7 +7,7 @@ const heading = (
 );
 
 const content = (
-  <div className="mr-8 ml-0">
+  <div className="">
     <span>
       I&apos;ve worked on a range of notable projects, from in-house billing
       services and vendor marketplaces to personalization platforms. My work

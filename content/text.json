@@ -16,31 +16,81 @@
   ],
   "professionalExperience": [
     {
+      "company": "Shift4",
+      "date": "2024 –– present",
+      "role": "Software Engineer",
+      "responsibilities": [
+        "Shift4 is a global company focused on building a powerful POS (point of sales) system. My team focuses on the merchant facing portal where businesses can setup, operate and manage their payments, menus, orders, storefronts, integrations and more. "
+      ],
+      "skills": [
+        "Ember.JS",
+        "RabbitMQ",
+        "Redis",
+        "Docker",
+        "Postgres",
+        "Node.js",
+        "Sentry.io",
+        "GitLab"
+      ]
+    },
+    {
       "company": "RoadRunner",
       "date": "2022 –– 2023",
       "role": "Software Engineer",
       "responsibilities": [
-        "Supported in-house billing and invoicing projects built on React, Node.js, Ruby on Rails, Digital Ocean, Heroku, and Redis. Improved developer experience by containerizing local environments and GitHub codespaces. Established new engineering docs on Confluence."
+        "At RoadRunner I was hired to support the billing and invoicing systems. This involved working on a Ruby on Rails application with a React frontend. As a Full Stack Engineer, common tasks included editing database schemas, designing models, updating controllers, creating view components, adding new workflows and writing test cases. Notable projects include overhauling the invoice pages which improved operations for the product and data analytics team; containerizing the development process to improve DX and expedite onboarding; and enhancing billing capabilities for our customers which improved our ability to bill accurately. When I wasn't writing code I focused on reviewing code, onboarding team members, interviewing candidates, presenting to staff, and improving internal processes."
       ],
       "skills": ["TypeScript", "React", "Ruby on Rails", "Postgres", "Node.js"]
     },
     {
-      "company": "X-Team",
-      "date": "2019 –– 2022",
+      "company": "PayPal",
+      "date": "2021 –– 2022",
       "role": "Software Engineer",
       "responsibilities": [
-        "Worked with PayPal to build out their federated GraphQL API gateway (Stargate) and develop the HoneyDeals marketplace on mobile. Additionally I built out frontend experiences for the Coinbase homepage and international pages."
+        "At PayPal I was contracted as a Backend Engineer to work with their API Gateway team. We were tasked with building out a GraphQL API for several services to consume. This involved integrating with mobile clients, personalization services, marketplaces and third-party systems. Notable projects include writing custom image parsing algorithms for dynamic theming, integrating systems from acquisitions (HoneyDeals), improving the internal content management system, and collaborating with the folks at Apollo to share use cases, experiment with early features and improve the product."
       ],
       "skills": ["TypeScript", "GraphQL", "Node.js"]
     },
     {
+      "company": "Coinbase",
+      "date": "2020 –– 2021",
+      "role": "Software Engineer",
+      "responsibilities": [
+        "After pivoting from retail operations to tech, I was contracted by Coinbase as a Frontend Engineer to work on public facing corporate pages. This involved working closely with the legal team to ensure compliance in multiple financial regulatory regions, and with the data science team to accurately capture and improve telemetry."
+      ],
+      "skills": [
+        "TypeScript",
+        "GraphQL",
+        "Node.js",
+        "Contently",
+        "Storybook",
+        "Jest"
+      ]
+    },
+    {
       "company": "Target",
       "date": "2014 –– 2019",
-      "role": "Sr. Operations Manager",
+      "role": "Manager",
       "responsibilities": [
-        "Managed retail operations of $75M in annual volume with a team of 50+ direct reports. Piloted technological initiatives such as online ordering, same-day delivery, self-checkout, and RFID operations. Achieved the highest number of promotions and employee cultural satisfaction. Selected for advanced leadership accelerator program."
+        "Shortly after graduating, I was hired at Target as a manager. I had assignments in sales and assets protection. My responsibilities were wide as they included managing a $75M+ operation, improving profitability, enhancing operations, reducing liabilities, conducting internal investigations of theft and fraud, and ensuring safety and cultural satisfaction. Notable projects included executing new technological initiatives such as flexible fulfillment (online store), curbside pickup, RFID logistics, online pickup, same day delivery (Shipt) and designer collaborations. I was responsible for a team of 50+ with 6 direct reports. Two of my proudest achievements were being selected for their advance leadership accelerator (L.E.A.D.) and ranking the highest in internal cultural satisfaction (Best Team Survey)."
       ],
-      "skills": ["Management", "Operations", "Analytics"]
+      "skills": ["Management", "Operations", "Analytics", "Asset Protection"]
+    },
+    {
+      "company": "Apple",
+      "date": "2011–– 2012",
+      "role": "Technical Specialist",
+      "responsibilities": [
+        "While in college, I worked at the Apple Store as a Family Room Specialist where I triaged software and hardware issues for our guests. I performed hardware tests, conducted repairs, upgraded hardware, performed data recovery and transfers, and facilitated training."
+      ],
+      "skills": [
+        "Hardware Repairs",
+        "Software Recovery",
+        "Customer Service",
+        "Sales",
+        "Technical Support",
+        "Educating"
+      ]
     }
   ],
   "academicExperience": [
