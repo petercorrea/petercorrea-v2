@@ -19,19 +19,25 @@ const Hero = () => {
                 Available for hire
               </p>
             </div>
-            <h1 className="text-primary md:text-6xl mb-5">
+            <h1 className="text-primary md:text-6xl mb-4">
               Software Engineer
             </h1>
-            <p className="dark:text-stone-400 text-stone-600 mb-4">
-              I&apos;m Peter, a Full Stack Engineer based in Florida. I
-              specialize in creating engaging web experiences backed by
-              resilient, scalable systems. You can often find me working with
-              TypeScript, Python, Go, React, NodeJs, Express, NextJs, and
-              Postgres. When I&apos;m away from my desk, you&apos;ll catch me
-              working on people and their development.
+
+            <p className="dark:text-stone-400 text-stone-600 font-semibold">
+              Peter | ˈpē-tər&nbsp; | noun:
+            </p>
+            <p className="dark:text-stone-400 text-stone-600">
+              1. A fullstack engineer based in Tampa, Florida.
+            </p>
+            <p className="dark:text-stone-400 text-stone-600">
+              2. Skilled in TypeScript, Python, Postgres, Redis, and RabbitMQ.
+            </p>
+            <p className="dark:text-stone-400 text-stone-600 mb-2">
+              3. Mentor, leader, former saxophonist.
             </p>
 
-            <div className="flex flex-row">
+
+            <div className="flex flex-row mb-20">
               <Transition delay="100" direction="up">
                 <a href={data.contact.mailto}>
                   <MdAlternateEmail
